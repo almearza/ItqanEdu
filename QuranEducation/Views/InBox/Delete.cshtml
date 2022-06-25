@@ -1,0 +1,61 @@
+﻿@model QuranEducation.Models.Inbox
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            البريد الالكتروني
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AUserName)
+        </dd>
+
+        <dt>
+            الرسالة
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+        <dt>
+            تاريخ الارسال
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arrival)
+        </dd>
+
+        <dt>
+            المرسل
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sender)
+        </dd>
+
+        <dt>
+            الرابط
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Delete" class="btn btn-default" /> 
+    <a class="btn" href="~/InBox/Index"> رجوع </a>
+
+</div>
+    }
+</div>

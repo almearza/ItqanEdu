@@ -1,0 +1,1232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F407DC0-75C5-4996-A108-E3104398C9E0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuranEducation</RootNamespace>
+    <AssemblyName>QuranEducation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44353</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Mailjet.Client, Version=2.0.2.0, Culture=neutral, PublicKeyToken=c297171c8bcce79f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mailjet.Api.2.0.2\lib\net45\Mailjet.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.4.0.0\lib\net451\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.4.0.0\lib\net451\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.4.0.0\lib\net451\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.4.0.0\lib\net451\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AutoMapperProfile.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Helpers\EmailSender.cs" />
+    <Compile Include="Migrations\202012050809420_add-assigment.cs" />
+    <Compile Include="Migrations\202012050809420_add-assigment.Designer.cs">
+      <DependentUpon>202012050809420_add-assigment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AssigmentController.cs" />
+    <Compile Include="Helpers\DateTimeExtensions.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InBoxController.cs" />
+    <Compile Include="Controllers\LectureController.cs" />
+    <Compile Include="Controllers\InstructorProfileController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\TutorialController.cs" />
+    <Compile Include="Controllers\MyController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ExceptionLogger.cs" />
+    <Compile Include="Helpers\GeneralHelper.cs" />
+    <Compile Include="Helpers\Langs.cs" />
+    <Compile Include="Helpers\LanguageMang.cs" />
+    <Compile Include="Helpers\SMSHelper-old.cs" />
+    <Compile Include="Migrations\202011151824126_InitDb.cs" />
+    <Compile Include="Migrations\202011151824126_InitDb.Designer.cs">
+      <DependentUpon>202011151824126_InitDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011191802255_add-lang.cs" />
+    <Compile Include="Migrations\202011191802255_add-lang.Designer.cs">
+      <DependentUpon>202011191802255_add-lang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011191830110_change-lang.cs" />
+    <Compile Include="Migrations\202011191830110_change-lang.Designer.cs">
+      <DependentUpon>202011191830110_change-lang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011200806340_addCodeLang.cs" />
+    <Compile Include="Migrations\202011200806340_addCodeLang.Designer.cs">
+      <DependentUpon>202011200806340_addCodeLang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011201811546_addLangCode.cs" />
+    <Compile Include="Migrations\202011201811546_addLangCode.Designer.cs">
+      <DependentUpon>202011201811546_addLangCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011250537260_tutorial.cs" />
+    <Compile Include="Migrations\202011250537260_tutorial.Designer.cs">
+      <DependentUpon>202011250537260_tutorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011250539178_tutorialforeignkey.cs" />
+    <Compile Include="Migrations\202011250539178_tutorialforeignkey.Designer.cs">
+      <DependentUpon>202011250539178_tutorialforeignkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011250651046_addinginstructorprofile.cs" />
+    <Compile Include="Migrations\202011250651046_addinginstructorprofile.Designer.cs">
+      <DependentUpon>202011250651046_addinginstructorprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011250805205_removedatetime.cs" />
+    <Compile Include="Migrations\202011250805205_removedatetime.Designer.cs">
+      <DependentUpon>202011250805205_removedatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011251238502_addinginbox.cs" />
+    <Compile Include="Migrations\202011251238502_addinginbox.Designer.cs">
+      <DependentUpon>202011251238502_addinginbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011260601036_addinglangcodetoinstructor.cs" />
+    <Compile Include="Migrations\202011260601036_addinglangcodetoinstructor.Designer.cs">
+      <DependentUpon>202011260601036_addinglangcodetoinstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011270800510_addCountOfLec.cs" />
+    <Compile Include="Migrations\202011270800510_addCountOfLec.Designer.cs">
+      <DependentUpon>202011270800510_addCountOfLec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011271526198_changeUserIdToUserNameTut.cs" />
+    <Compile Include="Migrations\202011271526198_changeUserIdToUserNameTut.Designer.cs">
+      <DependentUpon>202011271526198_changeUserIdToUserNameTut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011271836557_changeInInstProfile.cs" />
+    <Compile Include="Migrations\202011271836557_changeInInstProfile.Designer.cs">
+      <DependentUpon>202011271836557_changeInInstProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011280814513_changeInbox.cs" />
+    <Compile Include="Migrations\202011280814513_changeInbox.Designer.cs">
+      <DependentUpon>202011280814513_changeInbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011281152328_add-lec.cs" />
+    <Compile Include="Migrations\202011281152328_add-lec.Designer.cs">
+      <DependentUpon>202011281152328_add-lec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011281342520_change-lec.cs" />
+    <Compile Include="Migrations\202011281342520_change-lec.Designer.cs">
+      <DependentUpon>202011281342520_change-lec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012011821566_remove-user.cs" />
+    <Compile Include="Migrations\202012011821566_remove-user.Designer.cs">
+      <DependentUpon>202012011821566_remove-user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012051216128_change-ass.cs" />
+    <Compile Include="Migrations\202012051216128_change-ass.Designer.cs">
+      <DependentUpon>202012051216128_change-ass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012061913491_add-StrartTime.cs" />
+    <Compile Include="Migrations\202012061913491_add-StrartTime.Designer.cs">
+      <DependentUpon>202012061913491_add-StrartTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012061914557_add-StrartTime2.cs" />
+    <Compile Include="Migrations\202012061914557_add-StrartTime2.Designer.cs">
+      <DependentUpon>202012061914557_add-StrartTime2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012091746536_addEval.cs" />
+    <Compile Include="Migrations\202012091746536_addEval.Designer.cs">
+      <DependentUpon>202012091746536_addEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012091823368_changeEval.cs" />
+    <Compile Include="Migrations\202012091823368_changeEval.Designer.cs">
+      <DependentUpon>202012091823368_changeEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012110705502_add-student-profile.cs" />
+    <Compile Include="Migrations\202012110705502_add-student-profile.Designer.cs">
+      <DependentUpon>202012110705502_add-student-profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012111434144_addStudentProfiles.cs" />
+    <Compile Include="Migrations\202012111434144_addStudentProfiles.Designer.cs">
+      <DependentUpon>202012111434144_addStudentProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012121001274_add-data-t-st-profile.cs" />
+    <Compile Include="Migrations\202012121001274_add-data-t-st-profile.Designer.cs">
+      <DependentUpon>202012121001274_add-data-t-st-profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012121010414_change-data-t-st-profile.cs" />
+    <Compile Include="Migrations\202012121010414_change-data-t-st-profile.Designer.cs">
+      <DependentUpon>202012121010414_change-data-t-st-profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012251420102_add_st_tut.cs" />
+    <Compile Include="Migrations\202012251420102_add_st_tut.Designer.cs">
+      <DependentUpon>202012251420102_add_st_tut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012251430041_change_st_tut.cs" />
+    <Compile Include="Migrations\202012251430041_change_st_tut.Designer.cs">
+      <DependentUpon>202012251430041_change_st_tut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012260902105_add-sol.cs" />
+    <Compile Include="Migrations\202012260902105_add-sol.Designer.cs">
+      <DependentUpon>202012260902105_add-sol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012261420008_remove-answer.cs" />
+    <Compile Include="Migrations\202012261420008_remove-answer.Designer.cs">
+      <DependentUpon>202012261420008_remove-answer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101012047350_addInstEval.cs" />
+    <Compile Include="Migrations\202101012047350_addInstEval.Designer.cs">
+      <DependentUpon>202101012047350_addInstEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101020903282_changeInInstEval.cs" />
+    <Compile Include="Migrations\202101020903282_changeInInstEval.Designer.cs">
+      <DependentUpon>202101020903282_changeInInstEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101090855163_add-student-cert.cs" />
+    <Compile Include="Migrations\202101090855163_add-student-cert.Designer.cs">
+      <DependentUpon>202101090855163_add-student-cert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101110932197_remove-old-evalid.cs" />
+    <Compile Include="Migrations\202101110932197_remove-old-evalid.Designer.cs">
+      <DependentUpon>202101110932197_remove-old-evalid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101211927456_add-contactus.cs" />
+    <Compile Include="Migrations\202101211927456_add-contactus.Designer.cs">
+      <DependentUpon>202101211927456_add-contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101212020509_change-contactus.cs" />
+    <Compile Include="Migrations\202101212020509_change-contactus.Designer.cs">
+      <DependentUpon>202101212020509_change-contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103090805241_add-gender.cs" />
+    <Compile Include="Migrations\202103090805241_add-gender.Designer.cs">
+      <DependentUpon>202103090805241_add-gender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Assigment.cs" />
+    <Compile Include="Models\AssSolution.cs" />
+    <Compile Include="Models\ContactUs.cs" />
+    <Compile Include="Models\InstEval.cs" />
+    <Compile Include="Models\StudentProfile.cs" />
+    <Compile Include="Models\StudentTutorial.cs" />
+    <Compile Include="Models\SubVM.cs" />
+    <Compile Include="Models\VM\AssigmentVM.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Inbox.cs" />
+    <Compile Include="Models\InstructorProfile.cs" />
+    <Compile Include="Models\Lecture.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Tutorial.cs" />
+    <Compile Include="Models\VM\EvalStringsVM.cs" />
+    <Compile Include="Models\VM\EvaluateVM.cs" />
+    <Compile Include="Models\VM\InboxVM.cs" />
+    <Compile Include="Models\VM\InstEvalReportVM.cs" />
+    <Compile Include="Models\VM\InstructorProfileVm.cs" />
+    <Compile Include="Models\VM\InstVM.cs" />
+    <Compile Include="Models\VM\LectureVM.cs" />
+    <Compile Include="Models\VM\AssSolutionVM.cs" />
+    <Compile Include="Models\VM\StudentVM.cs" />
+    <Compile Include="Models\VM\TutorialVM.cs" />
+    <Compile Include="Models\VM\RoleNames.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuranRes.es.Designer.cs">
+      <DependentUpon>QuranRes.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.to.Designer.cs">
+      <DependentUpon>QuranRes.to.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.Os.Designer.cs">
+      <DependentUpon>QuranRes.Os.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.Ti.Designer.cs">
+      <DependentUpon>QuranRes.Ti.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.Bo1.Designer.cs">
+      <DependentUpon>QuranRes.Bo.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.Fr.Designer.cs">
+      <DependentUpon>QuranRes.Fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.Ar1.Designer.cs">
+      <DependentUpon>QuranRes.Ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.Designer.cs">
+      <DependentUpon>QuranRes.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="assets\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="assets\bootstrap-daterangepicker\date.js" />
+    <Content Include="assets\bootstrap-daterangepicker\daterangepicker.css" />
+    <Content Include="assets\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="assets\bootstrap-daterangepicker\examples.html" />
+    <Content Include="assets\bootstrap-ltr\css\bootstrap-responsive.min.css" />
+    <Content Include="assets\bootstrap-ltr\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap-ltr\css\font-awesome.css" />
+    <Content Include="assets\bootstrap-ltr\css\jquery.fancybox.css" />
+    <Content Include="assets\bootstrap-ltr\css\style.css" />
+    <Content Include="assets\bootstrap-ltr\css\style_default.css" />
+    <Content Include="assets\bootstrap-ltr\css\style_responsive.css" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprobold.svg" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprolight.svg" />
+    <Content Include="assets\bootstrap-ltr\font\myriadproregular.svg" />
+    <Content Include="assets\bootstrap-ltr\img\404.png" />
+    <Content Include="assets\bootstrap-ltr\img\500.png" />
+    <Content Include="assets\bootstrap-ltr\img\amanabg.png" />
+    <Content Include="assets\bootstrap-ltr\img\avatar-mini.png" />
+    <Content Include="assets\bootstrap-ltr\img\avatar.png" />
+    <Content Include="assets\bootstrap-ltr\img\avatar1.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\avatar1_small.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\avatar2.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\avatar3.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\avatar3_small.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\bg-default.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\bg-default.png" />
+    <Content Include="assets\bootstrap-ltr\img\bg-denim.png" />
+    <Content Include="assets\bootstrap-ltr\img\bg-grey.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\bg-navy-blue.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\bg-purple.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\body-bg.png" />
+    <Content Include="assets\bootstrap-ltr\img\box-bg.png" />
+    <Content Include="assets\bootstrap-ltr\img\bread-crumb-bg.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\bread-crumb-divider.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\bread-crumb-last.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\cancelled.png" />
+    <Content Include="assets\bootstrap-ltr\img\default.png" />
+    <Content Include="assets\bootstrap-ltr\img\fawaz.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\header_line.png" />
+    <Content Include="assets\bootstrap-ltr\img\lang.png" />
+    <Content Include="assets\bootstrap-ltr\img\loading.gif" />
+    <Content Include="assets\bootstrap-ltr\img\lock-avatar.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\login-btn.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\logo-old.png" />
+    <Content Include="assets\bootstrap-ltr\img\logo.png" />
+    <Content Include="assets\bootstrap-ltr\img\menu-selected-bg.png" />
+    <Content Include="assets\bootstrap-ltr\img\overlay-icon.png" />
+    <Content Include="assets\bootstrap-ltr\img\photo.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\profile-pic.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\side-bar-list-bg.png" />
+    <Content Include="assets\bootstrap-ltr\img\submenu_border.png" />
+    <Content Include="assets\bootstrap-ltr\img\submenu_hover.png" />
+    <Content Include="assets\bootstrap-ltr\img\super%40abs.sd.png" />
+    <Content Include="assets\bootstrap-ltr\img\top-bg.jpg" />
+    <Content Include="assets\bootstrap-ltr\img\trns-bg.png" />
+    <Content Include="assets\bootstrap-ltr\img\vector-lab.jpg" />
+    <Content Include="assets\bootstrap-rtl\css\bootstrap-fileupload.css" />
+    <Content Include="assets\bootstrap-rtl\css\bootstrap-responsive-rtl.min.css" />
+    <Content Include="assets\bootstrap-rtl\css\bootstrap-rtl.min.css" />
+    <Content Include="assets\bootstrap-rtl\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\bootstrap-rtl\img\glyphicons-halflings.png" />
+    <Content Include="assets\bootstrap-rtl\js\bootstrap-fileupload.js" />
+    <Content Include="assets\bootstrap-rtl\js\bootstrap.min.js" />
+    <Content Include="assets\bootstrap-timepicker\.gitignore" />
+    <Content Include="assets\bootstrap-timepicker\compiled\timepicker.css" />
+    <Content Include="assets\bootstrap-timepicker\js\bootstrap-timepicker.js" />
+    <Content Include="assets\chosen-bootstrap\.gitignore" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen-sprite.png" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.css" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.jquery.js" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.jquery.min.js" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.proto.js" />
+    <Content Include="assets\chosen-bootstrap\chosen\chosen.proto.min.js" />
+    <Content Include="assets\chosen-bootstrap\example.jquery.html" />
+    <Content Include="assets\chosen-bootstrap\example.proto.html" />
+    <Content Include="assets\data-tables\dataTables.bootstrap.min.css" />
+    <Content Include="assets\data-tables\dataTables.bootstrap.min.js" />
+    <Content Include="assets\data-tables\DT_bootstrap.css" />
+    <Content Include="assets\data-tables\DT_bootstrap.js" />
+    <Content Include="assets\data-tables\images\sort_asc.png" />
+    <Content Include="assets\data-tables\images\sort_both.png" />
+    <Content Include="assets\data-tables\images\sort_desc.png" />
+    <Content Include="assets\data-tables\jquery.dataTables.js" />
+    <Content Include="assets\data-tables\jquery.dataTables.min.js" />
+    <Content Include="assets\fancybox\.gitattributes" />
+    <Content Include="assets\fancybox\demo\1_b.jpg" />
+    <Content Include="assets\fancybox\demo\1_s.jpg" />
+    <Content Include="assets\fancybox\demo\2_b.jpg" />
+    <Content Include="assets\fancybox\demo\2_s.jpg" />
+    <Content Include="assets\fancybox\demo\3_b.jpg" />
+    <Content Include="assets\fancybox\demo\3_s.jpg" />
+    <Content Include="assets\fancybox\demo\4_b.jpg" />
+    <Content Include="assets\fancybox\demo\4_s.jpg" />
+    <Content Include="assets\fancybox\demo\5_b.jpg" />
+    <Content Include="assets\fancybox\demo\5_s.jpg" />
+    <Content Include="assets\fancybox\demo\ajax.txt" />
+    <Content Include="assets\fancybox\demo\iframe.html" />
+    <Content Include="assets\fancybox\demo\index.html" />
+    <Content Include="assets\fancybox\lib\jquery-1.8.2.min.js" />
+    <Content Include="assets\fancybox\lib\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="assets\fancybox\source\blank.gif" />
+    <Content Include="assets\fancybox\source\fancybox_loading.gif" />
+    <Content Include="assets\fancybox\source\fancybox_overlay.png" />
+    <Content Include="assets\fancybox\source\fancybox_sprite.png" />
+    <Content Include="assets\fancybox\source\helpers\fancybox_buttons.png" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-media.js" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="assets\fancybox\source\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.css" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.js" />
+    <Content Include="assets\fancybox\source\jquery.fancybox.pack.js" />
+    <Content Include="assets\font-awesome\.gitignore" />
+    <Content Include="assets\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="assets\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome\docs\assets\css\font-awesome-ie7.min.css" />
+    <Content Include="assets\font-awesome\docs\assets\css\font-awesome.css" />
+    <Content Include="assets\font-awesome\docs\assets\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome\docs\assets\css\prettify.css" />
+    <Content Include="assets\font-awesome\docs\assets\css\site.css" />
+    <Content Include="assets\font-awesome\docs\assets\ico\favicon.ico" />
+    <Content Include="assets\font-awesome\docs\assets\img\contribution-sample.png" />
+    <Content Include="assets\font-awesome\docs\assets\img\fort_awesome.jpg" />
+    <Content Include="assets\font-awesome\docs\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\font-awesome\docs\assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\font-awesome\docs\assets\js\backbone.min.js" />
+    <Content Include="assets\font-awesome\docs\assets\js\bootstrap-222.min.js" />
+    <Content Include="assets\font-awesome\docs\assets\js\index\index.js" />
+    <Content Include="assets\font-awesome\docs\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="assets\font-awesome\docs\assets\js\prettify.min.js" />
+    <Content Include="assets\font-awesome\docs\assets\js\underscore.min.js" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\buttons.html" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\css-tests.css" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\css-tests.html" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\forms-responsive.html" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\forms.html" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\navbar-fixed-top.html" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\navbar-static-top.html" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tests\navbar.html" />
+    <Content Include="assets\font-awesome\docs\design.html" />
+    <Content Include="assets\font-awesome\docs\index.html" />
+    <Content Include="assets\font-awesome\docs\test.html" />
+    <Content Include="assets\fullcalendar\changelog.txt" />
+    <Content Include="assets\fullcalendar\demos\agenda-views.html" />
+    <Content Include="assets\fullcalendar\demos\basic-views.html" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="assets\fullcalendar\demos\cupertino\theme.css" />
+    <Content Include="assets\fullcalendar\demos\default.html" />
+    <Content Include="assets\fullcalendar\demos\external-dragging.html" />
+    <Content Include="assets\fullcalendar\demos\gcal.html" />
+    <Content Include="assets\fullcalendar\demos\json-events.php" />
+    <Content Include="assets\fullcalendar\demos\json.html" />
+    <Content Include="assets\fullcalendar\demos\selectable.html" />
+    <Content Include="assets\fullcalendar\demos\theme.html" />
+    <Content Include="assets\fullcalendar\fullcalendar\bootstrap-fullcalendar.css" />
+    <Content Include="assets\fullcalendar\fullcalendar\fullcalendar.css" />
+    <Content Include="assets\fullcalendar\fullcalendar\fullcalendar.js" />
+    <Content Include="assets\fullcalendar\fullcalendar\fullcalendar.min.js" />
+    <Content Include="assets\fullcalendar\fullcalendar\fullcalendar.print.css" />
+    <Content Include="assets\fullcalendar\fullcalendar\gcal.js" />
+    <Content Include="assets\fullcalendar\GPL-LICENSE.txt" />
+    <Content Include="assets\fullcalendar\jquery\jquery-1.8.1.min.js" />
+    <Content Include="assets\fullcalendar\jquery\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="assets\fullcalendar\MIT-LICENSE.txt" />
+    <Content Include="assets\jquery-slimscroll\examples\allow-page-scroll.html" />
+    <Content Include="assets\jquery-slimscroll\examples\chaining.html" />
+    <Content Include="assets\jquery-slimscroll\examples\disable-fade-out.html" />
+    <Content Include="assets\jquery-slimscroll\examples\height-width.html" />
+    <Content Include="assets\jquery-slimscroll\examples\libs\prettify\prettify.css" />
+    <Content Include="assets\jquery-slimscroll\examples\libs\prettify\prettify.js" />
+    <Content Include="assets\jquery-slimscroll\examples\mouse-wheel.html" />
+    <Content Include="assets\jquery-slimscroll\examples\multiple-elements.html" />
+    <Content Include="assets\jquery-slimscroll\examples\programmatic-scrolling.html" />
+    <Content Include="assets\jquery-slimscroll\examples\rail.html" />
+    <Content Include="assets\jquery-slimscroll\examples\scrollbar.html" />
+    <Content Include="assets\jquery-slimscroll\examples\start-position.html" />
+    <Content Include="assets\jquery-slimscroll\examples\style.css" />
+    <Content Include="assets\jquery-slimscroll\examples\top-bottom-events.html" />
+    <Content Include="assets\jquery-slimscroll\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="assets\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="assets\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="assets\pre-loader\3D coffee cup.gif" />
+    <Content Include="assets\pre-loader\3D snake.gif" />
+    <Content Include="assets\pre-loader\Atom.gif" />
+    <Content Include="assets\pre-loader\Bouncing ball.gif" />
+    <Content Include="assets\pre-loader\Broken ring.gif" />
+    <Content Include="assets\pre-loader\Chasing blocks.gif" />
+    <Content Include="assets\pre-loader\Clock with hands.gif" />
+    <Content Include="assets\pre-loader\Drawing flower.gif" />
+    <Content Include="assets\pre-loader\Drink in glass.gif" />
+    <Content Include="assets\pre-loader\Fading squares.gif" />
+    <Content Include="assets\pre-loader\Fancy pants.gif" />
+    <Content Include="assets\pre-loader\Hourglass.gif" />
+    <Content Include="assets\pre-loader\Kaleidoscope.gif" />
+    <Content Include="assets\pre-loader\Linear star.gif" />
+    <Content Include="assets\pre-loader\Moving blocks.gif" />
+    <Content Include="assets\pre-loader\Nuclear alert.gif" />
+    <Content Include="assets\pre-loader\Ovals in circle.gif" />
+    <Content Include="assets\pre-loader\Pie chart.gif" />
+    <Content Include="assets\pre-loader\preview.gif" />
+    <Content Include="assets\pre-loader\preview2.gif" />
+    <Content Include="assets\pre-loader\preview3.gif" />
+    <Content Include="assets\pre-loader\Radar.gif" />
+    <Content Include="assets\pre-loader\Rounded blocks.gif" />
+    <Content Include="assets\pre-loader\Rounded stripes.gif" />
+    <Content Include="assets\pre-loader\Search with arrow.gif" />
+    <Content Include="assets\pre-loader\Searching.gif" />
+    <Content Include="assets\pre-loader\Snake.gif" />
+    <Content Include="assets\pre-loader\Snakes chasing.gif" />
+    <Content Include="assets\pre-loader\Snow with rain.gif" />
+    <Content Include="assets\pre-loader\Spider web.gif" />
+    <Content Include="assets\pre-loader\Spinning line.gif" />
+    <Content Include="assets\pre-loader\Spinning spiral.gif" />
+    <Content Include="assets\pre-loader\Storm.gif" />
+    <Content Include="assets\pre-loader\Sun.gif" />
+    <Content Include="assets\pre-loader\Surrounded segments.gif" />
+    <Content Include="assets\pre-loader\Thin broken ring.gif" />
+    <Content Include="assets\pre-loader\Thin fading line.gif" />
+    <Content Include="assets\pre-loader\Tree on wind.gif" />
+    <Content Include="assets\pre-loader\Triangles indicator.gif" />
+    <Content Include="assets\pre-loader\Twirl.gif" />
+    <Content Include="assets\pre-loader\Velocity.gif" />
+    <Content Include="assets\pre-loader\Ventilator.gif" />
+    <Content Include="assets\pre-loader\Water ripples.gif" />
+    <Content Include="assets\pre-loader\Whirlpool.gif" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\summernote.min.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="css\logn.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style_default.css" />
+    <Content Include="css\style_gray.css" />
+    <Content Include="css\style_navy-blue.css" />
+    <Content Include="css\style_purple.css" />
+    <Content Include="css\style_responsive.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\logo.png" />
+    <Content Include="img\404.png" />
+    <Content Include="img\500.png" />
+    <Content Include="img\amanabg.png" />
+    <Content Include="img\avatar-mini.png" />
+    <Content Include="img\avatar.png" />
+    <Content Include="img\avatar1.jpg" />
+    <Content Include="img\avatar1_small.jpg" />
+    <Content Include="img\avatar2.jpg" />
+    <Content Include="img\avatar3.jpg" />
+    <Content Include="img\avatar3_small.jpg" />
+    <Content Include="img\bg-default.jpg" />
+    <Content Include="img\bg-denim.png" />
+    <Content Include="img\bg-grey.jpg" />
+    <Content Include="img\bg-navy-blue.jpg" />
+    <Content Include="img\bg-purple.jpg" />
+    <Content Include="img\body-bg.png" />
+    <Content Include="img\box-bg.png" />
+    <Content Include="img\bread-crumb-bg.jpg" />
+    <Content Include="img\bread-crumb-divider.jpg" />
+    <Content Include="img\bread-crumb-last.jpg" />
+    <Content Include="img\cancelled.png" />
+    <Content Include="img\default.png" />
+    <Content Include="img\examIcon.png" />
+    <Content Include="img\header_line.png" />
+    <Content Include="img\lang.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\lock-avatar.jpg" />
+    <Content Include="img\login-btn.jpg" />
+    <Content Include="img\logo-old.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\menu-selected-bg.png" />
+    <Content Include="img\overlay-icon.png" />
+    <Content Include="img\photo.jpg" />
+    <Content Include="img\profile-pic.jpg" />
+    <Content Include="img\side-bar-list-bg.png" />
+    <Content Include="img\submenu_border.png" />
+    <Content Include="img\submenu_hover.png" />
+    <Content Include="img\super%40abs.sd.png" />
+    <Content Include="img\top-bg-new.jpg" />
+    <Content Include="img\top-bg.jpg" />
+    <Content Include="img\trns-bg.png" />
+    <Content Include="img\unnamed.png" />
+    <Content Include="img\vector-lab.jpg" />
+    <Content Include="js\demo.gmaps.js" />
+    <Content Include="js\excanvas.js" />
+    <Content Include="js\gmaps.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.8.2.min.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery.blockui.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.peity.min.js" />
+    <Content Include="js\jquery.pulsate.min.js" />
+    <Content Include="js\respond.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\ui-nestable.js" />
+    <Content Include="js\ui-tree.js" />
+    <Content Include="LoginContent\css\main.css" />
+    <Content Include="LoginContent\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="LoginContent\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="LoginContent\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="LoginContent\images\b.jpg" />
+    <Content Include="LoginContent\images\bg-02.png" />
+    <Content Include="LoginContent\images\icons\favicon.ico" />
+    <Content Include="LoginContent\images\itqanLogo.jpg" />
+    <Content Include="LoginContent\images\itqanq2021.png" />
+    <Content Include="LoginContent\js\main.js" />
+    <Content Include="LoginContent\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="LoginContent\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="LoginContent\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="LoginContent\vendor\select2\select2.css" />
+    <Content Include="LoginContent\vendor\select2\select2.js" />
+    <Content Include="LoginContent\vendor\select2\select2.min.css" />
+    <Content Include="LoginContent\vendor\select2\select2.min.js" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="LoginContent\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="LoginContent\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="LoginContent\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="LoginContent\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="fonts\DroidKufi-Regular.eot" />
+    <Content Include="fonts\DroidKufi-Regular.woff" />
+    <Content Include="fonts\DroidKufi-Regulard41d.eot" />
+    <Content Include="assets\.DS_Store" />
+    <Content Include="assets\bootstrap-datepicker\.DS_Store" />
+    <Content Include="assets\bootstrap-datepicker\less\datepicker.less" />
+    <Content Include="assets\bootstrap-rtl\.DS_Store" />
+    <Content Include="assets\bootstrap-rtl\css\.DS_Store" />
+    <Content Include="assets\bootstrap-rtl\img\.DS_Store" />
+    <Content Include="assets\bootstrap-rtl\js\.DS_Store" />
+    <Content Include="assets\bootstrap-timepicker\.DS_Store" />
+    <Content Include="assets\bootstrap-timepicker\less\timepicker.less" />
+    <Content Include="assets\bootstrap-timepicker\README.md" />
+    <Content Include="assets\chosen-bootstrap\.DS_Store" />
+    <Content Include="assets\chosen-bootstrap\Cakefile" />
+    <Content Include="assets\chosen-bootstrap\chosen\.DS_Store" />
+    <Content Include="assets\chosen-bootstrap\chosen\lib\chosen.less" />
+    <Content Include="assets\chosen-bootstrap\coffee\.DS_Store" />
+    <Content Include="assets\chosen-bootstrap\coffee\chosen.jquery.coffee" />
+    <Content Include="assets\chosen-bootstrap\coffee\chosen.proto.coffee" />
+    <Content Include="assets\chosen-bootstrap\coffee\lib\abstract-chosen.coffee" />
+    <Content Include="assets\chosen-bootstrap\coffee\lib\select-parser.coffee" />
+    <Content Include="assets\chosen-bootstrap\LICENSE.md" />
+    <Content Include="assets\chosen-bootstrap\package.json" />
+    <Content Include="assets\chosen-bootstrap\README.md" />
+    <Content Include="assets\chosen-bootstrap\VERSION" />
+    <Content Include="assets\data-tables\.DS_Store" />
+    <Content Include="assets\fancybox\.DS_Store" />
+    <Content Include="assets\fancybox\CHANGELOG.md" />
+    <Content Include="assets\fancybox\README.md" />
+    <Content Include="assets\fancybox\source\.DS_Store" />
+    <Content Include="assets\font-awesome\.DS_Store" />
+    <Content Include="assets\font-awesome\docs\.DS_Store" />
+    <Content Include="assets\font-awesome\docs\assets\.DS_Store" />
+    <Content Include="assets\font-awesome\docs\assets\font\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome\docs\assets\font\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome\docs\assets\font\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome\docs\assets\font\FontAwesome.otf" />
+    <Content Include="assets\font-awesome\docs\assets\font\museo_slab_300-webfont.eot" />
+    <Content Include="assets\font-awesome\docs\assets\font\museo_slab_300-webfont.ttf" />
+    <Content Include="assets\font-awesome\docs\assets\font\museo_slab_500-webfont.eot" />
+    <Content Include="assets\font-awesome\docs\assets\font\museo_slab_500-webfont.ttf" />
+    <Content Include="assets\font-awesome\docs\assets\font\proximanova-sbold-webfont.eot" />
+    <Content Include="assets\font-awesome\docs\assets\font\proximanova-sbold-webfont.ttf" />
+    <Content Include="assets\font-awesome\docs\assets\font\proximanova-webfont.eot" />
+    <Content Include="assets\font-awesome\docs\assets\font\proximanova-webfont.ttf" />
+    <Content Include="assets\font-awesome\docs\assets\img\icon-flag.pdf" />
+    <Content Include="assets\font-awesome\docs\assets\js\.DS_Store" />
+    <Content Include="assets\font-awesome\docs\assets\less\.DS_Store" />
+    <Content Include="assets\font-awesome\docs\assets\less\font-awesome-ie7.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\font-awesome.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\font-site.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\mixins.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\site.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\.DS_Store" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\accordion.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\alerts.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\bootstrap.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\breadcrumbs.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\button-groups.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\buttons.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\carousel.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\close.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\code.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\component-animations.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\dropdowns.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\forms.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\grid.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\hero-unit.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\labels-badges.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\layouts.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\media.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\mixins.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\modals.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\navbar.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\navs.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\pager.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\pagination.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\popovers.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\progress-bars.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\reset.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\responsive-1200px-min.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\responsive-767px-max.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\responsive-768px-979px.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\responsive-navbar.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\responsive-utilities.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\responsive.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\scaffolding.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\sprites.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tables.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\thumbnails.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\tooltip.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\type.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\utilities.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\variables.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\twbs-222\wells.less" />
+    <Content Include="assets\font-awesome\docs\assets\less\variables.less" />
+    <Content Include="assets\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome\font\FontAwesome.otf" />
+    <Content Include="assets\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="assets\font-awesome\less\font-awesome.less" />
+    <Content Include="assets\font-awesome\README.md" />
+    <Content Include="assets\font-awesome\sass\font-awesome.sass" />
+    <Content Include="assets\font-awesome\sass\font-awesome.scss" />
+    <Content Include="assets\fullcalendar\.DS_Store" />
+    <Content Include="assets\fullcalendar\demos\.DS_Store" />
+    <Content Include="assets\fullcalendar\demos\cupertino\.DS_Store" />
+    <Content Include="assets\jquery-slimscroll\.DS_Store" />
+    <Content Include="assets\jquery-slimscroll\examples\.DS_Store" />
+    <Content Include="assets\jquery-slimscroll\examples\libs\.DS_Store" />
+    <Content Include="assets\jquery-slimscroll\README.md" />
+    <Content Include="assets\jquery-slimscroll\slimScroll.jquery.json" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="fonts\summernote.eot" />
+    <Content Include="fonts\summernote.ttf" />
+    <Content Include="fonts\summernote.woff" />
+    <Content Include="fonts\summernote.woff2" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprobold.ttf" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprobold.woff" />
+    <Content Include="assets\bootstrap-ltr\font\myriadproit.eot" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprolight.eot" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprolight.ttf" />
+    <Content Include="assets\bootstrap-ltr\font\myriadprolight.woff" />
+    <Content Include="assets\bootstrap-ltr\font\myriadproregular.eot" />
+    <Content Include="assets\bootstrap-ltr\font\myriadproregular.ttf" />
+    <Content Include="assets\bootstrap-ltr\font\myriadproregular.woff" />
+    <Content Include="assets\bootstrap-ltr\img\.DS_Store" />
+    <Content Include="assets\bootstrap-ltr\font\fontawesome-webfont.eot" />
+    <Content Include="assets\bootstrap-ltr\font\fontawesome-webfont.ttf" />
+    <Content Include="assets\bootstrap-ltr\font\fontawesome-webfont.woff" />
+    <Content Include="assets\bootstrap-ltr\font\FontAwesome.otf" />
+    <Content Include="img\giphy.gif" />
+    <Content Include="assets\bootstrap-daterangepicker\README.md" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\summernote.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\ChangePass.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\_SideBarPartial.cshtml" />
+    <Content Include="Views\Tutorial\Index.cshtml" />
+    <Content Include="Views\Tutorial\HandlTutorial.cshtml" />
+    <Content Include="Views\InstructorProfile\HandlProfile.cshtml" />
+    <Content Include="Views\InstructorProfile\Inbox.cshtml" />
+    <Content Include="Views\InstructorProfile\Index.cshtml" />
+    <Content Include="Views\Report\GetTutorials.cshtml" />
+    <Content Include="Views\InBox\Index.cshtml" />
+    <Content Include="Views\Lecture\HandlLecture.cshtml" />
+    <Content Include="Views\Lecture\GetLectures.cshtml" />
+    <Content Include="Views\Report\GetWeeklyTimeTable.cshtml" />
+    <Content Include="Views\Report\GetInsts.cshtml" />
+    <Content Include="Views\Report\GetLecture.cshtml" />
+    <Content Include="Views\Report\GetTutorial.cshtml" />
+    <Content Include="Views\Report\GetLectures.cshtml" />
+    <Content Include="Views\Report\GetWeeklyTimeTableInst.cshtml" />
+    <Content Include="Views\Assigment\GetAssigments.cshtml" />
+    <Content Include="Views\Assigment\HandlAssigment.cshtml" />
+    <Content Include="Views\Report\GetAssignments.cshtml" />
+    <Content Include="Views\Report\GetAssignment.cshtml" />
+    <Content Include="Views\Account\Eval.cshtml" />
+    <Content Include="Views\Student\HandleAccount.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Report\GetAllTutorials.cshtml" />
+    <Content Include="Views\Report\GetWeeklyTimeTableSt.cshtml" />
+    <Content Include="Views\Student\MyTutorials.cshtml" />
+    <Content Include="Views\Report\GetStTutorial.cshtml" />
+    <Content Include="Views\Assigment\Solution.cshtml" />
+    <Content Include="Views\Tutorial\StudentRequest.cshtml" />
+    <Content Include="Views\Report\GetStudents.cshtml" />
+    <Content Include="Views\Student\EvalInst.cshtml" />
+    <Content Include="Views\Home\Done.cshtml" />
+    <Content Include="Views\Report\GetInstsEval.cshtml" />
+    <Content Include="Views\Report\GetStudentAssignments.cshtml" />
+    <Content Include="Views\Student\Certify.cshtml" />
+    <Content Include="Views\Student\MyEvaluate.cshtml" />
+    <Content Include="Views\Account\ForgetPass.cshtml" />
+    <Content Include="Views\Account\VerifyCodePass.cshtml" />
+    <Content Include="Views\Account\PasswordChanged.cshtml" />
+    <Content Include="Views\Student\InstGrantedEval.cshtml" />
+    <Content Include="Views\Report\Contactus.cshtml" />
+    <Content Include="Views\InBox\Remove.cshtml" />
+    <Content Include="Views\Tutorial\Getstudent1.cshtml" />
+    <Content Include="Views\Report\Delete.cshtml" />
+    <Content Include="Views\InBox\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Attachments\Answers\" />
+    <Folder Include="Attachments\Assigments\" />
+    <Folder Include="Attachments\Lectures\" />
+    <Folder Include="Attachments\Solutions\" />
+    <Folder Include="images\InstructorProfile\" />
+    <Folder Include="images\StudentCerts\" />
+    <Folder Include="images\StudentsProfiles\" />
+    <Folder Include="images\tutorial\" />
+    <Folder Include="Views\Management\" />
+    <Folder Include="Views\My\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202011151824126_InitDb.resx">
+      <DependentUpon>202011151824126_InitDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011191802255_add-lang.resx">
+      <DependentUpon>202011191802255_add-lang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011191830110_change-lang.resx">
+      <DependentUpon>202011191830110_change-lang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011200806340_addCodeLang.resx">
+      <DependentUpon>202011200806340_addCodeLang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011201811546_addLangCode.resx">
+      <DependentUpon>202011201811546_addLangCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011250537260_tutorial.resx">
+      <DependentUpon>202011250537260_tutorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011250539178_tutorialforeignkey.resx">
+      <DependentUpon>202011250539178_tutorialforeignkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011250651046_addinginstructorprofile.resx">
+      <DependentUpon>202011250651046_addinginstructorprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011250805205_removedatetime.resx">
+      <DependentUpon>202011250805205_removedatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011251238502_addinginbox.resx">
+      <DependentUpon>202011251238502_addinginbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011260601036_addinglangcodetoinstructor.resx">
+      <DependentUpon>202011260601036_addinglangcodetoinstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011270800510_addCountOfLec.resx">
+      <DependentUpon>202011270800510_addCountOfLec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011271526198_changeUserIdToUserNameTut.resx">
+      <DependentUpon>202011271526198_changeUserIdToUserNameTut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011271836557_changeInInstProfile.resx">
+      <DependentUpon>202011271836557_changeInInstProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011280814513_changeInbox.resx">
+      <DependentUpon>202011280814513_changeInbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011281152328_add-lec.resx">
+      <DependentUpon>202011281152328_add-lec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011281342520_change-lec.resx">
+      <DependentUpon>202011281342520_change-lec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012011821566_remove-user.resx">
+      <DependentUpon>202012011821566_remove-user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012050809420_add-assigment.resx">
+      <DependentUpon>202012050809420_add-assigment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012051216128_change-ass.resx">
+      <DependentUpon>202012051216128_change-ass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012061913491_add-StrartTime.resx">
+      <DependentUpon>202012061913491_add-StrartTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012061914557_add-StrartTime2.resx">
+      <DependentUpon>202012061914557_add-StrartTime2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012091746536_addEval.resx">
+      <DependentUpon>202012091746536_addEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012091823368_changeEval.resx">
+      <DependentUpon>202012091823368_changeEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012110705502_add-student-profile.resx">
+      <DependentUpon>202012110705502_add-student-profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012111434144_addStudentProfiles.resx">
+      <DependentUpon>202012111434144_addStudentProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012121001274_add-data-t-st-profile.resx">
+      <DependentUpon>202012121001274_add-data-t-st-profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012121010414_change-data-t-st-profile.resx">
+      <DependentUpon>202012121010414_change-data-t-st-profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012251420102_add_st_tut.resx">
+      <DependentUpon>202012251420102_add_st_tut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012251430041_change_st_tut.resx">
+      <DependentUpon>202012251430041_change_st_tut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012260902105_add-sol.resx">
+      <DependentUpon>202012260902105_add-sol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012261420008_remove-answer.resx">
+      <DependentUpon>202012261420008_remove-answer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101012047350_addInstEval.resx">
+      <DependentUpon>202101012047350_addInstEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101020903282_changeInInstEval.resx">
+      <DependentUpon>202101020903282_changeInInstEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101090855163_add-student-cert.resx">
+      <DependentUpon>202101090855163_add-student-cert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101110932197_remove-old-evalid.resx">
+      <DependentUpon>202101110932197_remove-old-evalid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101211927456_add-contactus.resx">
+      <DependentUpon>202101211927456_add-contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101212020509_change-contactus.resx">
+      <DependentUpon>202101212020509_change-contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103090805241_add-gender.resx">
+      <DependentUpon>202103090805241_add-gender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.es.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.to.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.to.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.Os.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Os.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.Ti.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Ti.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.Bo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Bo1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.Fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.Ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Ar1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53407/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

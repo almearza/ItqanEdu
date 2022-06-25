@@ -1,0 +1,193 @@
+﻿@using QuranEducation.Helpers
+@using QuranEducation.Models.VM
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>@QuranRes.SiteTitle</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link rel="icon" type="image/png" href="~/images/favicon.ico" />
+    @{
+        HttpCookie langCookie = Request.Cookies["culture"];
+        if (langCookie != null)
+        {
+            if (langCookie.Value == "Ar")
+            {
+                <link href="~/assets/bootstrap-rtl/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-rtl/css/bootstrap-responsive-rtl.min.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-rtl/css/bootstrap-fileupload.css" rel="stylesheet" />
+                <link href="~/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+                <link href="~/css/style.css" rel="stylesheet" />
+                <link href="~/css/style_responsive.css" rel="stylesheet" />
+                <link href="~/css/style_default.css" rel="stylesheet" id="style_color" />
+                <link href="~/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+            }
+            else
+            {
+
+                <link href="~/assets/bootstrap-ltr/css/bootstrap.min.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-ltr/css/bootstrap-responsive.min.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-ltr/css/font-awesome.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-ltr/css/style.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-ltr/css/style_responsive.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-ltr/css/style_default.css" rel="stylesheet" />
+                <link href="~/assets/bootstrap-ltr/css/jquery.fancybox.css" rel="stylesheet" />
+            }
+        }
+        else
+        {
+
+            <link href="~/assets/bootstrap-ltr/css/bootstrap.min.css" rel="stylesheet" />
+            <link href="~/assets/bootstrap-ltr/css/bootstrap-responsive.min.css" rel="stylesheet" />
+            <link href="~/assets/bootstrap-ltr/css/font-awesome.css" rel="stylesheet" />
+            <link href="~/assets/bootstrap-ltr/css/style.css" rel="stylesheet" />
+            <link href="~/assets/bootstrap-ltr/css/style_responsive.css" rel="stylesheet" />
+            <link href="~/assets/bootstrap-ltr/css/style_default.css" rel="stylesheet" />
+            <link href="~/assets/bootstrap-ltr/css/jquery.fancybox.css" rel="stylesheet" />
+        }
+    }
+
+    @RenderSection("styles", false)
+
+    <link href="~/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+    <!-- BEGIN HEADER -->
+    @Html.Partial("_HeaderPartial")
+    <!-- END HEADER -->
+    <!-- BEGIN CONTAINER -->
+    <div id="container" class="row-fluid">
+        <!-- BEGIN SIDEBAR -->
+        <div id="sidebar" class="nav-collapse collapse">
+
+            <div class="sidebar-toggler hidden-phone"></div>
+
+            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+            <div class="navbar-inverse">
+                <form class="navbar-search visible-phone">
+                    <input type="text" class="search-query" placeholder="Search" />
+                </form>
+            </div>
+            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+            <!-- BEGIN SIDEBAR MENU -->
+            @Html.Partial("_SideBarPartial")
+            <!-- END SIDEBAR MENU -->
+        </div>
+        <!-- END SIDEBAR -->
+        <div id="main-content">
+            <!-- BEGIN PAGE CONTAINER-->
+            <div class="container-fluid">
+                <!-- BEGIN PAGE HEADER-->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!-- BEGIN THEME CUSTOMIZER-->
+                        <!-- END THEME CUSTOMIZER-->
+                        <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+
+                        <ul class="breadcrumb">
+                            <li>
+                                <a><i class="icon-home"></i></a><span class="divider">&nbsp;</span>
+                            </li>
+                            <li>
+                                <a>@QuranRes.SiteTitle</a> <span class="divider">&nbsp;</span>
+                            </li>
+                            <li><a>@ViewBag.Title</a><span class="divider-last">&nbsp;</span></li>
+
+                        </ul>
+                        <!-- END PAGE TITLE & BREADCRUMB-->
+                    </div>
+                </div>
+                <!-- END PAGE HEADER-->
+                <!-- BEGIN PAGE CONTENT-->
+                @RenderBody()
+                <!-- END PAGE CONTENT-->
+            </div>
+            <!-- END PAGE CONTAINER-->
+        </div>
+        <!-- END PAGE -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div id="footer">
+        إتقــــان &copy; 2020
+        <div class="span pull-left">
+            <span class="go-top"><i class="icon-arrow-up"></i></span>
+        </div>
+    </div>
+
+
+    <script src="~/js/jquery-1.8.3.min.js"></script>
+    <script src="~/assets/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="~/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <script src="~/assets/bootstrap-rtl/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.blockui.js"></script>
+    <script src="~/js/jquery.peity.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+
+
+    @RenderSection("scripts", required: false)
+    <script>
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            App.init();
+        });
+    </script>
+
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $.ajax({
+                    url: '@Url.Content("~/Account/UserProfileJson")',
+                    dataType: 'json',
+                    data: {},
+                    type: "GET",
+                    cache: false,//important
+                    success: function (result) {
+                        let logoutUrl = '@Url.Content("~/Account/LogOff")';
+                        var controlToappend = "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>" +
+                                "<img src='/img/photo.jpg' alt='user image'  width='29' height='29'>" +
+                                "<span class='username'> " + result + " </span>" +
+                                "<b class='caret'></b>" +
+                                "</a>"
+
+                        let passUrl = '@Url.Content("~/Account/ChangePass")';
+                        let changePassText ='@QuranRes.ChangePassTextUrl';
+                        let logoffText = '@QuranRes.LogoutTextUrl';
+
+                        $("#profile")
+                            .append(controlToappend)
+                            .append(" <ul class='dropdown-menu'>" +
+                                "<li><a href='" + passUrl + "'><i class='icon-key'></i> " + changePassText + " </a></li>" +
+                            "<li class='divider'></li>" +
+                            "<li><a href='" + logoutUrl + "' class=' js-logout'><i class='icon-signout'></i> " + logoffText + " </a></li>" +
+                                "</ul>")
+                        //alert(result)
+                        //,
+                        //alert(data.ImgUrl)
+                    },
+                    error: function (response) {
+                        //alert("error in loading profile" + response);
+                    }
+                });
+
+
+            });
+        </script>
+    }
+
+    <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

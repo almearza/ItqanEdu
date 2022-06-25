@@ -1,0 +1,154 @@
+﻿@using QuranEducation.Models.VM
+@using QuranEducation.Helpers
+@model StudentVM
+@{
+    ViewBag.Title = QuranRes.StCreateAccountTitle;
+}
+@section styles{
+    <link rel="stylesheet" href="~/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link href="~/assets/bootstrap-timepicker/compiled/timepicker.css" rel="stylesheet" />
+}
+<div class="widget" style="background-color:transparent;">
+    <div class="widget-title">
+        <h4><i class="icon-building"></i>@ViewBag.Title</h4>
+        <span class="tools">
+            <a href="javascript:;" class="icon-chevron-down"></a>
+            <a href="javascript:;" class="icon-remove"></a>
+        </span>
+    </div>
+
+    <div class="widget-body">
+        <p>
+            @QuranRes.StRegReq1<br />
+            @QuranRes.StRegReq2.<br />
+            @QuranRes.StRegReq3.<br />
+            @QuranRes.StRegReq4.<br />
+            @QuranRes.StRegReq5.<br />
+            @QuranRes.StRegReq6.<br />
+            @QuranRes.StRegReq7.<br />
+            @QuranRes.StRegReq8.<br />
+            @QuranRes.StRegReq9.<br />
+            @QuranRes.StRegReq10.<br />
+            @QuranRes.StRegReq11.<br />
+        </p>
+        @using (Html.BeginForm("SaveAccountAsync", "Student", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+        {
+            <br />
+            <div class="error-validation">
+                @Html.ValidationSummary(true, QuranRes.ErrorSumTitle, new { @style = "color:red;" })
+            </div>
+
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.Email</lable>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.PhoneNumber</lable>
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", @style = "text-align:left;direction:ltr" })
+                @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.NameInNational</lable>
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Name, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.EnName</lable>
+
+                @Html.TextBoxFor(m => m.EnName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.EnName, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group">
+                <lable class="col-md-2 control-label">@QuranRes.BOD</lable>
+                <div class="form-control">
+                    <div class="input-append date date-picker" data-date-format="mm/dd/yyyy">
+                        @Html.TextBoxFor(m => m.BOD, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.BOD, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.Nationality</lable>
+                @Html.TextBoxFor(m => m.Nationality, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Nationality, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.ResidentCountry</lable>
+                @Html.DropDownListFor(m => m.ResidentCountryCode, new SelectList(GeneralHelper.GetCountries, "Id", "Title"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ResidentCountryCode, "", new { style = "color:red;" })
+            </div>
+
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.HomePhone</lable>
+                @Html.TextBoxFor(m => m.HomePhoneNumber, new { @class = "form-control", @style = "text-align:left;direction:ltr" })
+                @Html.ValidationMessageFor(m => m.HomePhoneNumber, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.Lang</lable>
+                @Html.DropDownListFor(m => m.LangCode, new SelectList(LanguageMang.AvailableLanguages, "Code", "Name"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.LangCode, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.EduYear</lable>
+                @Html.TextBoxFor(m => m.EduYear, new { @class = "form-control", @style = "text-align:left;direction:ltr" })
+                @Html.ValidationMessageFor(m => m.EduYear, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.StScore</lable>
+                @Html.DropDownListFor(m => m.StScore, new SelectList(GeneralHelper.GetScores, "Id", "Title"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.StScore, "", new { style = "color:red;" })
+            </div>
+
+            <div class="form-group">
+                @if (Model != null)
+                {
+                    <div class="profile-pic">
+                        <img src="~/images/StudentsProfiles/@Model.ImgUrl" alt="">
+                    </div>
+                }
+
+                <label> @QuranRes.ProfileImgLable</label>
+
+                @Html.TextBoxFor(m => m.ImgFile, "", new { type = "file", accept = "image/*" })
+            </div>
+            @Html.ValidationMessageFor(m => m.ImgFile, "", new { style = "color:red;" })
+
+            <div class="form-group">
+                @if (Model != null)
+                {
+                    <div class="profile-pic">
+                        <a href="~/images/StudentCerts/@Model.CertUrl"  target="_blank"> @QuranRes.StudentCert</a>
+                    </div>
+                }
+
+                <label> @QuranRes.StudentCert</label>
+
+                @Html.TextBoxFor(m => m.CertFile, "", new { type = "file", accept = "image/*" })
+            </div>
+            @Html.ValidationMessageFor(m => m.CertFile, "", new { style = "color:red;" })
+
+            if (Model != null)
+            {
+                @Html.HiddenFor(m => m.UserId)
+            }
+            @Html.AntiForgeryToken()
+            <br />
+            <button type="submit" class="btn btn-primary">@QuranRes.btnSend</button>
+        }
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+            <script src="~/Scripts/summernote.min.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-daterangepicker/date.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+
+        }
+    </div>
+</div>

@@ -1,0 +1,266 @@
+﻿@using QuranEducation.Models
+@using QuranEducation.Models.VM
+@model AssigmentVM
+@{
+    ViewBag.Title = @QuranRes.AssigmentTitle;
+}
+@section styles{
+    <link href="~/Content/summernote.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link href="~/assets/bootstrap-timepicker/compiled/timepicker.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <style>
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #005050;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+
+        .radio-title {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    </style>
+}
+<div class="widget" style="background-color:transparent;">
+    <div class="widget-title">
+        <h4><i class="icon-building"></i>@Model.Tutorial.Title</h4>
+        <span class="tools">
+            <a href="javascript:;" class="icon-chevron-down"></a>
+            <a href="javascript:;" class="icon-remove"></a>
+        </span>
+    </div>
+
+    <div class="widget-body">
+        @using (Html.BeginForm("SaveAssignment", "Assigment", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+        {
+            <br />
+            <div class="error-validation">
+                @Html.ValidationSummary(true, QuranRes.ErrorSumTitle, new { @style = "color:red;" })
+            </div>
+            <div class="form-group">
+
+                <lable class="col-md-2 control-label">@QuranRes.AssType</lable>
+                <br />
+                <br />
+                <table>
+                    <tr>
+                        <td>
+                            @Html.RadioButtonFor(m => m.AssType, AssType.Assigment)
+                        </td>
+                        <td>
+                            <p class="radio-title">@QuranRes.AsstypeTitle</p>
+                        </td>
+                        <td>
+                            @Html.RadioButtonFor(m => m.AssType, AssType.Homework)
+                        </td>
+                        <td>
+                            <p class="radio-title">@QuranRes.HMtypeTitle</p>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+
+                @Html.ValidationMessageFor(m => m.AssType, "", new { style = "color:red;" })
+
+            </div>
+            <div class="form-group">
+                <lable class="col-md-2 control-label">@QuranRes.AssTitle</lable>
+                @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Title, "", new { style = "color:red;" })
+            </div>
+            <br />
+            <lable class="col-md-2 control-label">@QuranRes.AssDesc</lable>
+            <br />
+            <br />
+            <br />
+            <div class="form-group">
+                @Html.TextAreaFor(m => m.Descr, new { @class = "form-control", @style = "resize:both;appearance:textarea", rows = 4, id = "Descr" })
+                @Html.ValidationMessageFor(m => m.Descr, "", new { style = "color:red;" })
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label> @QuranRes.AssAttach</label>
+                <br />
+                <hr />
+                @if (Model.AssigmentAttachments != null)
+                {
+                    var index = 1;
+                    foreach (var file in Model.AssigmentAttachments)
+                    {
+                        <br />
+                        <a class="btn btn-primary" href="~/Attachments/Assigments/@file.FileUrl" target="_blank">@QuranRes.ShowAtt @index</a>
+                        <a class="btn btn-primary btn-remove" data-linkatt="@Url.Content("~/Assigment/RemoveAtt/")@file.Id">@QuranRes.RemoveAtt</a>
+                        index++;
+                    }
+                }
+                else
+                {
+                    <p>@QuranRes.NoPrevAttForAss</p>
+                }
+                <hr />
+                <br />
+                @Html.TextBoxFor(m => m.AFiles, "", new { type = "file", multiple = "true" })
+            </div>
+            @Html.ValidationMessageFor(m => m.AFiles, "", new { style = "color:red;" })
+
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.AssStDate</lable>
+                <div class="controls">
+                    <div class="input-append date date-picker" data-date-format="mm/dd/yyyy">
+                        @Html.TextBoxFor(m => m.StartDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.StartDate, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.AssStTime</lable>
+                <div class="controls">
+                    <div class="input-append bootstrap-timepicker-component">
+                        @Html.TextBoxFor(m => m.StartTime, new { @class = " m-ctrl-small timepicker-default", type = "text" })
+                        <span class="add-on"><i class="icon-time"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.StartTime, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.AssEndDate</lable>
+                <div class="controls">
+                    <div class="input-append date date-picker" data-date-format="mm/dd/yyyy">
+                        @Html.TextBoxFor(m => m.EndDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.EndDate, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.AssEndTime</lable>
+                <div class="controls">
+                    <div class="input-append bootstrap-timepicker-component">
+                        @Html.TextBoxFor(m => m.EndTime, new { @class = " m-ctrl-small timepicker-default", type = "text" })
+                        <span class="add-on"><i class="icon-time"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.EndTime, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group ">
+                <lable class="col-md-2 control-label">@QuranRes.AssDegree</lable>
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.Degree, new { @class = "form-control m-ctrl-medium" })
+                    @Html.ValidationMessageFor(m => m.Degree, "", new { style = "color:red;" })
+                </div>
+            </div>
+
+            if (Model.Id != 0)
+            {
+                @Html.HiddenFor(m => m.Id)
+            }
+            @Html.HiddenFor(m => m.TutorialId)
+            @Html.HiddenFor(m => m.Tutorial.Title)
+            @Html.AntiForgeryToken()
+            <br />
+            <button type="submit" class="btn btn-primary">@QuranRes.btnSend</button>
+        }
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+        {
+            @Html.AntiForgeryToken()
+        }
+
+        @section Scripts {
+
+
+            @Scripts.Render("~/bundles/jqueryval")
+            <script src="~/Scripts/summernote.min.js"></script>
+            <script type="text/javascript" src="~/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+            <script type="text/javascript" src="~/assets/bootstrap-daterangepicker/date.js"></script>
+            <script type="text/javascript" src="~/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+            <script type="text/javascript" src="~/assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+            <script src="~/Scripts/bootbox.js"></script>
+            <script src="~/Scripts/toastr.js"></script>
+
+            <script type="text/javascript">
+        $(document).ready(function () {
+            $('#Descr').summernote();
+
+            let strTime='@Model.StartTime';
+            let endTime='@Model.EndTime';
+            $("#StartTime").timepicker({
+                defaultTime: strTime
+            });
+            $("#EndTime").timepicker({
+                defaultTime: endTime
+            });
+            //we initialize date in _layout-->app.init
+                });
+
+                $(".btn-remove").on("click", function () {
+
+                let button = $(this);
+                let form = $('#__AjaxAntiForgeryForm');
+                let token = $('input[name="__RequestVerificationToken"]', form).val();
+                let ask='@QuranRes.DeleteAttQues';
+                bootbox.confirm(ask,function (result) {
+                    if (result) {
+                        $.ajax({
+                            type: "POST",
+                            url: button.attr("data-linkatt"),
+                            data: {
+                                __RequestVerificationToken: token
+                            },
+                            success: function () {
+                                toastr.success('@QuranRes.AttRemoved');
+                                window.location.reload();
+                            },
+                            error: function (result) {
+                                toastr.error('@QuranRes.AttRemoveError');
+
+                            }
+                        });
+                    }
+                });
+            });
+            </script>
+        }
+
+
+
+
+    </div>
+
+</div>
+
+
+

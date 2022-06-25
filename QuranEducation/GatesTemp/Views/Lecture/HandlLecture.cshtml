@@ -1,0 +1,148 @@
+﻿@using QuranEducation.Models.VM
+@model LectureVM
+@{
+    ViewBag.Title = @QuranRes.LectureTitle;
+}
+@section styles{
+    <link href="~/Content/summernote.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link href="~/assets/bootstrap-timepicker/compiled/timepicker.css" rel="stylesheet" />
+}
+<div class="widget" style="background-color:transparent;">
+    <div class="widget-title">
+        <h4><i class="icon-building"></i>@Model.Tutorial.Title</h4>
+        <span class="tools">
+            <a href="javascript:;" class="icon-chevron-down"></a>
+            <a href="javascript:;" class="icon-remove"></a>
+        </span>
+    </div>
+
+    <div class="widget-body">
+        @using (Html.BeginForm("SaveLecture", "Lecture", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+        {
+            <br />
+            <div class="error-validation">
+                @Html.ValidationSummary(true, QuranRes.ErrorSumTitle, new { @style = "color:red;" })
+            </div>
+            <div class="form-group">
+                <lable class="col-md-2 control-label">@QuranRes.LecTitle</lable>
+                @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Title, "", new { style = "color:red;" })
+            </div>
+            <br />
+            <lable class="col-md-2 control-label">@QuranRes.LecDesc</lable>
+            <br />
+            <br />
+            <div class="form-group">
+
+                @Html.TextAreaFor(m => m.Descr, new { @class = "form-control", @style = "resize:both;appearance:textarea", rows = 4, id = "Descr" })
+                @Html.ValidationMessageFor(m => m.Descr, "", new { style = "color:red;" })
+            </div>
+
+            <div class="form-group">
+                @if (Model.AttachmentUrl != null)
+                {
+                    <br />
+                    <a class="btn btn-primary" href="~/Attachments/Lectures/@Model.AttachmentUrl" target="_blank">@QuranRes.LecAttach</a>
+                }
+                <label> @QuranRes.LecAttach</label>
+                @Html.TextBoxFor(m => m.Attachment, "", new { type = "file" })
+            </div>
+            @Html.ValidationMessageFor(m => m.Attachment, "", new { style = "color:red;" })
+
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.LecDate</lable>
+                <div class="controls">
+                    <div class="input-append date date-picker" data-date-format="mm/dd/yyyy">
+                        @Html.TextBoxFor(m => m.LecDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                        <span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.LecDate, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.LecStTime</lable>
+                <div class="controls">
+                    <div class="input-append bootstrap-timepicker-component">
+                        @Html.TextBoxFor(m => m.LecStartTimeStr, new { @class = " m-ctrl-small timepicker-default", type = "text" })
+                        <span class="add-on"><i class="icon-time"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.LecStartTimeStr, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.LecEndTime</lable>
+                <div class="controls">
+                    <div class="input-append bootstrap-timepicker-component">
+                        @Html.TextBoxFor(m => m.LecEndTimeStr, new { @class = " m-ctrl-small timepicker-default", type = "text" })
+                        <span class="add-on"><i class="icon-time"></i></span>
+                    </div>
+                    <div class="error-validation">
+                        @Html.ValidationMessageFor(m => m.LecEndTimeStr, "", new { style = "color:red;" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group ">
+                <lable class="col-md-2 control-label">@QuranRes.LecVirtualUrl</lable>
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.VirtualRoomUrl, new { @class = "form-control m-ctrl-medium" })
+                    @Html.ValidationMessageFor(m => m.VirtualRoomUrl, "", new { style = "color:red;" })
+                </div>
+            </div>
+            <div class="control-group">
+                <lable class="col-md-2 control-label">@QuranRes.VideoUrl</lable>
+                <div class="controls">
+                    @Html.TextBoxFor(m => m.VideoUrl, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.VideoUrl, "", new { style = "color:red;" })
+                </div>
+            </div>
+
+            if (Model.Id != 0)
+            {
+                @Html.HiddenFor(m => m.Id)
+            }
+            @Html.HiddenFor(m => m.TutorialId)
+            @Html.AntiForgeryToken()
+            <br />
+            <button type="submit" class="btn btn-primary">@QuranRes.btnSend</button>
+        }
+
+        @section Scripts {
+
+
+            @Scripts.Render("~/bundles/jqueryval")
+            <script src="~/Scripts/summernote.min.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-daterangepicker/date.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+
+            <script type="text/javascript">
+        $(document).ready(function () {
+            let strTime='@Model.LecStartTimeStr';
+            let endTime='@Model.LecEndTimeStr';
+            $('#Descr').summernote();
+            $("#LecStartTimeStr").timepicker({
+                defaultTime: strTime
+            });
+            $("#LecEndTimeStr").timepicker({
+                defaultTime: endTime
+            });
+            //we initialize date in _layout-->app.init
+        });
+            </script>
+        }
+
+
+
+
+    </div>
+
+</div>
+

@@ -1,0 +1,123 @@
+﻿@using QuranEducation.Models
+@model List<Inbox>
+@{
+    ViewBag.Title = QuranRes.InboxTitle;
+}
+@section styles{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <style>
+        .dataTables_paginate, .dataTables_filter {
+            float: right !important;
+        }
+
+        .dataTables_length {
+            width: 300px;
+            float: left;
+        }
+    </style>
+}
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-inbox"></i>@QuranRes.ListOfInBox</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body" style="overflow:auto">
+                <br />
+                <table id="messages" class="table table-bordered table-hover table-responsive" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>@QuranRes.InboxMessageTitle</th>
+                            <th>@QuranRes.InboxMessageFrom</th>
+                            <th>@QuranRes.InboxMessageDate</th>
+                            <th>@QuranRes.InboxMessageOpen</th>
+                            <th>@QuranRes.InboxMessageDelete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            foreach (var message in Model)
+                            {
+
+                                <tr>
+                                    <td>@message.Message</td>
+                                    <td>@message.Sender</td>
+                                    <td>@message.Arrival</td>
+                                    <td><a class="btn btn-primary" href="@message.Link" target="_blank">@QuranRes.InboxMessageOpen</a></td>
+                                    <td>
+                                    <a class="btn btn-danger" href="~/InBox/Remove/@message.Id">
+                                        <i class="icon icon-remove"></i>
+                                        @QuranRes.InboxMessageDelete
+                                    </a>
+                                    </td>
+                                   
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section scripts{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let sEmptyTable='@QuranRes.DtsEmptyTable';
+            let sLengthMenu='@QuranRes.DtsLengthMenu';
+            let sZeroRecords ='@QuranRes.DtsZeroRecords';
+
+            let sInfo='@QuranRes.DtsInfo';
+            let sInfoEmpty='@QuranRes.DtsInfoEmpty';
+            let sInfoFiltered='@QuranRes.DtsInfoFiltered';
+            let sSearch='@QuranRes.DtsSearch';
+            let sFirst='@QuranRes.DtsFirst';
+            let sPrevious='@QuranRes.DtsPrevious';
+            let sNext='@QuranRes.DtsNext';
+            let sLast='@QuranRes.DtsLast';
+            let sSortAscending='@QuranRes.DtsSortAscending';
+            let sSortDescending='@QuranRes.DtsSortDescending';
+            var table = $("#messages").DataTable({
+                "language": {
+                    "sEmptyTable": sEmptyTable,
+                    "sLoadingRecords": "جارٍ التحميل...",
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": sLengthMenu,
+                    "sZeroRecords": sZeroRecords,
+                    "sInfo": sInfo ,
+                    "sInfoEmpty": sInfoEmpty ,
+                    "sInfoFiltered": sInfoFiltered,
+                    "sInfoPostFix": "",
+                    "sSearch": sSearch,
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": sFirst ,
+                        "sPrevious": sPrevious,
+                        "sNext": sNext,
+                        "sLast": sLast
+                    },
+                    "oAria": {
+                        "sSortAscending": sSortAscending,
+                        "sSortDescending": sSortDescending
+                    }
+                }
+            });
+
+
+
+        });
+    </script>
+}
+

@@ -1,0 +1,56 @@
+﻿ <!-- BEGIN HEADER -->
+@using QuranEducation.Helpers
+<div id="header" class="navbar navbar-inverse navbar-fixed-top">
+    <!-- BEGIN TOP NAVIGATION BAR -->
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <!-- BEGIN LOGO -->
+            <a class="brand" href="#">
+                <img src="~/img/logo.png" alt="" />
+            </a>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="arrow"></span>
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+
+            <div class="top-nav ">
+                @{
+                    HttpCookie langCookie = Request.Cookies["culture"];
+                    if (langCookie != null)
+                    {
+                        if (langCookie.Value.ToLower() == "Ar")
+                        {
+                            <ul class="nav pull-left top-menu">
+                                <li class="dropdown" id="profile">
+                                    @*this part in _layout for general use*@
+                                </li>
+
+                                <!-- END USER LOGIN DROPDOWN -->
+                            </ul>
+                        }
+                        else
+                        {
+                            <ul class="nav pull-right top-menu">
+                                <li class="dropdown" id="profile">
+                                    @*this part in _layout for general use*@
+                                </li>
+
+                                <!-- END USER LOGIN DROPDOWN -->
+                            </ul>
+                        }
+                    }
+                }
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION BAR -->
+</div>
+<!-- END HEADER -->

@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe" xml:space="preserve">
+    <value>عني</value>
+  </data>
+  <data name="Acceptable" xml:space="preserve">
+    <value>مقبول</value>
+  </data>
+  <data name="AcceptInst" xml:space="preserve">
+    <value>أوافق</value>
+  </data>
+  <data name="AccountWasLocked" xml:space="preserve">
+    <value>تم قفل الحساب مؤقتا الرجاء الاتصال بمدير النظام</value>
+  </data>
+  <data name="AchievementFile" xml:space="preserve">
+    <value>ملف الإنجاز</value>
+  </data>
+  <data name="AddAssMsg2" xml:space="preserve">
+    <value> بإضافة أو تعديل </value>
+  </data>
+  <data name="AddLecMsg1" xml:space="preserve">
+    <value>قام المعلم</value>
+  </data>
+  <data name="AddLecMsg2" xml:space="preserve">
+    <value>بإضافة أو تعديل محاضرة</value>
+  </data>
+  <data name="AddLecMsg3" xml:space="preserve">
+    <value>للدروة التدريبية</value>
+  </data>
+  <data name="AdministrativeForms" xml:space="preserve">
+    <value>نماذج إدارية</value>
+  </data>
+  <data name="Alreadyeval" xml:space="preserve">
+    <value>لقد قمت بتقييم هذا الأستاذ مسبقا</value>
+  </data>
+  <data name="ArriveInATime" xml:space="preserve">
+    <value>يحضر المعلم في الوقت المناسب</value>
+  </data>
+  <data name="AssAttach" xml:space="preserve">
+    <value>مرفق  الواجب - الاختبار</value>
+  </data>
+  <data name="AssDegree" xml:space="preserve">
+    <value>درجة الواجب -الاختبار</value>
+  </data>
+  <data name="AssDesc" xml:space="preserve">
+    <value>تفاصيل الواجب - الاختبار</value>
+  </data>
+  <data name="assEndBeggerThanLecStart" xml:space="preserve">
+    <value>وقت النهاية يجب ان يكون بعد وقت البداية لهذا الواجب-الاختبار</value>
+  </data>
+  <data name="AssEndDate" xml:space="preserve">
+    <value>تاريخ نهاية الواجب - الاختبار</value>
+  </data>
+  <data name="AssEndTime" xml:space="preserve">
+    <value>زمن نهاية الواجب - الاختبار</value>
+  </data>
+  <data name="AssigmentList" xml:space="preserve">
+    <value>قائمة الواجبات - الاختبارات</value>
+  </data>
+  <data name="AssigmentTitle" xml:space="preserve">
+    <value>الواجبات و الاختبارات</value>
+  </data>
+  <data name="AssSolution" xml:space="preserve">
+    <value>حل الواجب</value>
+  </data>
+  <data name="AssSolutions" xml:space="preserve">
+    <value>حلول الواجبات</value>
+  </data>
+  <data name="AssStDate" xml:space="preserve">
+    <value>تاريخ بداية الواجب - الإختبار</value>
+  </data>
+  <data name="AssStTime" xml:space="preserve">
+    <value>زمن بداية الواجب - الإختبار</value>
+  </data>
+  <data name="assTimeError" xml:space="preserve">
+    <value>وقت الواجب - الاختبار يجب ان يكون بعد من الوقت الحالي</value>
+  </data>
+  <data name="AssTitle" xml:space="preserve">
+    <value>عنوان الواجب - الإختبار</value>
+  </data>
+  <data name="AssTutNotFound" xml:space="preserve">
+    <value>لا توجد دورة تدريبية لهذا الواجب</value>
+  </data>
+  <data name="AssType" xml:space="preserve">
+    <value>واجب أم اختبار</value>
+  </data>
+  <data name="AsstypeTitle" xml:space="preserve">
+    <value>اختبار</value>
+  </data>
+  <data name="AttRemoved" xml:space="preserve">
+    <value>تم حذف المرفق</value>
+  </data>
+  <data name="AttRemoveError" xml:space="preserve">
+    <value>حدث خطا اثناء حذف المرفق</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>رجوع للرئيسية</value>
+  </data>
+  <data name="BackTut" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="BOD" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="CertifyError" xml:space="preserve">
+    <value>الرجاء إختيار درجة الطالب</value>
+  </data>
+  <data name="ChangePassFailed" xml:space="preserve">
+    <value>هذا المستخدم غير موجود او ان كلمة السر القديمة غير صحيحة</value>
+  </data>
+  <data name="ChangePassLater" xml:space="preserve">
+    <value>يمكنك تغير كلمة السر لاحقا</value>
+  </data>
+  <data name="ChangePassTextUrl" xml:space="preserve">
+    <value>تغيير كلمة السر</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>الرمز</value>
+  </data>
+  <data name="codeNotValid" xml:space="preserve">
+    <value>رمز خاطئ</value>
+  </data>
+  <data name="ConfirmPassErrorText" xml:space="preserve">
+    <value>كلمتا السر غير متطابقتين</value>
+  </data>
+  <data name="ConfirmPassText" xml:space="preserve">
+    <value>أعد كلمة السر</value>
+  </data>
+  <data name="CreateAss" xml:space="preserve">
+    <value>إنشاء واجب - إختبار</value>
+  </data>
+  <data name="CreateLec" xml:space="preserve">
+    <value>إنشاء محاضرة</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>اليوم</value>
+  </data>
+  <data name="DeleteAttQues" xml:space="preserve">
+    <value>هل تريد حذف هذا المرفق؟</value>
+  </data>
+  <data name="DtsEmptyTable" xml:space="preserve">
+    <value>ليست هناك بيانات متاحة في الجدول</value>
+  </data>
+  <data name="DtsFirst" xml:space="preserve">
+    <value>الأول</value>
+  </data>
+  <data name="DtsInfoEmpty" xml:space="preserve">
+    <value>يعرض 0 إلى 0 من أصل 0 سجل</value>
+  </data>
+  <data name="DtsInfoFiltered" xml:space="preserve">
+    <value>(منتقاة من مجموع _MAX_ مُدخل)</value>
+  </data>
+  <data name="DtsLast" xml:space="preserve">
+    <value>الاخير</value>
+  </data>
+  <data name="DtsLengthMenu" xml:space="preserve">
+    <value>أظهر _MENU_ مدخلات</value>
+  </data>
+  <data name="DtsNext" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="DtsPrevious" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="DtsSearch" xml:space="preserve">
+    <value>إبحث</value>
+  </data>
+  <data name="DtsSortAscending" xml:space="preserve">
+    <value>: تفعيل لترتيب العمود تصاعدياً</value>
+  </data>
+  <data name="DtsSortDescending" xml:space="preserve">
+    <value>: تفعيل لترتيب العمود تنازليا</value>
+  </data>
+  <data name="DtsZeroRecords" xml:space="preserve">
+    <value>لم يعثر على أية سجلات</value>
+  </data>
+  <data name="EditProfileBtn" xml:space="preserve">
+    <value>تعديل ملفي</value>
+  </data>
+  <data name="EduYear" xml:space="preserve">
+    <value>السنة الدراسية</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="EmailAlreadyTaken" xml:space="preserve">
+    <value>هذا الايميل مستخدم من قبل شخص اخر</value>
+  </data>
+  <data name="EnName" xml:space="preserve">
+    <value>الاسم باللغة الانجليزية</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>الرجاء إدخال الرمز المرسل إلى بريدك الالكتروني</value>
+  </data>
+  <data name="EnterCorrectPhone" xml:space="preserve">
+    <value>البريد المدخل غير مسجل لدينا ، ادخل بريد صحيح</value>
+  </data>
+  <data name="ErrorSumTitle" xml:space="preserve">
+    <value>فضلا عالج الأخطاء</value>
+  </data>
+  <data name="ErrorWhileResetPass" xml:space="preserve">
+    <value>خطأ أثناء تحديث إعادة تعيين السر</value>
+  </data>
+  <data name="EvalSent" xml:space="preserve">
+    <value>تم إرسال تقييمك</value>
+  </data>
+  <data name="EvalStudent" xml:space="preserve">
+    <value>تقييم الطالب</value>
+  </data>
+  <data name="evaluated" xml:space="preserve">
+    <value>تم التقييم</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>ممتاز</value>
+  </data>
+  <data name="FatherNoti" xml:space="preserve">
+    <value>إشعارات أولياء الأمور</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>هذا الحقل إجباري</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>الجمعة</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>جيد</value>
+  </data>
+  <data name="GoodCommunications" xml:space="preserve">
+    <value>يتواصل المعلم معـــك بلطف</value>
+  </data>
+  <data name="GoodInStudy" xml:space="preserve">
+    <value>أسلوب التدريس مناسب لك</value>
+  </data>
+  <data name="GoodInUsingBoard" xml:space="preserve">
+    <value>يستخدم المعلم السبورة بصورة مفيدة</value>
+  </data>
+  <data name="GoodInVoice" xml:space="preserve">
+    <value>تسمع صوت المعــلم بوضوح</value>
+  </data>
+  <data name="HMtypeTitle" xml:space="preserve">
+    <value>واجب</value>
+  </data>
+  <data name="HomeIndexTitle" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="HomeIndexWelcome" xml:space="preserve">
+    <value>مرحبا بك في منصة إتقــــان</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>هاتف المنزل</value>
+  </data>
+  <data name="InboxMessageDate" xml:space="preserve">
+    <value>وصلت بتاريخ</value>
+  </data>
+  <data name="InboxMessageDelete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="InboxMessageFrom" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="InboxMessageOpen" xml:space="preserve">
+    <value>ذهاب</value>
+  </data>
+  <data name="InboxMessageTitle" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+  <data name="InboxTitle" xml:space="preserve">
+    <value>الوارد</value>
+  </data>
+  <data name="InstDescError" xml:space="preserve">
+    <value>فضلا أدخل وصف كاف عنك</value>
+  </data>
+  <data name="InstEval" xml:space="preserve">
+    <value>تقييم المعلم</value>
+  </data>
+  <data name="instHasNotThisTut" xml:space="preserve">
+    <value>هذه الدورة ليست لهذا الاستاذ</value>
+  </data>
+  <data name="InstImgError" xml:space="preserve">
+    <value>فضلا إختار صورة بحجم 220 بكسل * 220 بكسل</value>
+  </data>
+  <data name="InstLecList" xml:space="preserve">
+    <value>قائمة المحاضرات</value>
+  </data>
+  <data name="InstName" xml:space="preserve">
+    <value>إسم المعلم</value>
+  </data>
+  <data name="InstProfileUrl" xml:space="preserve">
+    <value>ملفي</value>
+  </data>
+  <data name="InstTitleError" xml:space="preserve">
+    <value>فضلا أدخل المسمى الوظيفي</value>
+  </data>
+  <data name="InstTitleText" xml:space="preserve">
+    <value>المسمى الوظيفي</value>
+  </data>
+  <data name="InstTut" xml:space="preserve">
+    <value>دوراتي التدريبية</value>
+  </data>
+  <data name="InstTutList" xml:space="preserve">
+    <value>قائمة الدورات التدريبية</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>البريد المدخل غير صحيح</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>الوصف الوظيفي</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="LecAttach" xml:space="preserve">
+    <value>فتح ملف مرفق</value>
+  </data>
+  <data name="LecDate" xml:space="preserve">
+    <value>تاريخ المحاضرة</value>
+  </data>
+  <data name="LecDesc" xml:space="preserve">
+    <value>وصف المحاضرة</value>
+  </data>
+  <data name="LecEndBeggerThanLecStart" xml:space="preserve">
+    <value>زمن نهاية المحاضرة يجب ان يكون بعد زمن بداية المحاضرة</value>
+  </data>
+  <data name="LecEndTime" xml:space="preserve">
+    <value>زمن نهاية المحاضرة</value>
+  </data>
+  <data name="LecsInSameTimeError" xml:space="preserve">
+    <value>هناك محاضرات في هذا الزمن الرجاء اختيار زمن اخر</value>
+  </data>
+  <data name="LecStTime" xml:space="preserve">
+    <value>زمن بداية المحاضرة</value>
+  </data>
+  <data name="LecTime" xml:space="preserve">
+    <value>زمن المحاضرة</value>
+  </data>
+  <data name="LecTimeError" xml:space="preserve">
+    <value>زمن المحاضرة يجب ان يكون اكبر من الزمن الحالي</value>
+  </data>
+  <data name="LecTitle" xml:space="preserve">
+    <value>عنوان المحاضرة</value>
+  </data>
+  <data name="LecTitleTimeTable" xml:space="preserve">
+    <value>المحاضرة</value>
+  </data>
+  <data name="LectureTitle" xml:space="preserve">
+    <value>المحاضرات</value>
+  </data>
+  <data name="LecTutNotFound" xml:space="preserve">
+    <value>لا توجد دورة تدريبية لهذه المحاضرة</value>
+  </data>
+  <data name="LecVirtualUrl" xml:space="preserve">
+    <value>رابط الغرفة الافتراضية</value>
+  </data>
+  <data name="ListOfInBox" xml:space="preserve">
+    <value>قائمة الرسائل الواردة</value>
+  </data>
+  <data name="LoginBtnVal" xml:space="preserve">
+    <value>دخول</value>
+  </data>
+  <data name="LoginCreateStAccount" xml:space="preserve">
+    <value>إنشاء حساب طالب</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>أدخل البريد الإلكتروني</value>
+  </data>
+  <data name="LoginFailedMsg" xml:space="preserve">
+    <value>محاولة دخول فاشلة</value>
+  </data>
+  <data name="LoginForgetPass" xml:space="preserve">
+    <value>نسيت كلمة السر</value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>أدخل كلمة السر</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>إتقــــان - تسجيل الدخول</value>
+  </data>
+  <data name="LoginTopHeader" xml:space="preserve">
+    <value>تسجيل دخول</value>
+  </data>
+  <data name="LoginToSub" xml:space="preserve">
+    <value>قم بالدخول للاشتراك</value>
+  </data>
+  <data name="LogoutTextUrl" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="ManagementAccept" xml:space="preserve">
+    <value>تمت الموافقة على طلبك</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>الإدارة</value>
+  </data>
+  <data name="MessageRegister" xml:space="preserve">
+    <value>فضلا منك اختيار اللغة التي تريد الدراسة بها</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>الإثنين</value>
+  </data>
+  <data name="MyAssignment" xml:space="preserve">
+    <value>واجباتي</value>
+  </data>
+  <data name="MyEvaluate" xml:space="preserve">
+    <value>تقييمي</value>
+  </data>
+  <data name="MyTutorials" xml:space="preserve">
+    <value>دوراتي</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="NameInNational" xml:space="preserve">
+    <value>الاسم باللغة الوطنية</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>الجنسية</value>
+  </data>
+  <data name="NewPassErrorText" xml:space="preserve">
+    <value>أدخل كلمة السر الجديدة</value>
+  </data>
+  <data name="NewPassLength" xml:space="preserve">
+    <value>طول كلمة السر يجب ان لا يقل عن 6 ولا يزيد عن 50 حرفا</value>
+  </data>
+  <data name="NewPassText" xml:space="preserve">
+    <value>كلمة السر الجديدة</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="NoPrevAttForAss" xml:space="preserve">
+    <value>لا يوجد مرفق تم رفعه لهذا الواجب - الإختبار</value>
+  </data>
+  <data name="NoPrevAttForSol" xml:space="preserve">
+    <value>لا يوجد مرفق تم رفعه لهذا الحل</value>
+  </data>
+  <data name="NotAcceptInst" xml:space="preserve">
+    <value>لاأوافق</value>
+  </data>
+  <data name="OldPassErrorText" xml:space="preserve">
+    <value>أدخل كلمة السر القديمة</value>
+  </data>
+  <data name="OldPassText" xml:space="preserve">
+    <value>كلمة السر القديمة</value>
+  </data>
+  <data name="OtherInstDataError" xml:space="preserve">
+    <value>البريد الالكتروني و الاسم و رقم الجوال حقول إجبارية</value>
+  </data>
+  <data name="passChanged" xml:space="preserve">
+    <value>تم تعديل كلمة المرور بنجاح</value>
+  </data>
+  <data name="PassMsg" xml:space="preserve">
+    <value>كلمة السر الخاصة بك هي</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="passwordsent" xml:space="preserve">
+    <value>تم ارسال كلمة السر</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم الجوال +xxx</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>رقم الهاتف شاملا رمز الدولة</value>
+  </data>
+  <data name="Poor" xml:space="preserve">
+    <value>ضعيف</value>
+  </data>
+  <data name="ProfileImgLable" xml:space="preserve">
+    <value>صورة 220*220</value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>ملفي الشخصي</value>
+  </data>
+  <data name="RemoveAtt" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="RequestedOrSubscribed" xml:space="preserve">
+    <value>تم الإشتراك أو تحت الطلب</value>
+  </data>
+  <data name="ResidentCountry" xml:space="preserve">
+    <value>بلد الإقامة</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>السبت</value>
+  </data>
+  <data name="ShowAtt" xml:space="preserve">
+    <value>عرض المرفق</value>
+  </data>
+  <data name="ShowStudentAssignments" xml:space="preserve">
+    <value>عرض واجبات الطالب</value>
+  </data>
+  <data name="ShowTutDetails" xml:space="preserve">
+    <value>عرض تفاصيل الدورة</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>إتقــــان</value>
+  </data>
+  <data name="SolAttach" xml:space="preserve">
+    <value>الملفات المرفقة مع الحل</value>
+  </data>
+  <data name="SolDesc" xml:space="preserve">
+    <value>الحل</value>
+  </data>
+  <data name="StAllTut" xml:space="preserve">
+    <value>الدورات المتاحة</value>
+  </data>
+  <data name="StAssociateYourAccount" xml:space="preserve">
+    <value>ربط حسابك على </value>
+  </data>
+  <data name="StAssociationForm" xml:space="preserve">
+    <value>شاشة الربط</value>
+  </data>
+  <data name="StCertRequired" xml:space="preserve">
+    <value>يجب رفع أخر شهادة دراسية</value>
+  </data>
+  <data name="StCompleteRegister" xml:space="preserve">
+    <value>إكمال عملية التسجيل</value>
+  </data>
+  <data name="StCreateAccountTitle" xml:space="preserve">
+    <value>إنشاء تعديل حساب طالب</value>
+  </data>
+  <data name="StDegree" xml:space="preserve">
+    <value>درجة الطالب</value>
+  </data>
+  <data name="StExLoginAccount" xml:space="preserve">
+    <value>حساب</value>
+  </data>
+  <data name="StExLoginBtnFace" xml:space="preserve">
+    <value>دخول عن طريق فيسبوك</value>
+  </data>
+  <data name="StExLoginUsing" xml:space="preserve">
+    <value>تسجيل الدخول بإستخدام فيسبوك</value>
+  </data>
+  <data name="StFinishLoginMsg" xml:space="preserve">
+    <value>فضلا أدخل رقم الجوال في الحقل أدناه لاكمال عملية التسجيل</value>
+  </data>
+  <data name="StLoginFailure" xml:space="preserve">
+    <value>فشلت عملية الدخول</value>
+  </data>
+  <data name="StRegReq1" xml:space="preserve">
+    <value>شروط التسجيل</value>
+  </data>
+  <data name="StRegReq10" xml:space="preserve">
+    <value>9- حضور الجلسة التعريفية عن خطَّة الدراسة واجتياز المقابلة الشخصية التي تهدف إلى التعرّف على قدرات الطالب وتحديد مستواه وإرشاده للخطَّة الدراسية المناسبة</value>
+  </data>
+  <data name="StRegReq11" xml:space="preserve">
+    <value>10- شراء المنهج التعليمي وهو كتاب القاعدة النورانية المطبوع أو الإلكتروني</value>
+  </data>
+  <data name="StRegReq2" xml:space="preserve">
+    <value>1- أن يكون عمر المتقدم 7 سنوات فأكثر</value>
+  </data>
+  <data name="StRegReq3" xml:space="preserve">
+    <value>2- حفظ الحروف العربية قبل بدء الدورة.</value>
+  </data>
+  <data name="StRegReq4" xml:space="preserve">
+    <value>3- الجدِّيَّة والالتزام بالحضور حتى نهاية الدورة.</value>
+  </data>
+  <data name="StRegReq5" xml:space="preserve">
+    <value>4- أن يجيد الطالب استخدام الحاسب الآلي، أو يكون مع الطالب مَنْ يساعده على ذلك</value>
+  </data>
+  <data name="StRegReq6" xml:space="preserve">
+    <value>5- أن يلتزم الطالب بالآداب العامة، وآداب تعلُّم القرآن</value>
+  </data>
+  <data name="StRegReq7" xml:space="preserve">
+    <value>6- أن يلتزم أولياء الأمور بمتابعة الطفل أثناء الجلسة التعليمية</value>
+  </data>
+  <data name="StRegReq8" xml:space="preserve">
+    <value>7- تعبئة استمارة التسجيل، وكتابة المعلومات المطلوبة بدقة، والتأكُّد من قراءة الشروط والأحكام</value>
+  </data>
+  <data name="StRegReq9" xml:space="preserve">
+    <value>8- التسجيل في المنصة باستخدام البريد الإلكتروني ورقم الهاتف للتحقُّق</value>
+  </data>
+  <data name="StScore" xml:space="preserve">
+    <value>مستوى التحصيل</value>
+  </data>
+  <data name="StSuccessExternalAuth" xml:space="preserve">
+    <value>تم التحقق بنجاح مع </value>
+  </data>
+  <data name="StudentCert" xml:space="preserve">
+    <value>أخر شهادة دراسية</value>
+  </data>
+  <data name="StudentCertify" xml:space="preserve">
+    <value>منح شهادة</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+  <data name="StudentsList" xml:space="preserve">
+    <value>قائمة الطلاب</value>
+  </data>
+  <data name="StUnsuccessfullLgin" xml:space="preserve">
+    <value>فشل التحقق مع خدمة </value>
+  </data>
+  <data name="StWithMyAccount" xml:space="preserve">
+    <value>بحسابك هذا</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>إشتراك</value>
+  </data>
+  <data name="SubStudents" xml:space="preserve">
+    <value>الطلاب المشتركون</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>الأحد</value>
+  </data>
+  <data name="TechProblemInTutorial" xml:space="preserve">
+    <value>توجد لديك مشكــــلات تقنية في الجلسة التعليمية</value>
+  </data>
+  <data name="Thur" xml:space="preserve">
+    <value>الخميس</value>
+  </data>
+  <data name="TimeTable" xml:space="preserve">
+    <value>الجدول الدراسي</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="Tus" xml:space="preserve">
+    <value>الثلاثاء</value>
+  </data>
+  <data name="TutAssignToInst" xml:space="preserve">
+    <value>تم إسناد دورة تدريبية لك من قبل الإدارة</value>
+  </data>
+  <data name="TutCloseDate" xml:space="preserve">
+    <value>تاريخ انتهاء الدورة</value>
+  </data>
+  <data name="TutCount" xml:space="preserve">
+    <value>عدد المحاضرات</value>
+  </data>
+  <data name="TutDetails" xml:space="preserve">
+    <value>تفاصيل الدورة</value>
+  </data>
+  <data name="TutInstName" xml:space="preserve">
+    <value>معلم الدورة</value>
+  </data>
+  <data name="TutLang" xml:space="preserve">
+    <value>لغة الدورة</value>
+  </data>
+  <data name="TutLectures" xml:space="preserve">
+    <value>محاضرات الدروة</value>
+  </data>
+  <data name="TutOpenDate" xml:space="preserve">
+    <value>تاريخ الدورة</value>
+  </data>
+  <data name="TutorialTitle" xml:space="preserve">
+    <value>عنوان الدورة</value>
+  </data>
+  <data name="UserNameMsg" xml:space="preserve">
+    <value>إسم المستخدم الخاص بك هو</value>
+  </data>
+  <data name="VerifyCode" xml:space="preserve">
+    <value>التحقق من الرمز</value>
+  </data>
+  <data name="VGood" xml:space="preserve">
+    <value>جيد جدا</value>
+  </data>
+  <data name="VideoUrl" xml:space="preserve">
+    <value>رابط فيديو المحاضرة</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>الأربعاء</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+</root>

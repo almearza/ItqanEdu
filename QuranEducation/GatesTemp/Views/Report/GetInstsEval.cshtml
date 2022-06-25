@@ -1,0 +1,75 @@
+﻿@using QuranEducation.Models.VM
+@model List<InstEvalReportVM>
+    @{
+        ViewBag.Title = "تقيم المعلمين";
+    }
+    @section styles{
+        <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Content/toastr.css" rel="stylesheet" />
+    }
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="widget" style="background-color:transparent;">
+                <div class="widget-title">
+                    <h4><i class="icon-paper-clip"></i>تقرير تقييم المعلمين</h4>
+                    <span class="tools">
+                        <a href="javascript:;" class="icon-chevron-down"></a>
+                        <a href="javascript:;" class="icon-remove"></a>
+                    </span>
+                </div>
+
+                <div class="widget-body">
+
+                    <br />
+                    <table id="evals" class="table table-bordered table-hover " style="width:100%;">
+                        <thead>
+                            <tr>
+                                <th>إسم المعلم</th>
+                                <th>عنوان الدورة</th>
+                                <th>إسم المقيم</th>
+                                <th> يحضر في الوقت المحدد ؟                    </th>
+                                <th> هل يناسبك أسلوب التدريس ؟                 </th>
+                                <th> هل يتواصل معك بلطف                        </th>
+                                <th> هل تسمع صوت المعلم واضحا                  </th>
+                                <th> هل توجد مشكلات تقنية في الجلسات التعليمية </th>
+                                <th> هل يستخدم المعلم السبورة بصورة مفيدة     </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                if (Model != null)
+                                {
+
+                                    foreach (var eval in Model)
+                                    {
+                                        <tr>
+                                            <td>@eval.InstName</td>
+                                            <td>@eval.TutName</td>
+                                            <td>@eval.EvalName</td>
+                                            <td>@eval.ArriveInATime</td>
+                                            <td>@eval.GoodInStudy</td>
+                                            <td>@eval.GoodCommunications</td>
+                                            <td>@eval.GoodInVoice</td>
+                                            <td>@eval.TechProblemInTutorial</td>
+                                            <td>@eval.GoodInUsingBoard</td>
+                                        </tr>
+                                    }
+
+                                }
+                            }
+                        </tbody>
+                    </table>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE CONTENT-->
+    @section scripts{
+        <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+        <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    }
+
+
+

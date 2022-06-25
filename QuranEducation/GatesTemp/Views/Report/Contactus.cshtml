@@ -1,0 +1,114 @@
+﻿@using QuranEducation.Models
+@model List<ContactUs>
+@{
+    ViewBag.Title = "تواصل معنا";
+}
+@section styles{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <style>
+        .dataTables_paginate, .dataTables_filter {
+            float: right !important;
+        }
+
+        .dataTables_length {
+            width: 300px;
+            float: left;
+        }
+    </style>
+}
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-inbox"></i>رسائل تواصل معنا</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body" style="overflow:auto">
+                <br />
+                <table id="messages" class="table table-bordered table-hover table-responsive" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>الإسم</th>
+                            <th>البريد</th>
+                            <th>الرسالة</th>
+                            <th>تاريخها</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            foreach (var message in Model)
+                            {
+                                <tr>
+                                    <td>@message.Name</td>
+                                    <td>@message.Email</td>
+                                    <td>@message.Message</td>
+                                    <td>@message.ArrivalDate</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section scripts{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let sEmptyTable='@QuranRes.DtsEmptyTable';
+            let sLengthMenu='@QuranRes.DtsLengthMenu';
+            let sZeroRecords ='@QuranRes.DtsZeroRecords';
+
+            let sInfo='@QuranRes.DtsInfo';
+            let sInfoEmpty='@QuranRes.DtsInfoEmpty';
+            let sInfoFiltered='@QuranRes.DtsInfoFiltered';
+            let sSearch='@QuranRes.DtsSearch';
+            let sFirst='@QuranRes.DtsFirst';
+            let sPrevious='@QuranRes.DtsPrevious';
+            let sNext='@QuranRes.DtsNext';
+            let sLast='@QuranRes.DtsLast';
+            let sSortAscending='@QuranRes.DtsSortAscending';
+            let sSortDescending='@QuranRes.DtsSortDescending';
+            var table = $("#messages").DataTable({
+                "language": {
+                    "sEmptyTable": sEmptyTable,
+                    "sLoadingRecords": "جارٍ التحميل...",
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": sLengthMenu,
+                    "sZeroRecords": sZeroRecords,
+                    "sInfo": sInfo ,
+                    "sInfoEmpty": sInfoEmpty ,
+                    "sInfoFiltered": sInfoFiltered,
+                    "sInfoPostFix": "",
+                    "sSearch": sSearch,
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": sFirst ,
+                        "sPrevious": sPrevious,
+                        "sNext": sNext,
+                        "sLast": sLast
+                    },
+                    "oAria": {
+                        "sSortAscending": sSortAscending,
+                        "sSortDescending": sSortDescending
+                    }
+                }
+            });
+
+
+
+        });
+    </script>
+}
+

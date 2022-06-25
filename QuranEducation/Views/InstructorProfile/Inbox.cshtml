@@ -1,0 +1,44 @@
+﻿@model IEnumerable<QuranEducation.Models.VM.InboxVM>
+
+@{
+    ViewBag.Title = @QuranEducation.QuranRes.Inbox;
+}
+
+<h2>@QuranEducation.QuranRes.Inbox</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @QuranEducation.QuranRes.FullName
+        </th>
+        <th>
+            @QuranEducation.QuranRes.Email
+        </th>
+        <th>
+            @QuranEducation.QuranRes.Message
+        </th>
+        <th>
+            @QuranEducation.QuranRes.Arrival
+        </th>
+      
+    </tr>
+    
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.AUser.FullName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AUser.Email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Message)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Arrival)
+    </td>
+   
+</tr>
+}
+
+</table>

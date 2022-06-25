@@ -1,0 +1,18 @@
+namespace QuranEducation.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class changecontactus : DbMigration
+    {
+        public override void Up()
+        {
+            AddColumn("dbo.ContactUs", "ArrivalDate", c => c.String());
+        }
+        
+        public override void Down()
+        {
+            DropColumn("dbo.ContactUs", "ArrivalDate");
+        }
+    }
+}

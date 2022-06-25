@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe" xml:space="preserve">
+    <value>O meni</value>
+  </data>
+  <data name="Acceptable" xml:space="preserve">
+    <value>Prihvaćeno</value>
+  </data>
+  <data name="AcceptInst" xml:space="preserve">
+    <value>Prihvaćam</value>
+  </data>
+  <data name="AccountWasLocked" xml:space="preserve">
+    <value>Vaš profil je trenutno isključen, molimo Vas kontaktirajte naš tim.</value>
+  </data>
+  <data name="AchievementFile" xml:space="preserve">
+    <value>Izvještaj o napretku</value>
+  </data>
+  <data name="AddAssMsg2" xml:space="preserve">
+    <value>Dodati ili urediti dostignuće</value>
+  </data>
+  <data name="AddLecMsg1" xml:space="preserve">
+    <value>Nastavnik</value>
+  </data>
+  <data name="AddLecMsg2" xml:space="preserve">
+    <value>Dodati ili urediti novi čas</value>
+  </data>
+  <data name="AddLecMsg3" xml:space="preserve">
+    <value>Ići na kurs</value>
+  </data>
+  <data name="AdministrativeForms" xml:space="preserve">
+    <value>Administrativni obrasci</value>
+  </data>
+  <data name="Alreadyeval" xml:space="preserve">
+    <value>Već ste ranije ocijenili ovog nastavnika</value>
+  </data>
+  <data name="ArriveInATime" xml:space="preserve">
+    <value>Nastavnik pristupa času na vrijeme</value>
+  </data>
+  <data name="AssAttach" xml:space="preserve">
+    <value>Prilog za zadatak/test</value>
+  </data>
+  <data name="AssDegree" xml:space="preserve">
+    <value>Ocjena zadatka/testa</value>
+  </data>
+  <data name="AssDesc" xml:space="preserve">
+    <value>Detalji zadatka/testa</value>
+  </data>
+  <data name="assEndBeggerThanLecStart" xml:space="preserve">
+    <value>Krajnje vrijeme za izvršenje zadtaka/testa bi trebalo biti nakon termina za početak</value>
+  </data>
+  <data name="AssEndDate" xml:space="preserve">
+    <value>Krajnji datum za izvršenje zadatka/testa</value>
+  </data>
+  <data name="AssEndTime" xml:space="preserve">
+    <value>Krajnje vrijeme za izvršenje zadatka/testa</value>
+  </data>
+  <data name="AssigmentList" xml:space="preserve">
+    <value>Lista zadaća i testova</value>
+  </data>
+  <data name="AssigmentTitle" xml:space="preserve">
+    <value>Zadaće i testovi</value>
+  </data>
+  <data name="AssSolution" xml:space="preserve">
+    <value>Rješenje zadatka</value>
+  </data>
+  <data name="AssSolutions" xml:space="preserve">
+    <value>Rješenja zadataka</value>
+  </data>
+  <data name="AssStDate" xml:space="preserve">
+    <value>Datum početka izrade zadataka/testova</value>
+  </data>
+  <data name="AssStTime" xml:space="preserve">
+    <value>Vrijeme početka izrade zadataka/testova</value>
+  </data>
+  <data name="assTimeError" xml:space="preserve">
+    <value>Termin početka izrade zadatka/testa bi trebao nastupiti nakon trenutnog vremena</value>
+  </data>
+  <data name="AssTitle" xml:space="preserve">
+    <value>Naziv zadatka/zadaće</value>
+  </data>
+  <data name="AssTutNotFound" xml:space="preserve">
+    <value>Nije pronađen kurs za ovaj zadatak </value>
+  </data>
+  <data name="AssType" xml:space="preserve">
+    <value>Zadatak ili test</value>
+  </data>
+  <data name="AsstypeTitle" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="AttRemoved" xml:space="preserve">
+    <value>Prilog je izbrisan</value>
+  </data>
+  <data name="AttRemoveError" xml:space="preserve">
+    <value>Došlo je do greške pri brisanju priloga</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>Natrag na početnu</value>
+  </data>
+  <data name="BackTut" xml:space="preserve">
+    <value>Natrag</value>
+  </data>
+  <data name="BOD" xml:space="preserve">
+    <value>Datum rođenja</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>Poslati</value>
+  </data>
+  <data name="CertifyError" xml:space="preserve">
+    <value>Molimo da odaberete ocjenu za ovog učenika</value>
+  </data>
+  <data name="ChangePassFailed" xml:space="preserve">
+    <value>Korisničko ime nije pronađeno ili je stara lozinka pogrešna!</value>
+  </data>
+  <data name="ChangePassLater" xml:space="preserve">
+    <value>Naknadno možete promijeniti lozinku</value>
+  </data>
+  <data name="ChangePassTextUrl" xml:space="preserve">
+    <value>Promijeniti svoju lozinku</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Kod</value>
+  </data>
+  <data name="codeNotValid" xml:space="preserve">
+    <value>Netačan kod</value>
+  </data>
+  <data name="ConfirmPassErrorText" xml:space="preserve">
+    <value>Unijete lozinke se ne poduderaju</value>
+  </data>
+  <data name="ConfirmPassText" xml:space="preserve">
+    <value>Ponovo unestie lozinku</value>
+  </data>
+  <data name="CreateAss" xml:space="preserve">
+    <value>Kreirati zadatak/test</value>
+  </data>
+  <data name="CreateLec" xml:space="preserve">
+    <value>Započeti čas</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Dan</value>
+  </data>
+  <data name="DeleteAttQues" xml:space="preserve">
+    <value>Da li sigurno želite ukloniti ovaj prilog?</value>
+  </data>
+  <data name="DtsEmptyTable" xml:space="preserve">
+    <value>U ovoj tabeli nema dostupnih podataka</value>
+  </data>
+  <data name="DtsFirst" xml:space="preserve">
+    <value>Prvi</value>
+  </data>
+  <data name="DtsInfo" xml:space="preserve">
+    <value>Pokazati_Početak_do_Kraj_iz_Ukupno_zapis</value>
+  </data>
+  <data name="DtsInfoEmpty" xml:space="preserve">
+    <value>Pokazati 0 do 0 od ukupno 0 zapisa</value>
+  </data>
+  <data name="DtsInfoFiltered" xml:space="preserve">
+    <value>Posljednje</value>
+  </data>
+  <data name="DtsLast" xml:space="preserve">
+    <value>Prikazati_POČETNA_zapis</value>
+  </data>
+  <data name="DtsLengthMenu" xml:space="preserve">
+    <value>Naredno</value>
+  </data>
+  <data name="DtsNext" xml:space="preserve">
+    <value>Prethodno</value>
+  </data>
+  <data name="DtsPrevious" xml:space="preserve">
+    <value>Tražiti</value>
+  </data>
+  <data name="DtsSearch" xml:space="preserve">
+    <value>Rastuće sortirati:</value>
+  </data>
+  <data name="DtsSortAscending" xml:space="preserve">
+    <value>Padajuće sortirati:</value>
+  </data>
+  <data name="DtsSortDescending" xml:space="preserve">
+    <value>Nikakvi zapisi nisu pronađeni</value>
+  </data>
+  <data name="DtsZeroRecords" xml:space="preserve">
+    <value>Urediti svoj profil</value>
+  </data>
+  <data name="EditProfileBtn" xml:space="preserve">
+    <value>Nastavna godina</value>
+  </data>
+  <data name="EduYear" xml:space="preserve">
+    <value>akademske godine</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Neko je ranije registrovan pod ovom e-mail adresom</value>
+  </data>
+  <data name="EmailAlreadyTaken" xml:space="preserve">
+    <value>Ime na engleskom jeziku</value>
+  </data>
+  <data name="EnName" xml:space="preserve">
+    <value>Unesite kod koji je poslan na Vaš e-mail</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>Ova e-mail adresa nije pronađena - unesite validnu</value>
+  </data>
+  <data name="EnterCorrectPhone" xml:space="preserve">
+    <value>Molimo da ispravite pogreške</value>
+  </data>
+  <data name="ErrorSumTitle" xml:space="preserve">
+    <value>Došlo je do greške pri resetanju lozinka</value>
+  </data>
+  <data name="ErrorWhileResetPass" xml:space="preserve">
+    <value>Vaša ocjena je poslana</value>
+  </data>
+  <data name="EvalSent" xml:space="preserve">
+    <value>Ocijeniti učenika</value>
+  </data>
+  <data name="EvalStudent" xml:space="preserve">
+    <value>Ocijenjeno</value>
+  </data>
+  <data name="evaluated" xml:space="preserve">
+    <value>Odlično</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>Zapažanja roditelja</value>
+  </data>
+  <data name="FatherNoti" xml:space="preserve">
+    <value>Žensko</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Ovo polje je obavezno</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>Petak</value>
+  </data>
+  <data name="FileTitle" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Pol</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Dobro</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Nastavnik razgovara sa mnom lijepo i ljubazno</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>Način podučavanja je primjeren</value>
+  </data>
+  <data name="GoodCommunications" xml:space="preserve">
+    <value>Nastavnik se efikasno koristi tablom</value>
+  </data>
+  <data name="GoodInStudy" xml:space="preserve">
+    <value>Jasno čujem nastavnikov glas</value>
+  </data>
+  <data name="GoodInUsingBoard" xml:space="preserve">
+    <value>Zadatak</value>
+  </data>
+  <data name="GoodInVoice" xml:space="preserve">
+    <value>Početna stranica</value>
+  </data>
+  <data name="HMtypeTitle" xml:space="preserve">
+    <value>Dobro došli na platformu Itqan</value>
+  </data>
+  <data name="HomeIndexTitle" xml:space="preserve">
+    <value>Fiksni telefon</value>
+  </data>
+  <data name="HomeIndexWelcome" xml:space="preserve">
+    <value>Stiglo je na datum</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>Ukloniti</value>
+  </data>
+  <data name="InboxMessageDate" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="InboxMessageDelete" xml:space="preserve">
+    <value>Ići</value>
+  </data>
+  <data name="InboxMessageFrom" xml:space="preserve">
+    <value>Poruka</value>
+  </data>
+  <data name="InboxMessageOpen" xml:space="preserve">
+    <value>Inboks</value>
+  </data>
+  <data name="InboxMessageTitle" xml:space="preserve">
+    <value>Molimo da unesete detaljan opis o sebi</value>
+  </data>
+  <data name="InboxTitle" xml:space="preserve">
+    <value>Evaluacija nastavnika</value>
+  </data>
+  <data name="InstDescError" xml:space="preserve">
+    <value>Ovaj kurs nije od ovog nastavnika</value>
+  </data>
+  <data name="InstEval" xml:space="preserve">
+    <value>Molimo da odaberete sliku dimenzija: 200x200 px</value>
+  </data>
+  <data name="instHasNotThisTut" xml:space="preserve">
+    <value>Lista nastavnika</value>
+  </data>
+  <data name="InstImgError" xml:space="preserve">
+    <value>Nastavnikovo ime</value>
+  </data>
+  <data name="InstLecList" xml:space="preserve">
+    <value>Moj profil</value>
+  </data>
+  <data name="InstName" xml:space="preserve">
+    <value>Molimo da uneste Vaše zanimanje</value>
+  </data>
+  <data name="InstProfileUrl" xml:space="preserve">
+    <value>Zanimanje</value>
+  </data>
+  <data name="InstTitleError" xml:space="preserve">
+    <value>Moji kursevi</value>
+  </data>
+  <data name="InstTut" xml:space="preserve">
+    <value>Lista kurseva</value>
+  </data>
+  <data name="InstTutList" xml:space="preserve">
+    <value>Pogrešna e-maila adresa</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Opis zanimanje</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Jezik</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>Otvorite prilog časa</value>
+  </data>
+  <data name="LecAttach" xml:space="preserve">
+    <value>Datum časa</value>
+  </data>
+  <data name="LecDate" xml:space="preserve">
+    <value>Opis časa</value>
+  </data>
+  <data name="LecDesc" xml:space="preserve">
+    <value>Postavljeno vrijeme za kraj časa bi trebalo biti nakon početka</value>
+  </data>
+  <data name="LecEndBeggerThanLecStart" xml:space="preserve">
+    <value>Vrijeme kraja časa</value>
+  </data>
+  <data name="LecEndTime" xml:space="preserve">
+    <value>Već postoje zakazani časovi u ovo vrijeme - molimo da odaberte drugi termin</value>
+  </data>
+  <data name="LecsInSameTimeError" xml:space="preserve">
+    <value>Vrijeme početka časa</value>
+  </data>
+  <data name="LecStTime" xml:space="preserve">
+    <value>Vrijeme časa</value>
+  </data>
+  <data name="LecTimeError" xml:space="preserve">
+    <value>Vrijeme trajanje časa bi trebalo biti duže od ovog</value>
+  </data>
+  <data name="LecTitle" xml:space="preserve">
+    <value>Naziv kursa</value>
+  </data>
+  <data name="LecTitleTimeTable" xml:space="preserve">
+    <value>Kurs</value>
+  </data>
+  <data name="LectureTitle" xml:space="preserve">
+    <value>Kursevi</value>
+  </data>
+  <data name="LecTutNotFound" xml:space="preserve">
+    <value>Ne postoje kursevi za ovaj čas</value>
+  </data>
+  <data name="LecVirtualUrl" xml:space="preserve">
+    <value>Link za virtuelnu učionicu</value>
+  </data>
+  <data name="ListOfInBox" xml:space="preserve">
+    <value>Spisak pristiglih poruka </value>
+  </data>
+  <data name="LoginBtnVal" xml:space="preserve">
+    <value>Prijaviti se</value>
+  </data>
+  <data name="LoginCreateStAccount" xml:space="preserve">
+    <value>Kreirati profil za novog učenika</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>Unesite Vašu e-mail adresu</value>
+  </data>
+  <data name="LoginFailedMsg" xml:space="preserve">
+    <value>Prijava nije uspjela</value>
+  </data>
+  <data name="LoginForgetPass" xml:space="preserve">
+    <value>Zaboravio sam lozinku</value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>Unesite Vašu lozinku</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Prijaviti se na Itqan</value>
+  </data>
+  <data name="LoginTopHeader" xml:space="preserve">
+    <value>Prijava korisnika</value>
+  </data>
+  <data name="LoginToSub" xml:space="preserve">
+    <value>Prijavite se da biste se pretplatili</value>
+  </data>
+  <data name="LogoutTextUrl" xml:space="preserve">
+    <value>Odjava</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Muško</value>
+  </data>
+  <data name="ManagementAccept" xml:space="preserve">
+    <value>Vaš zahtjev je odobren</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>Menadžment</value>
+  </data>
+  <data name="MessageRegister" xml:space="preserve">
+    <value>Molimo da odaberete jezik na kojem želite učiti</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Ponedjeljak</value>
+  </data>
+  <data name="MyAssignment" xml:space="preserve">
+    <value>Moji zadaci</value>
+  </data>
+  <data name="MyEvaluate" xml:space="preserve">
+    <value>Moje ocjene</value>
+  </data>
+  <data name="MyTutorials" xml:space="preserve">
+    <value>Moji kursevi</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ime i prezime</value>
+  </data>
+  <data name="NameInNational" xml:space="preserve">
+    <value>Ime na nacionalnom jeziku</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Nacionalnost</value>
+  </data>
+  <data name="NewPassErrorText" xml:space="preserve">
+    <value>Unesite novu lozinku</value>
+  </data>
+  <data name="NewPassLength" xml:space="preserve">
+    <value>Nova lozinka mora imati 6-50 karaktera</value>
+  </data>
+  <data name="NewPassText" xml:space="preserve">
+    <value>Nova lozinka</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="NoPrevAttForAss" xml:space="preserve">
+    <value>Nema uploudovanog priloga za ovaj zadatak/test</value>
+  </data>
+  <data name="NoPrevAttForSol" xml:space="preserve">
+    <value>Nema uploudovanog priloga za ovo rješenje</value>
+  </data>
+  <data name="NotAcceptInst" xml:space="preserve">
+    <value>Ne prihvaćam</value>
+  </data>
+  <data name="OldPassErrorText" xml:space="preserve">
+    <value>Unesite staru lozinku</value>
+  </data>
+  <data name="OldPassText" xml:space="preserve">
+    <value>Stara lozinka</value>
+  </data>
+  <data name="OtherInstDataError" xml:space="preserve">
+    <value>Unijeti e-mail, puno ime i broj mobitela je obavezno</value>
+  </data>
+  <data name="PassMsg" xml:space="preserve">
+    <value>Lozinka je uspješno promijenjena</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>I Vaša lozinka je</value>
+  </data>
+  <data name="passwordsent" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Lozinka je poslana</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>Broj mobitela +xxxxx</value>
+  </data>
+  <data name="Poor" xml:space="preserve">
+    <value>Broj mobitela uključujući pozivni broj zemlje</value>
+  </data>
+  <data name="ProfileImgLable" xml:space="preserve">
+    <value>Slabo</value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>Slika 200x200</value>
+  </data>
+  <data name="RemoveAtt" xml:space="preserve">
+    <value>Moj profil</value>
+  </data>
+  <data name="RequestedOrSubscribed" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="ResidentCountry" xml:space="preserve">
+    <value>Zahtjev je odobren ili se procesuira</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>Država stanovanja</value>
+  </data>
+  <data name="ShowAtt" xml:space="preserve">
+    <value>Subota</value>
+  </data>
+  <data name="ShowStudentAssignments" xml:space="preserve">
+    <value>Prikazati prilog</value>
+  </data>
+  <data name="ShowTutDetails" xml:space="preserve">
+    <value>Prikazati učenikove zadatake</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Prikazati detalje o kursu</value>
+  </data>
+  <data name="SolAttach" xml:space="preserve">
+    <value>Itqan</value>
+  </data>
+  <data name="SolDesc" xml:space="preserve">
+    <value>Priložene datoteke uz rješenje</value>
+  </data>
+  <data name="StAllTut" xml:space="preserve">
+    <value>Rješenje</value>
+  </data>
+  <data name="StAssociateYourAccount" xml:space="preserve">
+    <value>Dostupni kursevi</value>
+  </data>
+  <data name="StAssociationForm" xml:space="preserve">
+    <value>Povezati Vaš profil</value>
+  </data>
+  <data name="StCertRequired" xml:space="preserve">
+    <value>Ekran povezivanja</value>
+  </data>
+  <data name="StCompleteRegister" xml:space="preserve">
+    <value>Forografija posljednje diplome/svjedodžbe je obavezna</value>
+  </data>
+  <data name="StCreateAccountTitle" xml:space="preserve">
+    <value>Nastaviti prijavu</value>
+  </data>
+  <data name="StDegree" xml:space="preserve">
+    <value>Kreirati/urediti učenikov pofil</value>
+  </data>
+  <data name="StExLoginAccount" xml:space="preserve">
+    <value>Učenikova ocjena</value>
+  </data>
+  <data name="StExLoginBtnFace" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="StExLoginUsing" xml:space="preserve">
+    <value>Prijaviti se preko Facebooka</value>
+  </data>
+  <data name="StFinishLoginMsg" xml:space="preserve">
+    <value>Registrovati se preko Facebooka</value>
+  </data>
+  <data name="StLoginFailure" xml:space="preserve">
+    <value>Molimo da unesete broj mobitela u ponuđenu rubriku radi kompletiranja prijave</value>
+  </data>
+  <data name="StRegReq1" xml:space="preserve">
+    <value>Prijava nije uspjela</value>
+  </data>
+  <data name="StRegReq10" xml:space="preserve">
+    <value>Uslovi za registrovanje</value>
+  </data>
+  <data name="StRegReq11" xml:space="preserve">
+    <value>9. Prisustvo na pristupnom času gdje se predstavlja plan rada i učenja, te participacija u ličnom intervijuu na osnovu kojeg se procjenjuje znanje učenika i preporučuje mu se adekvatni nivo nastave.</value>
+  </data>
+  <data name="StRegReq2" xml:space="preserve">
+    <value>10. Kupiti nastavni udžbenik, odnosno sufaru Al-Ka'ida en-Nuranijja (Nuranijju), u printanom ili elektronskom formatu.</value>
+  </data>
+  <data name="StRegReq3" xml:space="preserve">
+    <value>1. Kandidat mora imati više od 7 godina.</value>
+  </data>
+  <data name="StRegReq4" xml:space="preserve">
+    <value>2. Kandidat mora poznavati nazive arapskih slova prije početka kursa.</value>
+  </data>
+  <data name="StRegReq5" xml:space="preserve">
+    <value>3. Samodisciplina i uredno prisustvovanje časove sve do kraja.</value>
+  </data>
+  <data name="StRegReq6" xml:space="preserve">
+    <value>4. Učenik bi trebao znati kako se koristiti računarom samostalno ili da – eventualno – bude s njim prisutan neko ko mu pomaže u tome.</value>
+  </data>
+  <data name="StRegReq7" xml:space="preserve">
+    <value>5. Neophodno je postupati po općim pravilima ponašanja i ponašati se skladno s edebima Kur'ana.</value>
+  </data>
+  <data name="StRegReq8" xml:space="preserve">
+    <value>6. Neophodne je da roditelj uzme sebi u obavezu da nadgleda svoje dijete tokom edukativne sesije (časa).</value>
+  </data>
+  <data name="StRegReq9" xml:space="preserve">
+    <value>7. Pravilno popuniti obrazac za registraciju. Napisati tačne informacije i pročitati pravila o odredbama i uslovima za korištenje Platforme.</value>
+  </data>
+  <data name="StScore" xml:space="preserve">
+    <value>8. Prijavite se na Platformu preko e-mail adrese i važećeg mobilnog borja radi verifikacije.</value>
+  </data>
+  <data name="StSuccessExternalAuth" xml:space="preserve">
+    <value>Dostignuće</value>
+  </data>
+  <data name="StudentCert" xml:space="preserve">
+    <value>Uspješno ste se autentificirali sa</value>
+  </data>
+  <data name="StudentCertify" xml:space="preserve">
+    <value>Posljednja diploma/svjedodžba</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Dodijeliti certifikat učeniku</value>
+  </data>
+  <data name="StudentsList" xml:space="preserve">
+    <value>Učenik</value>
+  </data>
+  <data name="StUnsuccessfullLgin" xml:space="preserve">
+    <value>Spisak učenika</value>
+  </data>
+  <data name="StWithMyAccount" xml:space="preserve">
+    <value>Neuspješna prijava preko servisa.</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Preko tvog računa</value>
+  </data>
+  <data name="SubStudents" xml:space="preserve">
+    <value>Pretplatite se</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Pretplaćeni učenici</value>
+  </data>
+  <data name="TechProblemInTutorial" xml:space="preserve">
+    <value>Nedjelja</value>
+  </data>
+  <data name="Thur" xml:space="preserve">
+    <value>Imam tehničke problema na času</value>
+  </data>
+  <data name="TimeTable" xml:space="preserve">
+    <value>Četvrtak</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Raspored nastave</value>
+  </data>
+  <data name="Tus" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="TutAssignToInst" xml:space="preserve">
+    <value>Utorak</value>
+  </data>
+  <data name="TutCloseDate" xml:space="preserve">
+    <value>Kurs je dodijeljen Vama od strane Menadžmenta</value>
+  </data>
+  <data name="TutCount" xml:space="preserve">
+    <value>Datum završetka kursa</value>
+  </data>
+  <data name="TutDetails" xml:space="preserve">
+    <value>Broj časova</value>
+  </data>
+  <data name="TutInstName" xml:space="preserve">
+    <value>Opis kursa</value>
+  </data>
+  <data name="TutLang" xml:space="preserve">
+    <value>Nastavnik</value>
+  </data>
+  <data name="TutLectures" xml:space="preserve">
+    <value>Jezik kursa</value>
+  </data>
+  <data name="TutOpenDate" xml:space="preserve">
+    <value>Časovi kursa</value>
+  </data>
+  <data name="TutorialTitle" xml:space="preserve">
+    <value>Datum kursa</value>
+  </data>
+  <data name="UserNameMsg" xml:space="preserve">
+    <value>Naziv kursa</value>
+  </data>
+  <data name="VerifyCode" xml:space="preserve">
+    <value>Vaše korisničko ime:</value>
+  </data>
+  <data name="VGood" xml:space="preserve">
+    <value>Verifikacija koda</value>
+  </data>
+  <data name="VideoUrl" xml:space="preserve">
+    <value>Vrlo dobro</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Link časa</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Srijeda</value>
+  </data>
+</root>

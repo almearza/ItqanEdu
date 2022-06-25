@@ -1,0 +1,2502 @@
+
+controller>>> Account
+action>>> Login
+message>>> C:\Users\fawaz\Desktop\QuranEducation\QuranEducation\Views\Account\Login.cshtml(9): error CS0122: 'QuranRes' is inaccessible due to its protection level
+InnerException>>>
+TargetSite>>>System.CodeDom.Compiler.CompilerResults Compile()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 4:18:23 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> C:\Users\fawaz\Desktop\QuranEducation\QuranEducation\Views\Account\Login.cshtml(38): error CS0117: 'QuranRes' does not contain a definition for 'LoginTopHeader'
+InnerException>>>
+TargetSite>>>System.CodeDom.Compiler.CompilerResults Compile()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 5:01:50 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#bad-request",
+  "title" : "Bad Request",
+  "status" : 400,
+  "detail" : "The 'to' address cannot start with 0: 0565772109"
+}
+
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#insufficient-credits",
+  "title" : "Insufficient Credits",
+  "status" : 403
+}
+
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#insufficient-credits",
+  "title" : "Insufficient Credits",
+  "status" : 403
+}
+
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:12:22 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:25 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:27 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:27 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:27 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:28 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:28 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:28 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/20/2020 9:13:30 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#insufficient-credits",
+  "title" : "Insufficient Credits",
+  "status" : 403
+}
+
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#bad-request",
+  "title" : "Bad Request",
+  "status" : 400,
+  "detail" : "The 'to' address must have less than 16 digits: +87876878787879797979"
+}
+
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#insufficient-credits",
+  "title" : "Insufficient Credits",
+  "status" : 403
+}
+
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>06/04/42 04:40:17 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/21/2020 4:40:28 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/21/2020 4:45:39 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/21/2020 4:47:29 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>06/04/42 04:52:56 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 1:28:19 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 1:28:31 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=Unknown;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 1:53:14 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=Unknown;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 1:56:02 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 1:58:50 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=Unknown;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:10:58 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:14:58 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:18:18 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:19:43 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:20:15 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:21:40 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:22:05 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:22:48 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:24:07 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:24:24 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:24:36 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:24:54 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:25:30 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/22/2020 2:25:38 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Register
+message>>> تعذر تحليل الاسم البعيد: 'api.bulksms.com'
+InnerException>>>
+TargetSite>>>System.IO.Stream GetRequestStream(System.Net.TransportContext ByRef)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>09/04/42 09:19:12 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/04/42 09:41:42 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> ChangePass
+message>>> C:\Users\fawaz\AppData\Local\Temp\Temporary ASP.NET Files\vs\19725436\b4658ed4\App_Web_changepass.cshtml.5f83eb8c.z2gic5dw.0.cs(31): error CS0246: The type or namespace name 'DelalaLicPanel' could not be found (are you missing a using directive or an assembly reference?)
+InnerException>>>
+TargetSite>>>System.CodeDom.Compiler.CompilerResults Compile()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=inst@quran.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/27/2020 5:18:55 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> ChangePass
+message>>> C:\Users\fawaz\Desktop\QuranEducation\QuranEducation\Views\Account\ChangePass.cshtml(33): error CS0117: 'QuranRes' does not contain a definition for 'btnSend'
+InnerException>>>
+TargetSite>>>System.CodeDom.Compiler.CompilerResults Compile()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=inst@quran.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/27/2020 6:10:26 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/30/2020 8:37:38 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Register
+message>>> تعذر تحليل الاسم البعيد: 'api.bulksms.com'
+InnerException>>>
+TargetSite>>>System.IO.Stream GetRequestStream(System.Net.TransportContext ByRef)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>15/04/42 08:38:56 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The provided anti-forgery token was meant for a different claims-based user than the current user.
+InnerException>>>
+TargetSite>>>Void ValidateTokens(System.Web.HttpContextBase, System.Security.Principal.IIdentity, System.Web.Helpers.AntiXsrf.AntiForgeryToken, System.Web.Helpers.AntiXsrf.AntiForgeryToken)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=inst@quran.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/30/2020 8:42:09 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>16/04/42 08:22:19 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The provided anti-forgery token was meant for a different claims-based user than the current user.
+InnerException>>>
+TargetSite>>>Void ValidateTokens(System.Web.HttpContextBase, System.Security.Principal.IIdentity, System.Web.Helpers.AntiXsrf.AntiForgeryToken, System.Web.Helpers.AntiXsrf.AntiForgeryToken)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=inst2@quran.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>16/04/42 08:24:14 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>16/04/42 09:38:05 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>17/04/42 03:08:48 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>17/04/42 03:16:03 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>17/04/42 09:36:11 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>18/04/42 03:11:00 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=inst@quran.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/05/2020 11:09:18
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=inst@quran.edu;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/05/2020 11:09:18
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/05/2020 20:14:28
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/06/2020 20:20:03
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome86;
+Name=Chrome;
+Version=86.0;
+MajorVersion=86;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>24/04/42 08:46:23 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:02:35 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+InnerException>>>
+TargetSite>>>System.Web.Helpers.AntiXsrf.AntiForgeryToken Deserialize(System.String)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:15:38 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+InnerException>>>
+TargetSite>>>System.Web.Helpers.AntiXsrf.AntiForgeryToken Deserialize(System.String)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:17:26 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+InnerException>>>
+TargetSite>>>System.Web.Helpers.AntiXsrf.AntiForgeryToken Deserialize(System.String)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/11/2020 10:19:10
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The anti-forgery token could not be decrypted. If this application is hosted by a Web Farm or cluster, ensure that all machines are running the same version of ASP.NET Web Pages and that the <machineKey> configuration specifies explicit encryption and validation keys. AutoGenerate cannot be used in a cluster.
+InnerException>>>
+TargetSite>>>System.Web.Helpers.AntiXsrf.AntiForgeryToken Deserialize(System.String)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/11/2020 10:34:03
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/11/2020 10:42:54
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:47:33 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/11/2020 10:47:52
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:52:14 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:56:36 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 10:57:34 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:00:01 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:04:14 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:04:29 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:09:20 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:09:45 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:23:13 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:23:30 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:24:12 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:24:30 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:24:50 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>127.0.0.1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=127.0.0.1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:25:20 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>127.0.0.1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=127.0.0.1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 11:26:05 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:34:09 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:34:20 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:34:56 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:35:53 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:36:43 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:37:18 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:38:05 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:39:43 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:39:53 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:41:06 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:41:18 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> ExternalLoginConfirmation
+message>>> Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+InnerException>>>
+TargetSite>>>System.Threading.Tasks.Task`1[System.Int32] SaveChangesAsync(System.Threading.CancellationToken)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 06:44:16 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@hotmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:05:06 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:15:19 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:17:09 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:17:51 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:18:02 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:18:53 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:19:17 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:19:56 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>127.0.0.1
+BrowserInfo>>>RemoteUser=alnafagalsudani@gmail.com;
+RemoteHost=127.0.0.1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/04/42 09:20:35 م
+-------------------------------------------------------------------------------------------------------------------------------------
+{
+  "type" : "https://developer.bulksms.com/json/v1/errors#insufficient-credits",
+  "title" : "Insufficient Credits",
+  "status" : 403
+}
+
+controller>>> Account
+action>>> UserProfileJson
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=fawazalmogadem@yahoo.com;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>11/05/42 05:19:37 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The model backing the 'ApplicationDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+InnerException>>>
+TargetSite>>>Void InitializeDatabase(TContext)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>17/05/42 11:47:08 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> VerifyCode
+message>>> C:\Users\fawaz\AppData\Local\Temp\Temporary ASP.NET Files\vs\19725436\b4658ed4\App_Web_verifycode.cshtml.5f83eb8c.wr3ei8py.0.cs(31): error CS0246: The type or namespace name 'DelalaLicPanel' could not be found (are you missing a using directive or an assembly reference?)
+InnerException>>>
+TargetSite>>>System.CodeDom.Compiler.CompilerResults Compile()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>25/05/42 06:58:27 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> ForgetPass
+message>>> تعذر تحليل الاسم البعيد: 'api.bulksms.com'
+InnerException>>>
+TargetSite>>>System.IO.Stream GetRequestStream(System.Net.TransportContext ByRef)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>25/05/42 07:01:28 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> ForgetPass
+message>>> يتعذر إجراء ربط في وقت التشغيل على مرجع فارغ
+InnerException>>>
+TargetSite>>>System.Object CallSite.Target(System.Runtime.CompilerServices.Closure, System.Runtime.CompilerServices.CallSite, System.Object)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome87;
+Name=Chrome;
+Version=87.0;
+MajorVersion=87;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/05/42 09:52:15 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> حدث خطأ متعلق بالشبكة أو محدد لمثيل محدد أثناء تأسيس اتصال بملقم SQL Server. لم يتم العثور على الملقم أو أنه لم يكن قابلاً للوصول إليه. تحقق من صحة اسم المثيل ومن تهيئة ملقم  SQL Server بحيث يتيح الاتصالات البعيدة. (provider: Named Pipes Provider, error: 40 - تعذر فتح الاتصال بـ SQL Server)
+InnerException>>>System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+TargetSite>>>Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome90;
+Name=Chrome;
+Version=90.0;
+MajorVersion=90;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>16/09/1442 10:22:06 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The provided anti-forgery token was meant for a different claims-based user than the current user.
+InnerException>>>
+TargetSite>>>Void ValidateTokens(System.Web.HttpContextBase, System.Security.Principal.IIdentity, System.Web.Helpers.AntiXsrf.AntiForgeryToken, System.Web.Helpers.AntiXsrf.AntiForgeryToken)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome90;
+Name=Chrome;
+Version=90.0;
+MajorVersion=90;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>17/09/1442 12:02:26 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> Unable to complete operation. The supplied SqlConnection does not specify an initial catalog or AttachDBFileName.
+InnerException>>>
+TargetSite>>>Void GetOrGenerateDatabaseNameAndGetFileNames(System.Data.SqlClient.SqlConnection, System.String ByRef, System.String ByRef, System.String ByRef)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome90;
+Name=Chrome;
+Version=90.0;
+MajorVersion=90;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>10/10/1442 10:57:14 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> الكلمة الأساسية غير معتمدة: 'catalog'.
+InnerException>>>
+TargetSite>>>System.Data.Common.NameValuePair ParseInternal(System.Collections.Hashtable, System.String, Boolean, System.Collections.Hashtable, Boolean)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome90;
+Name=Chrome;
+Version=90.0;
+MajorVersion=90;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>10/10/1442 11:01:32 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The provided anti-forgery token was meant for a different claims-based user than the current user.
+InnerException>>>
+TargetSite>>>Void ValidateTokens(System.Web.HttpContextBase, System.Security.Principal.IIdentity, System.Web.Helpers.AntiXsrf.AntiForgeryToken, System.Web.Helpers.AntiXsrf.AntiForgeryToken)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=Bader1@gmail.com;
+RemoteHost=::1;
+Type=Chrome90;
+Name=Chrome;
+Version=90.0;
+MajorVersion=90;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>10/12/1442 11:12:12 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@test.com;
+RemoteHost=::1;
+Type=Chrome90;
+Name=Chrome;
+Version=90.0;
+MajorVersion=90;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>10/14/1442 10:38:08 م
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=Hmood@gmail.com;
+RemoteHost=::1;
+Type=Chrome95;
+Name=Chrome;
+Version=95.0;
+MajorVersion=95;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>07/11/2021 08:04:29
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> UserProfileJson
+message>>> Object reference not set to an instance of an object.
+InnerException>>>
+TargetSite>>>System.Web.Mvc.JsonResult UserProfileJson()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=Hmood@gmail.com;
+RemoteHost=::1;
+Type=Chrome95;
+Name=Chrome;
+Version=95.0;
+MajorVersion=95;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>09/11/2021 02:37:08
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> The provided anti-forgery token was meant for a different claims-based user than the current user.
+InnerException>>>
+TargetSite>>>Void ValidateTokens(System.Web.HttpContextBase, System.Security.Principal.IIdentity, System.Web.Helpers.AntiXsrf.AntiForgeryToken, System.Web.Helpers.AntiXsrf.AntiForgeryToken)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=nif11@gmail.com;
+RemoteHost=::1;
+Type=Chrome96;
+Name=Chrome;
+Version=96.0;
+MajorVersion=96;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>12/24/2021 2:28:17 PM
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> حدث خطأ متعلق بالشبكة أو محدد لمثيل محدد أثناء تأسيس اتصال بملقم SQL Server. لم يتم العثور على الملقم أو أنه لم يكن قابلاً للوصول إليه. تحقق من صحة اسم المثيل ومن تهيئة ملقم  SQL Server بحيث يتيح الاتصالات البعيدة. (provider: Named Pipes Provider, error: 40 - تعذر فتح الاتصال بـ SQL Server)
+InnerException>>>System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+TargetSite>>>Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome96;
+Name=Chrome;
+Version=96.0;
+MajorVersion=96;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>24/05/43 09:13:55 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> حدث خطأ متعلق بالشبكة أو محدد لمثيل محدد أثناء تأسيس اتصال بملقم SQL Server. لم يتم العثور على الملقم أو أنه لم يكن قابلاً للوصول إليه. تحقق من صحة اسم المثيل ومن تهيئة ملقم  SQL Server بحيث يتيح الاتصالات البعيدة. (provider: Named Pipes Provider, error: 40 - تعذر فتح الاتصال بـ SQL Server)
+InnerException>>>System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+TargetSite>>>Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome96;
+Name=Chrome;
+Version=96.0;
+MajorVersion=96;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>5/24/1443 17:00:04
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Index
+message>>> لم يتم تعيين مرجع كائن لمثيل كائن.
+InnerException>>>
+TargetSite>>>Void Execute()
+Requester>>>::1
+BrowserInfo>>>RemoteUser=admin@quran-inst.edu;
+RemoteHost=::1;
+Type=Chrome97;
+Name=Chrome;
+Version=97.0;
+MajorVersion=97;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>7/3/1443 11:26:08
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> حدث خطأ متعلق بالشبكة أو محدد لمثيل محدد أثناء تأسيس اتصال بملقم SQL Server. لم يتم العثور على الملقم أو أنه لم يكن قابلاً للوصول إليه. تحقق من صحة اسم المثيل ومن تهيئة ملقم  SQL Server بحيث يتيح الاتصالات البعيدة. (provider: Named Pipes Provider, error: 40 - تعذر فتح الاتصال بـ SQL Server)
+InnerException>>>System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+TargetSite>>>Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome102;
+Name=Chrome;
+Version=102.0;
+MajorVersion=102;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/11/43 11:25:35 ص
+-------------------------------------------------------------------------------------------------------------------------------------
+controller>>> Account
+action>>> Login
+message>>> حدث خطأ متعلق بالشبكة أو محدد لمثيل محدد أثناء تأسيس اتصال بملقم SQL Server. لم يتم العثور على الملقم أو أنه لم يكن قابلاً للوصول إليه. تحقق من صحة اسم المثيل ومن تهيئة ملقم  SQL Server بحيث يتيح الاتصالات البعيدة. (provider: Named Pipes Provider, error: 40 - تعذر فتح الاتصال بـ SQL Server)
+InnerException>>>System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+TargetSite>>>Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)
+Requester>>>::1
+BrowserInfo>>>RemoteUser=;
+RemoteHost=::1;
+Type=Chrome102;
+Name=Chrome;
+Version=102.0;
+MajorVersion=102;
+MinorVersion=0;
+Platform=WinNT;
+SupportsCookies=True;
+SupportsJavaScript=3.0;
+SupportsActiveXControls=False;
+SupportsJavaScriptVersion=1.7
+
+Time>>>26/11/43 11:26:06 ص
+-------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,147 @@
+﻿@using System.Data.Entity
+@using QuranEducation.Helpers
+@using QuranEducation.Models
+@model List<Lecture>
+@{
+    ViewBag.Title = QuranRes.TimeTable;
+}
+@section styles{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <style>
+        .dataTables_paginate, .dataTables_filter {
+            float: right !important;
+        }
+
+        .dataTables_length {
+            width: 300px;
+            float: left;
+        }
+    </style>
+}
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-building"></i>@QuranRes.InstLecList</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body">
+                @{
+                    if (Model != null && Model.GroupBy(m => m.LecStrartTime.Date).Count()>0)
+                    {
+                        var maxLecsCountInWeek = Model.GroupBy(m => m.LecStrartTime.Date).Max(m => m.Count());
+                        var satDate = DateTime.Now.StartOfWeek(DayOfWeek.Saturday);
+
+                        <br />
+                        <table id="Lecs" class="table table-bordered table-hover " style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>@QuranRes.Day</th>
+                                    @for (int i = 0; i < maxLecsCountInWeek; i++)
+                                    {
+                                        <th>@QuranRes.LecTitleTimeTable @(i + 1)</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    string[] daysOfWeek = { QuranRes.Sat, QuranRes.Sun, QuranRes.Mon, QuranRes.Tus, QuranRes.Wed, QuranRes.Thur, QuranRes.Fri };
+                                    for (int i = 0; i < 7; i++)
+                                    {
+                                        <tr>
+                                            @{
+                                                var DateOfThisDay = satDate.AddDays(i).Date;
+                                                var LecsOfThisDate = Model.Where(m => m.LecStrartTime.Date == DateOfThisDay).ToList();
+
+                                                <td>
+                                                    @daysOfWeek[i]<br />
+                                                    @DateOfThisDay.ToString("MM/dd/yyyy")
+                                                </td>
+                                                for (int j = 0; j < LecsOfThisDate.Count; j++)
+                                                {
+                                                    var instName = GeneralHelper.GetInstFullName(LecsOfThisDate[j].Tutorial.InstUName);
+                                                    <td>
+                                                        <a class="btn btn-link" href="~/Lecture/HandlLecture/@LecsOfThisDate[j].Id">@LecsOfThisDate[j].Title</a><br />
+                                                        @QuranRes.From @string.Format("{0:hh:mm tt}", LecsOfThisDate[j].LecStrartTime) <br />
+                                                        - @QuranRes.To @string.Format("{0:hh:mm tt}", LecsOfThisDate[j].LecEndTime) <br />
+                                                        @instName
+                                                    </td>
+                                                }
+                                                for (int k = LecsOfThisDate.Count; k < maxLecsCountInWeek; k++)
+                                                {
+                                                    <td></td>
+                                                }
+
+                                            }
+                                        </tr>
+                                    }
+                                }
+
+                            </tbody>
+                        </table>
+                        <br />
+                    }
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section scripts{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let sEmptyTable='@QuranRes.DtsEmptyTable';
+            let sLengthMenu='@QuranRes.DtsLengthMenu';
+            let sZeroRecords ='@QuranRes.DtsZeroRecords';
+
+            let sInfo='@QuranRes.DtsInfo';
+            let sInfoEmpty='@QuranRes.DtsInfoEmpty';
+            let sInfoFiltered='@QuranRes.DtsInfoFiltered';
+            let sSearch='@QuranRes.DtsSearch';
+            let sFirst='@QuranRes.DtsFirst';
+            let sPrevious='@QuranRes.DtsPrevious';
+            let sNext='@QuranRes.DtsNext';
+            let sLast='@QuranRes.DtsLast';
+            let sSortAscending='@QuranRes.DtsSortAscending';
+            let sSortDescending='@QuranRes.DtsSortDescending';
+            $("#Lecs").DataTable({
+                "language": {
+                    "sEmptyTable": sEmptyTable,
+                    "sLoadingRecords": "جارٍ التحميل...",
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": sLengthMenu,
+                    "sZeroRecords": sZeroRecords,
+                    "sInfo": sInfo,
+                    "sInfoEmpty": sInfoEmpty,
+                    "sInfoFiltered": sInfoFiltered,
+                    "sInfoPostFix": "",
+                    "sSearch": sSearch,
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": sFirst,
+                        "sPrevious": sPrevious,
+                        "sNext": sNext,
+                        "sLast": sLast
+                    },
+                    "oAria": {
+                        "sSortAscending": sSortAscending,
+                        "sSortDescending": sSortDescending
+                    }
+                },
+                "sorting": false
+            });
+        });
+    </script>
+}
+
+

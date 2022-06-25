@@ -1,0 +1,38 @@
+﻿@model QuranEducation.Models.ExternalLoginConfirmationViewModel
+@{
+    ViewBag.Title = QuranRes.StCompleteRegister;
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@QuranRes.StAssociateYourAccount @ViewBag.LoginProvider @QuranRes.StWithMyAccount.</h3>
+
+@using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <h4>@QuranRes.StAssociationForm</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <p class="text-info">
+        @QuranRes.StSuccessExternalAuth  <strong>@ViewBag.LoginProvider</strong>.
+        @QuranRes.StFinishLoginMsg
+    </p>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @Html.HiddenFor(m=>m.Email)
+    @Html.HiddenFor(m=>m.FullName)
+    @Html.HiddenFor(m=>m.ProfilePic)
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="@QuranRes.btnSend" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

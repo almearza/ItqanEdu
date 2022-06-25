@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe" xml:space="preserve">
+    <value>about me</value>
+  </data>
+  <data name="Acceptable" xml:space="preserve">
+    <value>Acceptable</value>
+  </data>
+  <data name="AcceptInst" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="AccountWasLocked" xml:space="preserve">
+    <value>Your Account was temporary Locked out</value>
+  </data>
+  <data name="AchievementFile" xml:space="preserve">
+    <value>Achievement File</value>
+  </data>
+  <data name="AddAssMsg2" xml:space="preserve">
+    <value> Add or Edited Assignment </value>
+  </data>
+  <data name="AddLecMsg1" xml:space="preserve">
+    <value>Instructor </value>
+  </data>
+  <data name="AddLecMsg2" xml:space="preserve">
+    <value> Added or edited New Lecture </value>
+  </data>
+  <data name="AddLecMsg3" xml:space="preserve">
+    <value> to Tutorial </value>
+  </data>
+  <data name="AdministrativeForms" xml:space="preserve">
+    <value>Admin Forms</value>
+  </data>
+  <data name="Alreadyeval" xml:space="preserve">
+    <value>You already Evaluate this instructor before</value>
+  </data>
+  <data name="ArriveInATime" xml:space="preserve">
+    <value>The teacher attends on time</value>
+  </data>
+  <data name="AssAttach" xml:space="preserve">
+    <value>Assignment-Homework Attachments</value>
+  </data>
+  <data name="AssDegree" xml:space="preserve">
+    <value> Assignment-Homework Degree</value>
+  </data>
+  <data name="AssDesc" xml:space="preserve">
+    <value>Assignment-Homework Details</value>
+  </data>
+  <data name="assEndBeggerThanLecStart" xml:space="preserve">
+    <value>Assignment-homework End Date and time should be after start date and time</value>
+  </data>
+  <data name="AssEndDate" xml:space="preserve">
+    <value>Assignment-Homework End Date</value>
+  </data>
+  <data name="AssEndTime" xml:space="preserve">
+    <value>Assignment-Homework End Time</value>
+  </data>
+  <data name="AssigmentList" xml:space="preserve">
+    <value>Assignments and Homeworks List</value>
+  </data>
+  <data name="AssigmentTitle" xml:space="preserve">
+    <value>Assignments and Homeworks</value>
+  </data>
+  <data name="AssSolution" xml:space="preserve">
+    <value>Assignment Solution</value>
+  </data>
+  <data name="AssSolutions" xml:space="preserve">
+    <value>Assignments Soluations</value>
+  </data>
+  <data name="AssStDate" xml:space="preserve">
+    <value>Assignment-Homework Start Date</value>
+  </data>
+  <data name="AssStTime" xml:space="preserve">
+    <value>Assignment-Homework Start Time</value>
+  </data>
+  <data name="assTimeError" xml:space="preserve">
+    <value>Assignment-homework start date and time should be after current date and time</value>
+  </data>
+  <data name="AssTitle" xml:space="preserve">
+    <value>Assignment-Homework Title</value>
+  </data>
+  <data name="AssTutNotFound" xml:space="preserve">
+    <value>Tutorial not found for this Assignment</value>
+  </data>
+  <data name="AssType" xml:space="preserve">
+    <value>Assignment or Homework</value>
+  </data>
+  <data name="AsstypeTitle" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="AttRemoved" xml:space="preserve">
+    <value>Attachment deleted</value>
+  </data>
+  <data name="AttRemoveError" xml:space="preserve">
+    <value>Error Occured When try to delete this attachment</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>Back To Home</value>
+  </data>
+  <data name="BackTut" xml:space="preserve">
+    <value>back</value>
+  </data>
+  <data name="BOD" xml:space="preserve">
+    <value>Birth of Date</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="CertifyError" xml:space="preserve">
+    <value>Please select degree for this studen</value>
+  </data>
+  <data name="ChangePassFailed" xml:space="preserve">
+    <value>unable to find this user or old password was wrong !</value>
+  </data>
+  <data name="ChangePassLater" xml:space="preserve">
+    <value>you can change password later</value>
+  </data>
+  <data name="ChangePassTextUrl" xml:space="preserve">
+    <value>Change My Password</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="codeNotValid" xml:space="preserve">
+    <value>invalid code</value>
+  </data>
+  <data name="ConfirmPassErrorText" xml:space="preserve">
+    <value>Passwords not matches</value>
+  </data>
+  <data name="ConfirmPassText" xml:space="preserve">
+    <value>ReEnter Password</value>
+  </data>
+  <data name="CreateAss" xml:space="preserve">
+    <value>Create Assignment - Homework</value>
+  </data>
+  <data name="CreateLec" xml:space="preserve">
+    <value>Create Lecture</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="DeleteAttQues" xml:space="preserve">
+    <value>Are you sure you want to remove this attachment ?</value>
+  </data>
+  <data name="DtsEmptyTable" xml:space="preserve">
+    <value>There is no data in this table</value>
+  </data>
+  <data name="DtsFirst" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="DtsInfo" xml:space="preserve">
+    <value>show_START_ to_END_ from total _TOTAL_ record</value>
+  </data>
+  <data name="DtsInfoEmpty" xml:space="preserve">
+    <value>shoing 0  to 0 from total 0 records</value>
+  </data>
+  <data name="DtsInfoFiltered" xml:space="preserve">
+    <value>(filtered from _MAX_ records)</value>
+  </data>
+  <data name="DtsLast" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="DtsLengthMenu" xml:space="preserve">
+    <value>show _MENU_ records</value>
+  </data>
+  <data name="DtsNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="DtsPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="DtsSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="DtsSortAscending" xml:space="preserve">
+    <value>Ascending Sort: </value>
+  </data>
+  <data name="DtsSortDescending" xml:space="preserve">
+    <value>Descending Sort:</value>
+  </data>
+  <data name="DtsZeroRecords" xml:space="preserve">
+    <value>no records to show</value>
+  </data>
+  <data name="EditProfileBtn" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="EduYear" xml:space="preserve">
+    <value>Academic year</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailAlreadyTaken" xml:space="preserve">
+    <value>This Email is Already Taken by another person</value>
+  </data>
+  <data name="EnName" xml:space="preserve">
+    <value>Name in English Language</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>Enter Code we sent to your Email</value>
+  </data>
+  <data name="EnterCorrectPhone" xml:space="preserve">
+    <value>enter valid email this email not found</value>
+  </data>
+  <data name="ErrorSumTitle" xml:space="preserve">
+    <value>please fix these errors</value>
+  </data>
+  <data name="ErrorWhileResetPass" xml:space="preserve">
+    <value>Error While Reset Password</value>
+  </data>
+  <data name="EvalSent" xml:space="preserve">
+    <value>Your Evaluation was send</value>
+  </data>
+  <data name="EvalStudent" xml:space="preserve">
+    <value>Evaluate Student</value>
+  </data>
+  <data name="evaluated" xml:space="preserve">
+    <value>evaluated</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>Excellent</value>
+  </data>
+  <data name="FatherNoti" xml:space="preserve">
+    <value>Father's Notis</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>This field is required</value>
+  </data>
+  <data name="FileTitle" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="GoodCommunications" xml:space="preserve">
+    <value>The teacher communicates with you well and kindly</value>
+  </data>
+  <data name="GoodInStudy" xml:space="preserve">
+    <value>The teaching method is appropriate </value>
+  </data>
+  <data name="GoodInUsingBoard" xml:space="preserve">
+    <value>The teacher uses the board effectively</value>
+  </data>
+  <data name="GoodInVoice" xml:space="preserve">
+    <value>You hear the yeacher clearly</value>
+  </data>
+  <data name="HMtypeTitle" xml:space="preserve">
+    <value>Homework</value>
+  </data>
+  <data name="HomeIndexTitle" xml:space="preserve">
+    <value>Main Page</value>
+  </data>
+  <data name="HomeIndexWelcome" xml:space="preserve">
+    <value>welcome of you in Portal of Etkan</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>Home Phone</value>
+  </data>
+  <data name="InboxMessageDate" xml:space="preserve">
+    <value>Arrival at</value>
+  </data>
+  <data name="InboxMessageDelete" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="InboxMessageFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="InboxMessageOpen" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="InboxMessageTitle" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="InboxTitle" xml:space="preserve">
+    <value>InBox</value>
+  </data>
+  <data name="InstDescError" xml:space="preserve">
+    <value>Please Enter full description about you</value>
+  </data>
+  <data name="InstEval" xml:space="preserve">
+    <value>Instructor Evaluation</value>
+  </data>
+  <data name="instHasNotThisTut" xml:space="preserve">
+    <value>this tutorial not belong to this instructor</value>
+  </data>
+  <data name="InstImgError" xml:space="preserve">
+    <value>Please Select 220 px * 220 px image</value>
+  </data>
+  <data name="InstLecList" xml:space="preserve">
+    <value>List of Lectures</value>
+  </data>
+  <data name="InstName" xml:space="preserve">
+    <value>Instructor Name</value>
+  </data>
+  <data name="InstProfileUrl" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="InstTitleError" xml:space="preserve">
+    <value>please enter job title</value>
+  </data>
+  <data name="InstTut" xml:space="preserve">
+    <value>My Tutorials</value>
+  </data>
+  <data name="InstTutList" xml:space="preserve">
+    <value>List of Tutorials</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Invalid Email !</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LecAttach" xml:space="preserve">
+    <value>Open Lecture Attachment</value>
+  </data>
+  <data name="LecDate" xml:space="preserve">
+    <value>Lecture Date</value>
+  </data>
+  <data name="LecDesc" xml:space="preserve">
+    <value>Lecture Description</value>
+  </data>
+  <data name="LecEndBeggerThanLecStart" xml:space="preserve">
+    <value>end time of the lecture should be after start time of the lecture</value>
+  </data>
+  <data name="LecEndTime" xml:space="preserve">
+    <value>Lecture End Time</value>
+  </data>
+  <data name="LecsInSameTimeError" xml:space="preserve">
+    <value>there are lectures in these times please select another start and end time</value>
+  </data>
+  <data name="LecStTime" xml:space="preserve">
+    <value>Lecture Start Time</value>
+  </data>
+  <data name="LecTimeError" xml:space="preserve">
+    <value>the time of lecture should be begger than current time</value>
+  </data>
+  <data name="LecTitle" xml:space="preserve">
+    <value>Lecture Title</value>
+  </data>
+  <data name="LecTitleTimeTable" xml:space="preserve">
+    <value>Lecture</value>
+  </data>
+  <data name="LectureTitle" xml:space="preserve">
+    <value>Lectures</value>
+  </data>
+  <data name="LecTutNotFound" xml:space="preserve">
+    <value>Tutorial not found for this lecture</value>
+  </data>
+  <data name="LecVirtualUrl" xml:space="preserve">
+    <value>Virtual Room Url</value>
+  </data>
+  <data name="ListOfInBox" xml:space="preserve">
+    <value>List of incomming messages</value>
+  </data>
+  <data name="LoginBtnVal" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginCreateStAccount" xml:space="preserve">
+    <value>Create new student account</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>Enter your Email</value>
+  </data>
+  <data name="LoginFailedMsg" xml:space="preserve">
+    <value>login failed</value>
+  </data>
+  <data name="LoginForgetPass" xml:space="preserve">
+    <value>Forget my password</value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>Enter your password</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>QuranInstitude - Login</value>
+  </data>
+  <data name="LoginTopHeader" xml:space="preserve">
+    <value>User Login</value>
+  </data>
+  <data name="LoginToSub" xml:space="preserve">
+    <value>Login to subscribe</value>
+  </data>
+  <data name="LogoutTextUrl" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ManagementAccept" xml:space="preserve">
+    <value>Your Request to join tutorial was accepted</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="MyAssignment" xml:space="preserve">
+    <value>My Assignment</value>
+  </data>
+  <data name="MyEvaluate" xml:space="preserve">
+    <value>My Evaluate</value>
+  </data>
+  <data name="MyTutorials" xml:space="preserve">
+    <value>My Tutorials</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="NameInNational" xml:space="preserve">
+    <value>Name in national language</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="NewPassErrorText" xml:space="preserve">
+    <value>Enter New Password</value>
+  </data>
+  <data name="NewPassLength" xml:space="preserve">
+    <value>the length of new password must more than 6 and less than 50 characters</value>
+  </data>
+  <data name="NewPassText" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="NoPrevAttForAss" xml:space="preserve">
+    <value>No Attachment uploaded for this Assignment-Homework</value>
+  </data>
+  <data name="NoPrevAttForSol" xml:space="preserve">
+    <value>No Attachment for this solution</value>
+  </data>
+  <data name="NotAcceptInst" xml:space="preserve">
+    <value>Notaccept</value>
+  </data>
+  <data name="OldPassErrorText" xml:space="preserve">
+    <value>Old Password is wrong</value>
+  </data>
+  <data name="OldPassText" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="OtherInstDataError" xml:space="preserve">
+    <value>email,full name ,phone number are required</value>
+  </data>
+  <data name="PassMsg" xml:space="preserve">
+    <value>for send sms And Your Password is</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="passwordsent" xml:space="preserve">
+    <value>Password Sent to your phone</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone +xxxxx</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>Phone containing country code</value>
+  </data>
+  <data name="Poor" xml:space="preserve">
+    <value>Poor</value>
+  </data>
+  <data name="ProfileImgLable" xml:space="preserve">
+    <value>Image 220*220</value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="RemoveAtt" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="RequestedOrSubscribed" xml:space="preserve">
+    <value>Requested Or Subscribed</value>
+  </data>
+  <data name="ResidentCountry" xml:space="preserve">
+    <value>Country of Resident</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>Satarday</value>
+  </data>
+  <data name="ShowAtt" xml:space="preserve">
+    <value>Show Attachment</value>
+  </data>
+  <data name="ShowStudentAssignments" xml:space="preserve">
+    <value>Show Student Assignments</value>
+  </data>
+  <data name="ShowTutDetails" xml:space="preserve">
+    <value>Show Tutorial Details</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Etkan</value>
+  </data>
+  <data name="SolAttach" xml:space="preserve">
+    <value>Solution Attachments</value>
+  </data>
+  <data name="SolDesc" xml:space="preserve">
+    <value>Solution</value>
+  </data>
+  <data name="StAllTut" xml:space="preserve">
+    <value>Available tutorials</value>
+  </data>
+  <data name="StAssociateYourAccount" xml:space="preserve">
+    <value>Associate your</value>
+  </data>
+  <data name="StAssociationForm" xml:space="preserve">
+    <value>Association Form</value>
+  </data>
+  <data name="StCertRequired" xml:space="preserve">
+    <value>Last Academic  Certificate Required</value>
+  </data>
+  <data name="StCompleteRegister" xml:space="preserve">
+    <value>Complete Registeration</value>
+  </data>
+  <data name="StCreateAccountTitle" xml:space="preserve">
+    <value>Create - Edit Student Account</value>
+  </data>
+  <data name="StDegree" xml:space="preserve">
+    <value>Student Degree</value>
+  </data>
+  <data name="StExLoginAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="StExLoginBtnFace" xml:space="preserve">
+    <value>facebook login</value>
+  </data>
+  <data name="StExLoginUsing" xml:space="preserve">
+    <value>Login using facebook account</value>
+  </data>
+  <data name="StFinishLoginMsg" xml:space="preserve">
+    <value>Please enter a phone number for this site below and click the Register button to finish logging in.</value>
+  </data>
+  <data name="StLoginFailure" xml:space="preserve">
+    <value>Login Failure</value>
+  </data>
+  <data name="StRegReq1" xml:space="preserve">
+    <value>Conditions of registration</value>
+  </data>
+  <data name="StRegReq10" xml:space="preserve">
+    <value>9- Attending the introductory session on the study plan and passing the personal interview aimed at identifying the student’s capabilities, determining his level, and guiding him to the appropriate study plan</value>
+  </data>
+  <data name="StRegReq11" xml:space="preserve">
+    <value>10- Buying the educational curriculum, which is the printed or electronic book of Al Qaida Al Noorania</value>
+  </data>
+  <data name="StRegReq2" xml:space="preserve">
+    <value>1- The applicant must be 7 years old or more</value>
+  </data>
+  <data name="StRegReq3" xml:space="preserve">
+    <value>2- Memorizing the Arabic letters before starting the course.</value>
+  </data>
+  <data name="StRegReq4" xml:space="preserve">
+    <value>3- Seriousness and commitment to attend until the end of the course.</value>
+  </data>
+  <data name="StRegReq5" xml:space="preserve">
+    <value>4- That the student is good at using the computer, or there is someone who helps him to do so with the student</value>
+  </data>
+  <data name="StRegReq6" xml:space="preserve">
+    <value>5- That the student adhere to public morals and etiquette for learning the Qur’an</value>
+  </data>
+  <data name="StRegReq7" xml:space="preserve">
+    <value>6- Parents are obligated to follow the child during the educational session</value>
+  </data>
+  <data name="StRegReq8" xml:space="preserve">
+    <value>7- Fill out the registration form, write the required information accurately, and make sure to read the terms and conditions</value>
+  </data>
+  <data name="StRegReq9" xml:space="preserve">
+    <value>8- Register on the platform using e-mail and phone number for verification</value>
+  </data>
+  <data name="StScore" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="StSuccessExternalAuth" xml:space="preserve">
+    <value>You've successfully authenticated with</value>
+  </data>
+  <data name="StudentCert" xml:space="preserve">
+    <value>Last Academic  Certificate</value>
+  </data>
+  <data name="StudentCertify" xml:space="preserve">
+    <value>Certify Student</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Students</value>
+  </data>
+  <data name="StudentsList" xml:space="preserve">
+    <value>Students List</value>
+  </data>
+  <data name="StUnsuccessfullLgin" xml:space="preserve">
+    <value>Unsuccessful login with service.</value>
+  </data>
+  <data name="StWithMyAccount" xml:space="preserve">
+    <value>With your Account</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubStudents" xml:space="preserve">
+    <value>SubscribedStudents</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="TechProblemInTutorial" xml:space="preserve">
+    <value>You have technical problems during the session</value>
+  </data>
+  <data name="Thur" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="TimeTable" xml:space="preserve">
+    <value>Time Table</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Tus" xml:space="preserve">
+    <value>Tuseday</value>
+  </data>
+  <data name="TutAssignToInst" xml:space="preserve">
+    <value>Tutorail assigned to you</value>
+  </data>
+  <data name="TutCloseDate" xml:space="preserve">
+    <value>Tutorial Close Date</value>
+  </data>
+  <data name="TutCount" xml:space="preserve">
+    <value>Count Of Lictures</value>
+  </data>
+  <data name="TutDetails" xml:space="preserve">
+    <value>Tutorial Details</value>
+  </data>
+  <data name="TutInstName" xml:space="preserve">
+    <value>Instructor</value>
+  </data>
+  <data name="TutLang" xml:space="preserve">
+    <value>Language of Tutorial</value>
+  </data>
+  <data name="TutLectures" xml:space="preserve">
+    <value>Tutorial Lectures</value>
+  </data>
+  <data name="TutOpenDate" xml:space="preserve">
+    <value>Tutorial Date</value>
+  </data>
+  <data name="TutorialTitle" xml:space="preserve">
+    <value>Tutorial Title</value>
+  </data>
+  <data name="UserNameMsg" xml:space="preserve">
+    <value>Yuor UserName is</value>
+  </data>
+  <data name="VerifyCode" xml:space="preserve">
+    <value>Code Verfication</value>
+  </data>
+  <data name="VGood" xml:space="preserve">
+    <value>Very Good</value>
+  </data>
+  <data name="VideoUrl" xml:space="preserve">
+    <value>Lecture Video Url</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="MessageRegister" xml:space="preserve">
+    <value>Please choose the language you want to study in</value>
+  </data>
+</root>

@@ -1,0 +1,87 @@
+
+
+@font-face {
+    font-family: 'Tajawal-Medium';
+    src: url(../fonts/Tajawal-Medium.eot);
+    src: url(../fonts/Tajawal-Medium.eot?#iefix) format("embedded-opentype"),url(../fonts/Tajawal-Medium.ttf) format("truetype"),url(../fonts/Tajawal-Medium.svg#Tajawal-Medium) format("svg")
+}
+body
+{
+    font-family: Tajawal-Medium;
+    color: #fff;
+    background-image: url(/img/amanabg.png);
+    background-size: cover;
+}
+.signin
+{
+    background: rgba(00,99,66,0.5);
+    padding: 40px;
+    width: 250px;
+    margin: auto;
+    margin-top: 90px;
+    height: 440px;
+    margin-left: 180x;
+	border-radius:8px 8px 8px 8px;
+    
+}
+form
+{
+    width: 240px;
+    text-align: center;
+}
+input
+{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: Tajawal-Medium;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+input[type=button]
+{
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=button]:hover
+{
+    color: #fff;
+    background-color: #009966;
+}
+h2
+{
+    color: white;
+    
+}
+a
+{
+    color: #ffd700;
+    text-decoration: blink;
+}
+a:hover
+{
+    color: #fff;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+::placeholder {
+    color:aliceblue;
+    opacity: 0.8; /* Firefox */
+}

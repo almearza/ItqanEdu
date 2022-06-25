@@ -1,0 +1,77 @@
+﻿@using QuranEducation.Models.VM
+@using QuranEducation.Helpers
+@model TutorialVM
+@{
+    ViewBag.Title = QuranRes.InstTutList;
+}
+
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget">
+            <div class="widget-title">
+                <h4><i class="icon-user"></i>@ViewBag.Title</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+            @if (Model != null)
+            {
+                <div class="widget-body">
+                    <div class="span3">
+                        <div class="text-center profile-pic">
+                            <img src="~/images/tutorial/@Model.ImageUrl" alt="">
+                        </div>
+
+                    </div>
+                    <div class="span6">
+                        <h4>@Model.Title <br /></h4>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td class="span2">@QuranRes.TutInstName</td>
+                                    <td>
+                                        @GeneralHelper.GetInstFullName(Model.InstUName)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="span2">@QuranRes.TutOpenDate</td>
+                                    <td>
+                                        @Model.OpenDate.ToString("MM/dd/yyyy")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="span2">@QuranRes.TutCloseDate</td>
+                                    <td>
+                                        @Model.CloseDate.ToString("MM/dd/yyyy")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="span2">@QuranRes.TutLang</td>
+                                    <td>
+                                        @LanguageMang.AvailableLanguages.FirstOrDefault(m => m.Code == Model.LangCode).Name
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4>@QuranRes.TutDetails</h4>
+                        <div class="">
+                            <address>
+                                @Html.Raw(Model.Descr)
+                            </address>
+                        </div>
+                        <a class="btn btn-primary" href="~/Report/GetLectures/@Model.Id">@QuranRes.TutLectures</a>
+                        <a class="btn btn-primary" href="~/Report/GetAssignments/@Model.Id">@QuranRes.AssigmentTitle</a>
+                    </div>
+                    <div class="space5"></div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,63 @@
+﻿@using QuranEducation.Models.VM
+@using QuranEducation.Helpers
+@model QuranEducation.Models.RegisterViewModel
+@{
+    ViewBag.Title = "تسجيل مستخدم";
+}
+
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+{
+    <h2>@ViewBag.Title.</h2>
+    <br />
+    <div class="error-validation">
+        @Html.ValidationSummary(true, "فضلا عالج الأخطاء")
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @style = "resize:both;appearance:textarea", rows = 4 })
+        @Html.ValidationMessageFor(m => m.Email, "", new { style = "color:red;" })
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @style = "resize:both;appearance:textarea", rows = 4 })
+        @Html.ValidationMessageFor(m => m.Name, "", new { style = "color:red;" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PhoneNumber)
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", @style = "text-align: left;direction: ltr; ", @placeholder = "أدخل الجوال بدءا بمفتاح الدولة +XXX" })
+        @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { style = "color:red;" })
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.LangCode, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m=>m.LangCode, new SelectList(LanguageMang.AvailableLanguages, "Code", "Name"), new { @class = "form-control" })
+        
+    </div>
+    <div class="control-group">
+        @Html.LabelFor(m => m.RoleName)
+
+        <br />
+        @Html.RadioButtonFor(m => m.RoleName, RoleNames.AdminLevel)
+        <span>موظف إدارة</span>
+        <br />
+        <br />
+        @Html.RadioButtonFor(m => m.RoleName, RoleNames.InstructorLevel)
+        <span>معلم</span>
+        <br />
+
+        @Html.ValidationMessageFor(m => m.RoleName, "", new { style = "color:red;" })
+
+    </div>
+
+
+    @Html.HiddenFor(m => m.UserId)
+    @Html.AntiForgeryToken()
+    <br />
+    <button type="submit" class="btn btn-primary">حفظ</button>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

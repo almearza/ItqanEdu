@@ -1,0 +1,159 @@
+﻿@using QuranEducation.Models.VM
+@using QuranEducation.Helpers
+@using QuranEducation.Models
+@model UsersViewModel
+@{
+    ViewBag.Title = "المستخدمين";
+}
+@section styles{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+}
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-building"></i>قائمة المستخدمين</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body">
+
+                <br />
+                <div>
+                    @Html.ActionLink("إضافة مستخدم", "Register", "Account", null, new { @class = "btn btn-primary" })
+                </div>
+
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                }
+
+
+
+                <br />
+                <table id="users" class="table table-bordered table-hover " style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>الاسم</th>
+                            <th>البريد الإلكتروني</th>
+                            <th>رقم الهاتف</th>
+                            @*<th>رقم الهوية</th>*@
+                            <th>الصلاحية</th>
+                            <th>اللغة</th>
+                            <th>تعديل</th>
+                            <th>تعطيل | تفعيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (UserPlusRoleNameVM userPlusRoleVM in Model.Users)
+                            {
+                                var activate = (userPlusRoleVM.User.LockoutEndDateUtc != null && userPlusRoleVM.User.LockoutEndDateUtc > DateTime.Now) ? "تفعيل" : "تعطيل";
+                                <tr>
+                                    <td>@userPlusRoleVM.User.FullName</td>
+                                    <td>@userPlusRoleVM.User.Email</td>
+                                    <td>@userPlusRoleVM.User.PhoneNumber</td>
+                                    @*<td>@userPlusRoleVM.User.IdentityNo</td>*@
+                                    @{
+                                        var role = "";
+                                        if (userPlusRoleVM.RoleName == RoleNames.AdminLevel)
+                                        {
+                                            role = "الإدارة";
+                                        }
+                                        else if (userPlusRoleVM.RoleName == RoleNames.InstructorLevel)
+                                        {
+                                            role = "معلم";
+                                        }
+                                        else if (userPlusRoleVM.RoleName == RoleNames.StudentLevel)
+                                        {
+                                            role = "طالب";
+                                        }
+                                    }
+                                    <td>@role</td>
+                                    <td>@LanguageMang.AvailableLanguages.FirstOrDefault(m=>m.Code.ToLower() == userPlusRoleVM.User.LangCode).Name</td>
+
+                                    <td><a class="btn" href="~/Account/Edit/@userPlusRoleVM.User.Id">تعديل</a></td>
+                                    <td><a class="btn js-activate" data-user-id="@userPlusRoleVM.User.Id">@activate</a></td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section scripts{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/bootbox.js"></script>
+    <script src="~/Scripts/toastr.js"></script>
+    <script>
+        $(document).ready(function () {
+            var table = $("#users").DataTable({
+                "language": {
+                    "sEmptyTable": "ليست هناك بيانات متاحة في الجدول",
+                    "sLoadingRecords": "جارٍ التحميل...",
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": "أظهر _MENU_ مدخلات",
+                    "sZeroRecords": "لم يعثر على أية سجلات",
+                    "sInfo": "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+                    "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
+                    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                    "sInfoPostFix": "",
+                    "sSearch": "ابحث:",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "الأول",
+                        "sPrevious": "السابق",
+                        "sNext": "التالي",
+                        "sLast": "الأخير"
+                       
+                    },
+                    "oAria": {
+                        "sSortAscending": ": تفعيل لترتيب العمود تصاعدياً",
+                        "sSortDescending": ": تفعيل لترتيب العمود تنازلياً"
+                    }
+                }
+            });
+
+
+         
+            $("#users").on("click", ".js-activate", function () {
+
+                var button = $(this);
+                var form = $('#__AjaxAntiForgeryForm');
+                var token = $('input[name="__RequestVerificationToken"]', form).val();
+
+                bootbox.confirm("هل تريد " + $(button).text() + " هذا المستخدم ؟", function (result) {
+                    if (result) {
+                        $.ajax({
+                            type: "POST",
+                            url: '@Url.Content("~/Account/Activate/")' + button.attr("data-user-id"),
+                            data: {
+                                __RequestVerificationToken: token
+                            },
+                            success: function () {
+                                toastr.success("تم " + $(button).text() + " المستخدم بنجاح");
+                                var obisitText = "";
+                                if ($(button).text() === "تعطيل") { obisitText = "تفعيل" } else { obisitText = "تعطيل" }
+                                $(button).text(obisitText);
+                            },
+                            error: function (result) {
+                                toastr.error("حدث خطأ");
+
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

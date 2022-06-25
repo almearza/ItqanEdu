@@ -1,0 +1,165 @@
+﻿@using QuranEducation.Helpers
+@using QuranEducation.Models.VM
+@model List<TutorialVM>
+@{
+    ViewBag.Title = "الدورات التدريبية";
+}
+@section styles{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <style>
+        .dataTables_paginate, .dataTables_filter{
+            float:right !important;
+        }
+        .dataTables_length {
+            width: 300px;
+            float: left;
+        }
+    </style>
+}
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-building"></i>قائمة الدورات التدريبية</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body">
+
+                <br />
+                <div>
+                    @Html.ActionLink("إضافة دورة تدريبية", "HandlTutorial", "Tutorial", null, new { @class = "btn btn-primary" })
+                </div>
+
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                }
+
+
+
+                <br />
+                <table id="users" class="table table-bordered table-hover " style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>عنوان الدورة تدريبية</th>
+                            @*<th>الوصف</th>*@
+                            <th>تاريخ فتح الدورة</th>
+                            <th>تاريخ قفل الدورة</th>
+                            <th>الصورة</th>
+                            <th>اللغة</th>
+                            <th>المعلم</th>
+                            <th>المحاضرات</th>
+                            <th>الواجبات- الاختبارات</th>
+                            <th>تمت بواسطة</th>
+                            <th>تاريخ العملية</th>
+                            <th>عرض - تعديل</th>
+                            <th>تعطيل | تفعيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            foreach (var Tutorial in Model)
+                            {
+                                var activate = Tutorial.Active ? "تعطيل" : "تفعيل";
+                        <tr>
+                            <td>@Tutorial.Title</td>
+                            @*<td>@Html.Raw(Tutorial.Descr)</td>*@
+                            <td>@Tutorial.OpenDate</td>
+                            <td>@Tutorial.CloseDate</td>
+                            <td><a class="btn btn-primary" href="~/images/tutorial/@Tutorial.ImageUrl" target="_blank">فتح الصورة</a></td>
+                            <td>@LanguageMang.AvailableLanguages.FirstOrDefault(m => m.Code == Tutorial.LangCode).Name</td>
+                            <td>@GeneralHelper.GetInstFullName(Tutorial.InstUName)</td>
+                            <td><a class="btn btn-primary" href="~/Report/GetLectures/@Tutorial.Id">المحاضرات</a></td>
+                            <td><a class="btn btn-primary" href="~/Report/GetAssignments/@Tutorial.Id">الواجبات- الاختبارات</a></td>
+
+                            <td>@Tutorial.DoneBy</td>
+                            <td>@Tutorial.StDate</td>
+
+                            <td><a class="btn" href="~/Tutorial/HandlTutorial/@Tutorial.Id">عرض - تعديل</a></td>
+                            <td><a class="btn js-activate" data-user-id="@Tutorial.Id" data-active="@Tutorial.Active">@activate</a></td>
+                        </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section scripts{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/bootbox.js"></script>
+    <script src="~/Scripts/toastr.js"></script>
+    <script>
+        $(document).ready(function () {
+            var table = $("#users").DataTable({
+                "language": {
+                    "sEmptyTable": "ليست هناك بيانات متاحة في الجدول",
+                    "sLoadingRecords": "جارٍ التحميل...",
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": "أظهر _MENU_ مدخلات",
+                    "sZeroRecords": "لم يعثر على أية سجلات",
+                    "sInfo": "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+                    "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
+                    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                    "sInfoPostFix": "",
+                    "sSearch": "ابحث:",
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": "الأول",
+                        "sPrevious": "السابق",
+                        "sNext": "التالي",
+                        "sLast": "الأخير"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": تفعيل لترتيب العمود تصاعدياً",
+                        "sSortDescending": ": تفعيل لترتيب العمود تنازلياً"
+                    }
+                }
+            });
+
+
+
+            $("#users").on("click", ".js-activate", function () {
+
+                var button = $(this);
+                var form = $('#__AjaxAntiForgeryForm');
+                var token = $('input[name="__RequestVerificationToken"]', form).val();
+
+                bootbox.confirm("هل تريد " + $(button).text() + " هذه الدورة التدريبية ؟", function (result) {
+                    if (result) {
+                        $.ajax({
+                            type: "POST",
+                            url: '@Url.Content("~/Tutorial/Activate/")' + button.attr("data-user-id"),
+                            data: {
+                                active: button.attr("data-active"),
+                                __RequestVerificationToken: token
+                            },
+                            success: function () {
+                                toastr.success("تم " + $(button).text() + " الدورة التدريبية بنجاح");
+                                var obisitText = "";
+                                if ($(button).text() === "تعطيل") { obisitText = "تفعيل" } else { obisitText = "تعطيل" }
+                                $(button).text(obisitText);
+                            },
+                            error: function (result) {
+                                toastr.error("حدث خطأ");
+
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
+

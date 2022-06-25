@@ -1,0 +1,135 @@
+﻿@using QuranEducation.Helpers
+@using QuranEducation.Models
+@model InstEval
+@{
+    ViewBag.Title = QuranRes.InstEval;
+}
+@section styles{
+    <style>
+        input[type="radio"] {
+            margin:0px !important;
+        }
+    </style>
+}
+<div class="widget" style="background-color:transparent;">
+    <div class="widget-title">
+        <h4><i class="icon-check"></i>@ViewBag.Title</h4>
+        <span class="tools">
+            <a href="javascript:;" class="icon-chevron-down"></a>
+            <a href="javascript:;" class="icon-remove"></a>
+        </span>
+    </div>
+
+    <div class="widget-body">
+        @using (Html.BeginForm("EvalInst", "Student", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            var InstsAndTut = GeneralHelper.GetInst();
+            if (InstsAndTut != null)
+            {
+                <div class="form-group ">
+                    <label class="col-md-2 control-label">@QuranRes.InstName</label>
+                    @Html.DropDownListFor(m => m.InstUserName, new SelectList(InstsAndTut.Insts, "UserName", "FullName"), new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.InstUserName, "", new { style = "color:red;" })
+                </div>
+                <div class="form-group ">
+                    <label class="col-md-2 control-label">@QuranRes.TutorialTitle</label>
+                    @Html.DropDownListFor(m => m.TutorialId, new SelectList(InstsAndTut.Tuts, "Id", "Title"), new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.TutorialId, "", new { style = "color:red;" })
+                </div>
+            }
+            <div class="error-validation">
+                @Html.ValidationSummary(true, QuranRes.ErrorSumTitle, new { @style = "color:red;" })
+            </div>
+            <br /><br />
+
+            <table class="table ">
+                <tr>
+                    <td class="">
+                        <label class="" style="padding-top:0px!important">
+                            @QuranRes.ArriveInATime
+                        </label>
+                    </td>
+                    <td class="">
+                        <label>
+                            @Html.RadioButtonFor(m => m.ArriveInATime, "true", new { @class = "" }) @QuranRes.AcceptInst &nbsp;&nbsp;
+                            @Html.RadioButtonFor(m => m.ArriveInATime, "false", new { @class = "" }) @QuranRes.NotAcceptInst
+                        </label>
+
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="">
+                        <label class="" style="padding-top:0px!important">
+                            @QuranRes.GoodInStudy
+                        </label>
+                    </td>
+                    <td>
+                        @Html.RadioButtonFor(m => m.GoodInStudy, "true") @QuranRes.AcceptInst &nbsp;&nbsp;&nbsp;
+                        @Html.RadioButtonFor(m => m.GoodInStudy, "false")  @QuranRes.NotAcceptInst
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">
+                        <label class="" style="padding-top:0px!important">
+                            @QuranRes.GoodCommunications
+                        </label>
+                    </td>
+                    <td>
+                        @Html.RadioButtonFor(m => m.GoodCommunications, "true") @QuranRes.AcceptInst &nbsp;&nbsp;&nbsp;
+                        @Html.RadioButtonFor(m => m.GoodCommunications, "false")  @QuranRes.NotAcceptInst
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="">
+                        <label class="" style="padding-top:0px!important">
+                            @QuranRes.GoodInVoice
+                        </label>
+                    </td>
+                    <td>
+                        @Html.RadioButtonFor(m => m.GoodInVoice, "true") @QuranRes.AcceptInst &nbsp;&nbsp;&nbsp;
+                        @Html.RadioButtonFor(m => m.GoodInVoice, "false")  @QuranRes.NotAcceptInst
+                    </td>
+                </tr>
+                <td class="">
+                    <label class="" style="padding-top:0px!important">
+                        @QuranRes.TechProblemInTutorial
+                    </label>
+                </td>
+                <td>
+                    @Html.RadioButtonFor(m => m.TechProblemInTutorial, "true") @QuranRes.AcceptInst &nbsp;&nbsp;&nbsp;
+                    @Html.RadioButtonFor(m => m.TechProblemInTutorial, "false")  @QuranRes.NotAcceptInst
+                </td>
+                <tr>
+                    <td class="">
+                        <label class="" style="padding-top:0px!important">
+                            @QuranRes.GoodInUsingBoard
+                        </label>
+                    </td>
+                    <td>
+                        @Html.RadioButtonFor(m => m.GoodInUsingBoard, "true") @QuranRes.AcceptInst &nbsp;&nbsp;&nbsp;
+                        @Html.RadioButtonFor(m => m.GoodInUsingBoard, "false")  @QuranRes.NotAcceptInst
+                    </td>
+                </tr>
+
+
+            </table>
+
+            @Html.AntiForgeryToken()
+            <br />
+            <button type="submit" class="btn btn-primary">@QuranRes.btnSend</button>
+        }
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+
+
+
+
+    </div>
+
+</div>
+

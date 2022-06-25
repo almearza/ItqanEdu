@@ -1,0 +1,47 @@
+﻿@using QuranEducation.Helpers
+@using QuranEducation.Models
+@model List<Assigment>
+@{
+    ViewBag.Title = QuranRes.AssigmentTitle;
+}
+
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+       
+        <br />
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-building"></i>@ViewBag.TutTitle > @QuranRes.AssigmentList</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body">
+                <br />
+
+                <div class="row-fluid">
+                    <div class="span12">
+
+                        @if (Model != null)
+                        {
+                            foreach (var ass in Model)
+                            {
+
+                                <a class="icon-btn span3" href="~/Report/GetAssignment/@ass.Id">
+                                    <i class="icon-question-sign"></i>
+                                    <div>@ass.Title</div>
+                                </a>
+                            }
+                        }
+
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->

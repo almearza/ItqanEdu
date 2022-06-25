@@ -1,0 +1,94 @@
+﻿@using QuranEducation.Helpers
+@using QuranEducation.Models.VM
+@model InstructorProfileVm
+@{
+    ViewBag.Title = @QuranRes.ProfileTitle;
+}
+@section styles{
+    <link href="~/Content/summernote.min.css" rel="stylesheet" />
+}
+<div class="widget" style="background-color:transparent;">
+    <div class="widget-title">
+        <h4><i class="icon-building"></i>@ViewBag.Title</h4>
+        <span class="tools">
+            <a href="javascript:;" class="icon-chevron-down"></a>
+            <a href="javascript:;" class="icon-remove"></a>
+        </span>
+    </div>
+
+    <div class="widget-body">
+        @using (Html.BeginForm("SaveInstProfile", "InstructorProfile", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+        {
+            <br />
+            <div class="error-validation">
+                @Html.ValidationSummary(true, QuranRes.ErrorSumTitle, new { @style = "color:red;" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Title, new { @class = "col-md-2 control-label" })
+                @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Title, "", new { style = "color:red;" })
+            </div>
+            <br />
+            <lable class="col-md-2 control-label">@QuranRes.AboutMe</lable>
+            <br />
+            <br />
+            <div class="form-group">
+
+                @Html.TextAreaFor(m => m.Desc, new { @class = "form-control", @style = "resize:both;appearance:textarea", rows = 4, id = "Desc" })
+                @Html.ValidationMessageFor(m => m.Desc, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group">
+                <div class="profile-pic">
+                    <img src="~/images/InstructorProfile/@Model.ImageUrl" alt="">
+                </div>
+                <label> @QuranRes.ProfileImgLable</label>
+
+                @Html.TextBoxFor(m => m.Image, "", new { type = "file", accept = "image/*" })
+            </div>
+            @Html.ValidationMessageFor(m => m.Image, "", new { style = "color:red;" })
+
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.Name</lable>
+
+                @Html.TextBoxFor(m => m.AppUser.FullName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.AppUser.PhoneNumber, "", new { style = "color:red;" })
+            </div>
+
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.Email</lable>
+                @Html.TextBoxFor(m => m.AppUser.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.AppUser.Email, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.PhoneNumber</lable>
+                @Html.TextBoxFor(m => m.AppUser.PhoneNumber, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.AppUser.PhoneNumber, "", new { style = "color:red;" })
+            </div>
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.Lang</lable>
+                @Html.DropDownListFor(m => m.AppUser.LangCode, new SelectList(LanguageMang.AvailableLanguages, "Code", "Name"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.AppUser.LangCode, "", new { style = "color:red;" })
+            </div>
+            if (Model != null)
+            {
+                @Html.HiddenFor(m => m.Id)
+            }
+            @Html.AntiForgeryToken()
+            <br />
+            <button type="submit" class="btn btn-primary">@QuranRes.btnSend</button>
+        }
+
+        @section Scripts {
+
+
+            @Scripts.Render("~/bundles/jqueryval")
+            <script src="~/Scripts/summernote.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#Desc').summernote();
+                    //we initialize date in _layout-->app.init
+                });
+            </script>
+        }
+    </div>
+</div>

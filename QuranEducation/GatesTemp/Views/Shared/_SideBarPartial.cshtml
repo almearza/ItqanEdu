@@ -1,0 +1,41 @@
+﻿@using QuranEducation.Models.VM
+<ul class="sidebar-menu">
+    @if (User.IsInRole(RoleNames.AdminLevel))
+    {
+
+        <li><a class="" href="~/Account/Index"><span class="icon-box"><i class="icon-group"></i></span> موظفو الإدارة </a></li>
+        <li><a class="" href="~/Tutorial/Index"><span class="icon-box"><i class="icon-book"></i></span> الدورات التدريبية </a></li>
+        <li><a class="" href="~/Report/GetWeeklyTimeTable"><span class="icon-box"><i class="icon-table"></i></span> الجدول الدراسي </a></li>
+        <li><a class="" href="~/Report/GetInsts"><span class="icon-box"><i class="icon-group"></i></span>المعلمين</a></li>
+        <li><a class="" href="~/Report/GetStudents"><span class="icon-box"><i class="icon-group"></i></span>الطلاب</a></li>
+        <li><a class="" href="~/Tutorial/StudentRequest"><span class="icon-box"><i class="icon-inbox"></i></span>طلبات الإشتراك </a></li>
+        <li><a class="" href="~/Student/EvalInst"><span class="icon-box"><i class="icon-user"></i></span>تقييم أستاذ </a></li>
+        <li><a class="" href="~/Inbox/Index"><span class="icon-box"><i class="icon-bell"></i></span>الوارد</a></li>
+        <li><a class="" href="~/Report/Contactus"><span class="icon-box"><i class="icon-bell"></i></span>تواصل معنا</a></li>
+        <li><a class="" href="#"><span class="icon-box"><i class="icon-book"></i></span>إصدار الشهادات</a></li>
+    }
+    else
+    if (User.IsInRole(RoleNames.InstructorLevel))
+    {
+        <li><a class="" href="~/InstructorProfile/Index"><span class="icon-box"><i class="icon-user"></i></span> @QuranRes.InstProfileUrl </a></li>
+        <li><a class="" href="~/Report/GetTutorials"><span class="icon-box"><i class="icon-book"></i></span>  @QuranRes.InstTut </a></li>
+        <li><a class="" href="~/Report/GetWeeklyTimeTableInst"><span class="icon-box"><i class="icon-table"></i></span>@QuranRes.TimeTable</a></li>
+        @*<li><a class="" href="~/Report/GetStudents"><span class="icon-box"><i class="icon-group"></i></span>@QuranRes.Students</a></li>*@
+
+        <li><a class="" href="~/Inbox/Index"><span class="icon-box"><i class="icon-bell"></i></span>  @QuranRes.InboxTitle </a></li>
+        <li><a class="" href="#"><span class="icon-box"><i class="icon-bell"></i></span>  @QuranRes.FatherNoti </a></li>
+        <li><a class="" href="#"><span class="icon-box"><i class="icon-file"></i></span>  @QuranRes.AchievementFile </a></li>
+        <li><a class="" href="#"><span class="icon-box"><i class="icon-paper-clip"></i></span>  @QuranRes.AdministrativeForms </a></li>
+    }
+    else if (User.IsInRole(RoleNames.StudentLevel))
+    {
+        <li><a class="" href="~/Student/Index"><span class="icon-box"><i class="icon-user"></i></span> @QuranRes.InstProfileUrl </a></li>
+        <li><a class="" href="~/Report/GetAllTutorials"><span class="icon-box"><i class="icon-book"></i></span>  @QuranRes.StAllTut </a></li>
+        <li><a class="" href="~/Student/MyTutorials"><span class="icon-box"><i class="icon-book"></i></span>  @QuranRes.MyTutorials </a></li>
+        <li><a class="" href="~/Report/GetWeeklyTimeTableSt"><span class="icon-box"><i class="icon-table"></i></span>@QuranRes.TimeTable</a></li>
+        <li><a class="" href="~/Report/GetStAssignments"><span class="icon-box"><i class="icon-question-sign"></i></span>@QuranRes.MyAssignment</a></li>
+        <li><a class="" href="~/Inbox/Index"><span class="icon-box"><i class="icon-bell"></i></span>  @QuranRes.InboxTitle </a></li>
+        <li><a class="" href="~/Student/EvalInst"><span class="icon-box"><i class="icon-group"></i></span>@QuranRes.InstEval</a></li>
+        <li><a class="" href="~/Student/MyEvaluate"><span class="icon-box"><i class="icon-group"></i></span>@QuranRes.MyEvaluate</a></li>
+    }
+</ul>

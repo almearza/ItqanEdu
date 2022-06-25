@@ -1,0 +1,201 @@
+﻿@using QuranEducation.Models.VM
+@using QuranEducation.Helpers
+@using QuranEducation.Models
+@model List<ApplicationUser>
+@{
+    ViewBag.Title = QuranRes.Students;
+}
+@section styles{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+}
+<!-- BEGIN PAGE CONTENT-->
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget" style="background-color:transparent;">
+            <div class="widget-title">
+                <h4><i class="icon-building"></i>@QuranRes.StudentsList</h4>
+                <span class="tools">
+                    <a href="javascript:;" class="icon-chevron-down"></a>
+                    <a href="javascript:;" class="icon-remove"></a>
+                </span>
+            </div>
+
+            <div class="widget-body">
+
+
+
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                }
+
+
+
+                <br />
+                <table id="users" class="table table-bordered table-hover " style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>@QuranRes.Name</th>
+                            <th>@QuranRes.Email</th>
+                            <th>@QuranRes.PhoneNumber</th>
+                            @if (User.IsInRole(RoleNames.AdminLevel))
+                            {
+                                <th>ملف الطالب</th>
+                                <th>تعطيل | تفعيل</th>
+                            }
+                            else
+                            {
+                                <th>@QuranRes.AssigmentTitle</th>
+                                <th>@QuranRes.EvalStudent</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            if (Model != null)
+                            {
+
+                                foreach (var user in Model)
+                                {
+                                    var activate = (user.LockoutEndDateUtc != null && user.LockoutEndDateUtc > DateTime.Now) ? "تفعيل" : "تعطيل";
+                        <tr>
+                            <td>@user.FullName</td>
+                            <td>@user.Email</td>
+                            <td>@user.PhoneNumber</td>
+                            @if (User.IsInRole(RoleNames.AdminLevel))
+                            {
+                                <td><a class="btn btn-primary" href="~/Student/Index?Id=@user.UserName" target="_blank">عرض الملف</a></td>
+                                <td><a class="btn js-activate" data-user-id="@user.Id">@activate</a></td>
+                            }
+                            else
+                            {
+                                <td><a class="btn btn-primary" href="~/Report/GetStudentAssignments?Id=@user.UserName&StName=@user.FullName" target="_blank">@QuranRes.ShowStudentAssignments</a></td>
+                                var degree = GeneralHelper.Degree(ViewBag.tutId, user.UserName);
+                                if (degree == CertifiedDegree.NotCertified)
+                                {
+                                    <td><a class="btn btn-primary" href="~/Student/Certify?UserName=@user.UserName&&tutId=@ViewBag.tutId" target="_blank">@QuranRes.EvalStudent</a></td>
+                                }
+                                else
+                                {
+                                    if (degree == CertifiedDegree.Excellent)
+                                    {
+                                        <td>@QuranRes.Excellent</td>
+                                    }
+
+                                    else if (degree == CertifiedDegree.vGood)
+                                    {
+                                        <td>@QuranRes.VGood</td>
+                                    }
+                                    else if (degree == CertifiedDegree.Good)
+                                    {
+                                        <td>@QuranRes.Good</td>
+                                    }
+                                    else if (degree == CertifiedDegree.Accepted)
+                                    {
+                                        <td>@QuranRes.Acceptable</td>
+                                    }
+                                    else if (degree == CertifiedDegree.Poor)
+                                    {
+                                        <td>@QuranRes.Poor</td>
+                                    }
+                                }
+                            }
+
+
+                        </tr>
+                                }
+
+                            }
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE CONTENT-->
+@section scripts{
+    <link href="~/assets/data-tables/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <script src="~/assets/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/bootbox.js"></script>
+    <script src="~/Scripts/toastr.js"></script>
+    <script>
+        $(document).ready(function () {
+            let sEmptyTable='@QuranRes.DtsEmptyTable';
+            let sLengthMenu='@QuranRes.DtsLengthMenu';
+            let sZeroRecords ='@QuranRes.DtsZeroRecords';
+
+            let sInfo='@QuranRes.DtsInfo';
+            let sInfoEmpty='@QuranRes.DtsInfoEmpty';
+            let sInfoFiltered='@QuranRes.DtsInfoFiltered';
+            let sSearch='@QuranRes.DtsSearch';
+            let sFirst='@QuranRes.DtsFirst';
+            let sPrevious='@QuranRes.DtsPrevious';
+            let sNext='@QuranRes.DtsNext';
+            let sLast='@QuranRes.DtsLast';
+            let sSortAscending='@QuranRes.DtsSortAscending';
+            let sSortDescending='@QuranRes.DtsSortDescending';
+            $("#users").DataTable({
+                "language": {
+                    "sEmptyTable": sEmptyTable,
+                    "sLoadingRecords": "جارٍ التحميل...",
+                    "sProcessing": "جارٍ التحميل...",
+                    "sLengthMenu": sLengthMenu,
+                    "sZeroRecords": sZeroRecords,
+                    "sInfo": sInfo,
+                    "sInfoEmpty": sInfoEmpty,
+                    "sInfoFiltered": sInfoFiltered,
+                    "sInfoPostFix": "",
+                    "sSearch": sSearch,
+                    "sUrl": "",
+                    "oPaginate": {
+                        "sFirst": sFirst,
+                        "sPrevious": sPrevious,
+                        "sNext": sNext,
+                        "sLast": sLast
+                    },
+                    "oAria": {
+                        "sSortAscending": sSortAscending,
+                        "sSortDescending": sSortDescending
+                    }
+                }
+            });
+
+
+
+            $("#users").on("click", ".js-activate", function () {
+
+                var button = $(this);
+                var form = $('#__AjaxAntiForgeryForm');
+                var token = $('input[name="__RequestVerificationToken"]', form).val();
+
+                bootbox.confirm("هل تريد " + $(button).text() + " هذا الطالب ؟", function (result) {
+                    if (result) {
+                        $.ajax({
+                            type: "POST",
+                            url: '@Url.Content("~/Account/Activate/")' + button.attr("data-user-id"),
+                            data: {
+                                __RequestVerificationToken: token
+                            },
+                            success: function () {
+                                toastr.success("تم " + $(button).text() + " الطالب بنجاح");
+                                var obisitText = "";
+                                if ($(button).text() === "تعطيل") { obisitText = "تفعيل" } else { obisitText = "تعطيل" }
+                                $(button).text(obisitText);
+                            },
+                            error: function (result) {
+                                toastr.error("حدث خطأ");
+
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+

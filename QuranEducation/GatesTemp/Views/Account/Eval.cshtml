@@ -1,0 +1,32 @@
+﻿@using QuranEducation.Models
+@using QuranEducation.Helpers
+@model QuranEducation.Models.InstructorProfile
+@{
+    ViewBag.Title = "تقييم معلم";
+}
+
+
+@using (Html.BeginForm("Eval", "Account", FormMethod.Post))
+{
+    <h2>@ViewBag.InsName</h2>
+    <br />
+    <div class="error-validation">
+        @Html.ValidationSummary(true, "فضلا عالج الأخطاء")
+    </div>
+    <div class="form-group">
+        <label>التقييم</label>
+        @Html.DropDownListFor(m => m.EvalId, new SelectList(GeneralHelper.GetEvalStrings, "Id", "Title"), new { @class = "form-control" })
+       
+        @Html.ValidationMessageFor(m => m.EvalId, "", new { style = "color:red;" })
+    </div>
+    @Html.HiddenFor(m => m.UserName)
+    @Html.AntiForgeryToken()
+    <br />
+    <button type="submit" class="btn btn-primary">حفظ</button>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

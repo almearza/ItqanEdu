@@ -1,0 +1,62 @@
+﻿@using QuranEducation.Models
+@using QuranEducation.Models.VM
+@using QuranEducation.Helpers
+@model EvaluateVM
+@{
+    ViewBag.Title = QuranRes.StCreateAccountTitle;
+}
+@section styles{
+    <link rel="stylesheet" href="~/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link href="~/assets/bootstrap-timepicker/compiled/timepicker.css" rel="stylesheet" />
+}
+<div class="widget" style="background-color:transparent;">
+    <div class="widget-title">
+        <h4><i class="icon-building"></i>@ViewBag.Title</h4>
+        <span class="tools">
+            <a href="javascript:;" class="icon-chevron-down"></a>
+            <a href="javascript:;" class="icon-remove"></a>
+        </span>
+    </div>
+
+    <div class="widget-body">
+        
+        @using (Html.BeginForm("Certify", "Student", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            <p>
+                @QuranRes.EvalStudent @Model.FullName
+            </p>
+            <br />
+            <div class="error-validation">
+                @Html.ValidationSummary(true, QuranRes.ErrorSumTitle, new { @style = "color:red;" })
+            </div>
+
+            <div class="form-group ">
+                <lable class="col-md-2 control-label">@QuranRes.StDegree</lable>
+                <select class = "form-control" name="Degree" id="Degree">
+                    <option value="@CertifiedDegree.Excellent">@QuranRes.Excellent</option>
+                    <option value="@CertifiedDegree.vGood">@QuranRes.VGood</option>
+                    <option value="@CertifiedDegree.Good">@QuranRes.Good</option>
+                    <option value="@CertifiedDegree.Accepted">@QuranRes.Acceptable</option>
+                    <option value="@CertifiedDegree.Poor">@QuranRes.Poor</option>
+                </select>
+                
+            </div>
+            @Html.HiddenFor(m=>m.FullName)
+            @Html.HiddenFor(m=>m.UserName)
+            @Html.HiddenFor(m=>m.TutId)
+            @Html.AntiForgeryToken()
+            <br />
+            <button type="submit" class="btn btn-primary">@QuranRes.btnSend</button>
+        }
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+            <script src="~/Scripts/summernote.min.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-daterangepicker/date.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+            <script type="text/javascript" src="/assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+
+        }
+    </div>
+</div>

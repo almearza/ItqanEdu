@@ -1,0 +1,103 @@
+﻿@using QuranEducation.Helpers
+@using QuranEducation.Models.VM
+@model TutorialVM
+@{
+    ViewBag.Title = "إضافة - تعديل دورة";
+}
+@section styles{
+    <link href="~/Content/summernote.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link href="~/assets/bootstrap-timepicker/compiled/timepicker.css" rel="stylesheet" />
+}
+
+@using (Html.BeginForm("SaveTutorial", "Tutorial", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    <h2>@ViewBag.Title.</h2>
+    <br />
+    <div class="error-validation">
+        @Html.ValidationSummary(true, "فضلا عالج الأخطاء")
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Title)
+        @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Title, "", new { style = "color:red;" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Descr)
+        @Html.TextAreaFor(m => m.Descr, new { @class = "form-control", @style = "resize:both;appearance:textarea", rows = 4, id = "Descr" })
+        @Html.ValidationMessageFor(m => m.Descr, "", new { style = "color:red;" })
+    </div>
+    <br />
+    <div class="control-group">
+        @Html.LabelFor(m => m.OpenDate, new { @class = "control-label" })
+        <div class="controls">
+            <div class="input-append date date-picker" data-date-format="MM/dd/yyyy">
+                @Html.TextBoxFor(m => m.OpenDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                <span class="add-on"><i class="icon-calendar"></i></span>
+            </div>
+            <div class="error-validation">
+                @Html.ValidationMessageFor(m => m.OpenDate)
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        @Html.LabelFor(m => m.CloseDate, new { @class = "control-label" })
+        <div class="controls">
+            <div class="input-append date date-picker" data-date-format="MM/dd/yyyy">
+                @Html.TextBoxFor(m => m.CloseDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                <span class="add-on"><i class="icon-calendar"></i></span>
+            </div>
+            <div class="error-validation">
+                @Html.ValidationMessageFor(m => m.CloseDate)
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        
+            <img src="~/images/tutorial/@Model.ImageUrl" width="500" height="300" alt="">
+        
+        <label class="col-md-2 control-label">صورة 300*500</label>
+        @Html.TextBoxFor(m => m.Image, "", new { type = "file", accept = "image/*" })
+    </div>
+    @Html.ValidationMessageFor(m => m.Image, "", new { style = "color:red;" })
+    <div class="form-group ">
+        @Html.LabelFor(m => m.LangCode, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m => m.LangCode, new SelectList(LanguageMang.AvailableLanguages, "Code", "Name"), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LangCode, "", new { style = "color:red;" })
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.InstUName, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m => m.InstUName, new SelectList(GeneralHelper.GetInstructors, "UserName", "FullName"), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.InstUName, "", new { style = "color:red;" })
+    </div>
+
+    if (Model != null)
+    {
+        @Html.HiddenFor(m => m.Id)
+    }
+    @Html.AntiForgeryToken()
+    <br />
+    <button type="submit" class="btn btn-primary">حفظ</button>
+}
+
+@section Scripts {
+
+    <script type="text/javascript" src="~/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-daterangepicker/date.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/summernote.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#Descr').summernote();
+        });
+                //we initialize date in _layout-->app.init
+    </script>
+}
+
+

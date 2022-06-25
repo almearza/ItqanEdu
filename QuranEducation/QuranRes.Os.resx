@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe" xml:space="preserve">
+    <value>обо мне</value>
+  </data>
+  <data name="Acceptable" xml:space="preserve">
+    <value>удовлетворительно</value>
+  </data>
+  <data name="AcceptInst" xml:space="preserve">
+    <value>Принимаю</value>
+  </data>
+  <data name="AccountWasLocked" xml:space="preserve">
+    <value>Ваша учетная запись была временно заблокирована, просим связаться с администратором</value>
+  </data>
+  <data name="AchievementFile" xml:space="preserve">
+    <value>Файл достижений</value>
+  </data>
+  <data name="AddAssMsg2" xml:space="preserve">
+    <value>Добавление или редактирование задания</value>
+  </data>
+  <data name="AddLecMsg1" xml:space="preserve">
+    <value>встал преподаватель</value>
+  </data>
+  <data name="AddLecMsg2" xml:space="preserve">
+    <value> Добавлена ​​или отредактирована лекция</value>
+  </data>
+  <data name="AddLecMsg3" xml:space="preserve">
+    <value>к учебному пособию</value>
+  </data>
+  <data name="AdministrativeForms" xml:space="preserve">
+    <value> административные Формы</value>
+  </data>
+  <data name="Alreadyeval" xml:space="preserve">
+    <value>Вы уже оценили этого преподавателя раньше</value>
+  </data>
+  <data name="ArriveInATime" xml:space="preserve">
+    <value>Учитель приходит вовремя</value>
+  </data>
+  <data name="AssAttach" xml:space="preserve">
+    <value>Приложения к домашнему заданию - Экзамен</value>
+  </data>
+  <data name="AssDegree" xml:space="preserve">
+    <value>Оценка домашнего задания - Экзамен</value>
+  </data>
+  <data name="AssDesc" xml:space="preserve">
+    <value>Детали домашнего задания - Экзамен</value>
+  </data>
+  <data name="assEndBeggerThanLecStart" xml:space="preserve">
+    <value>Дата и время окончания домашнего задания должны быть позже даты и времени начала.</value>
+  </data>
+  <data name="AssEndDate" xml:space="preserve">
+    <value>Дата окончания домашнего задания</value>
+  </data>
+  <data name="AssEndTime" xml:space="preserve">
+    <value>Время окончания домашнего задания - Экзамена</value>
+  </data>
+  <data name="AssigmentList" xml:space="preserve">
+    <value>Список домашних заданий - Экзаменов</value>
+  </data>
+  <data name="AssigmentTitle" xml:space="preserve">
+    <value>Домашние задания -Экзамены</value>
+  </data>
+  <data name="AssSolution" xml:space="preserve">
+    <value>Решение задания</value>
+  </data>
+  <data name="AssSolutions" xml:space="preserve">
+    <value>Решения заданий</value>
+  </data>
+  <data name="AssStDate" xml:space="preserve">
+    <value>Дата начала домашнего задания - Экзамена</value>
+  </data>
+  <data name="AssStTime" xml:space="preserve">
+    <value>Время начала домашнего задания - Экзамена</value>
+  </data>
+  <data name="assTimeError" xml:space="preserve">
+    <value>Дата и время начала домашнего задания - Экзамена должны быть после текущей даты и времени</value>
+  </data>
+  <data name="AssTitle" xml:space="preserve">
+    <value>Название домашнего задания - Экзамена</value>
+  </data>
+  <data name="AssTutNotFound" xml:space="preserve">
+    <value>Учебника (пособий) нет для этого задания</value>
+  </data>
+  <data name="AssType" xml:space="preserve">
+    <value>домашнее задание или экзамен </value>
+  </data>
+  <data name="AsstypeTitle" xml:space="preserve">
+    <value>Экзамен</value>
+  </data>
+  <data name="AttRemoved" xml:space="preserve">
+    <value>Приложение удалено</value>
+  </data>
+  <data name="AttRemoveError" xml:space="preserve">
+    <value>Ошибка при попытке удалить это приложение</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>Вернуться на главную</value>
+  </data>
+  <data name="BackTut" xml:space="preserve">
+    <value>назад</value>
+  </data>
+  <data name="BOD" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>Отправлять</value>
+  </data>
+  <data name="CertifyError" xml:space="preserve">
+    <value>Пожалуйста, выберите оценку для этой студены</value>
+  </data>
+  <data name="ChangePassFailed" xml:space="preserve">
+    <value>не удалось найти этого пользователя или старый пароль был неправильным!</value>
+  </data>
+  <data name="ChangePassLater" xml:space="preserve">
+    <value>Вы можете изменить пароль позже</value>
+  </data>
+  <data name="ChangePassTextUrl" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="codeNotValid" xml:space="preserve">
+    <value>неверный код</value>
+  </data>
+  <data name="ConfirmPassErrorText" xml:space="preserve">
+    <value>Пароли не совпадают</value>
+  </data>
+  <data name="ConfirmPassText" xml:space="preserve">
+    <value>Повторно введите пароль</value>
+  </data>
+  <data name="CreateAss" xml:space="preserve">
+    <value>Создать  домашнее задание - Экзамен</value>
+  </data>
+  <data name="CreateLec" xml:space="preserve">
+    <value>Создать лекцию</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="DeleteAttQues" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить это приложение?</value>
+  </data>
+  <data name="DtsEmptyTable" xml:space="preserve">
+    <value>В этой таблице нет данных</value>
+  </data>
+  <data name="DtsFirst" xml:space="preserve">
+    <value>Первый</value>
+  </data>
+  <data name="DtsInfo" xml:space="preserve">
+    <value>показать_ 0_до_ 0_из_ 0_ записей</value>
+  </data>
+  <data name="DtsInfoEmpty" xml:space="preserve">
+    <value>Вход _MAX_ Выбран из общего</value>
+  </data>
+  <data name="DtsInfoFiltered" xml:space="preserve">
+    <value>Последний</value>
+  </data>
+  <data name="DtsLast" xml:space="preserve">
+    <value>показать_МЕНЮ_записей</value>
+  </data>
+  <data name="DtsLengthMenu" xml:space="preserve">
+    <value>Следующий</value>
+  </data>
+  <data name="DtsNext" xml:space="preserve">
+    <value>Предыдущий</value>
+  </data>
+  <data name="DtsPrevious" xml:space="preserve">
+    <value>Искать</value>
+  </data>
+  <data name="DtsSearch" xml:space="preserve">
+    <value>Сортировка снизу вверх</value>
+  </data>
+  <data name="DtsSortAscending" xml:space="preserve">
+    <value>Сортировка сверху вниз</value>
+  </data>
+  <data name="DtsSortDescending" xml:space="preserve">
+    <value>нет записей </value>
+  </data>
+  <data name="DtsZeroRecords" xml:space="preserve">
+    <value>Редактировать  мой профиль</value>
+  </data>
+  <data name="EditProfileBtn" xml:space="preserve">
+    <value>Учебный год</value>
+  </data>
+  <data name="EduYear" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Этот email уже занят другим человеком</value>
+  </data>
+  <data name="EmailAlreadyTaken" xml:space="preserve">
+    <value>Имя  на английском языке</value>
+  </data>
+  <data name="EnName" xml:space="preserve">
+    <value>Введите код, который мы отправили на вашу электронную почту</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>этот email не найден, введите действительный email </value>
+  </data>
+  <data name="EnterCorrectPhone" xml:space="preserve">
+    <value>Пожалуйста, исправьте эти ошибки</value>
+  </data>
+  <data name="ErrorSumTitle" xml:space="preserve">
+    <value>ошибка при повторном обновлении пароля</value>
+  </data>
+  <data name="ErrorWhileResetPass" xml:space="preserve">
+    <value>Ваша оценка была отправлена</value>
+  </data>
+  <data name="EvalSent" xml:space="preserve">
+    <value>Оценка студента</value>
+  </data>
+  <data name="EvalStudent" xml:space="preserve">
+    <value>Оценён</value>
+  </data>
+  <data name="evaluated" xml:space="preserve">
+    <value>Отлично</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>уведомление родителей</value>
+  </data>
+  <data name="FatherNoti" xml:space="preserve">
+    <value>женский</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Это поле обязательно для заполнения</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>Пятница</value>
+  </data>
+  <data name="FileTitle" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>вид</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Хорошо</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Учитель общается с вами хорошо и доброжелательно</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>Методика обучения тебя устраивает </value>
+  </data>
+  <data name="GoodCommunications" xml:space="preserve">
+    <value>Учитель эффективно использует доску</value>
+  </data>
+  <data name="GoodInStudy" xml:space="preserve">
+    <value>Вы ясно слышите учителя</value>
+  </data>
+  <data name="GoodInUsingBoard" xml:space="preserve">
+    <value>Домашнее задание</value>
+  </data>
+  <data name="GoodInVoice" xml:space="preserve">
+    <value>Главная страница</value>
+  </data>
+  <data name="HMtypeTitle" xml:space="preserve">
+    <value>добро пожаловать на платформе Иткан</value>
+  </data>
+  <data name="HomeIndexTitle" xml:space="preserve">
+    <value>Домашний телефон</value>
+  </data>
+  <data name="HomeIndexWelcome" xml:space="preserve">
+    <value>Прибыл в</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="InboxMessageDate" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="InboxMessageDelete" xml:space="preserve">
+    <value>Идти</value>
+  </data>
+  <data name="InboxMessageFrom" xml:space="preserve">
+    <value>миссия</value>
+  </data>
+  <data name="InboxMessageOpen" xml:space="preserve">
+    <value>Папка "Входящие"</value>
+  </data>
+  <data name="InboxMessageTitle" xml:space="preserve">
+    <value>Пожалуйста, введите полное описание о себе</value>
+  </data>
+  <data name="InboxTitle" xml:space="preserve">
+    <value>Оценка учителя</value>
+  </data>
+  <data name="InstDescError" xml:space="preserve">
+    <value>этот курс не для этого учителя</value>
+  </data>
+  <data name="InstEval" xml:space="preserve">
+    <value>Пожалуйста, выберите изображение размером 220px*220px</value>
+  </data>
+  <data name="instHasNotThisTut" xml:space="preserve">
+    <value>Список лекций</value>
+  </data>
+  <data name="InstImgError" xml:space="preserve">
+    <value>Имя учителя</value>
+  </data>
+  <data name="InstLecList" xml:space="preserve">
+    <value>Мой файл</value>
+  </data>
+  <data name="InstName" xml:space="preserve">
+    <value>пожалуйста, введите название должности</value>
+  </data>
+  <data name="InstProfileUrl" xml:space="preserve">
+    <value>название должности</value>
+  </data>
+  <data name="InstTitleError" xml:space="preserve">
+    <value>мои учебные курсы</value>
+  </data>
+  <data name="InstTut" xml:space="preserve">
+    <value>Список учебных курсов</value>
+  </data>
+  <data name="InstTutList" xml:space="preserve">
+    <value>Неверная электронная почта</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>Открыть прикрепленный файл</value>
+  </data>
+  <data name="LecAttach" xml:space="preserve">
+    <value>Дата лекции</value>
+  </data>
+  <data name="LecDate" xml:space="preserve">
+    <value> Описание лекции</value>
+  </data>
+  <data name="LecDesc" xml:space="preserve">
+    <value>время окончания лекции должно быть после времени начала лекции</value>
+  </data>
+  <data name="LecEndBeggerThanLecStart" xml:space="preserve">
+    <value> время окончания лекции</value>
+  </data>
+  <data name="LecEndTime" xml:space="preserve">
+    <value>В это время есть лекции, пожалуйста, выберите другое время </value>
+  </data>
+  <data name="LecsInSameTimeError" xml:space="preserve">
+    <value>Время начала лекции</value>
+  </data>
+  <data name="LecStTime" xml:space="preserve">
+    <value>продолжительность лекции</value>
+  </data>
+  <data name="LecTimeError" xml:space="preserve">
+    <value>продолжительность лекции должно быть больше</value>
+  </data>
+  <data name="LecTitle" xml:space="preserve">
+    <value>Название лекции</value>
+  </data>
+  <data name="LecTitleTimeTable" xml:space="preserve">
+    <value>Лекция</value>
+  </data>
+  <data name="LectureTitle" xml:space="preserve">
+    <value>Лекции</value>
+  </data>
+  <data name="LecTutNotFound" xml:space="preserve">
+    <value>нет практики для этой лекции</value>
+  </data>
+  <data name="LecVirtualUrl" xml:space="preserve">
+    <value>ссылка для виртуальной комнаты</value>
+  </data>
+  <data name="ListOfInBox" xml:space="preserve">
+    <value>Список входящих сообщений</value>
+  </data>
+  <data name="LoginBtnVal" xml:space="preserve">
+    <value>вход </value>
+  </data>
+  <data name="LoginCreateStAccount" xml:space="preserve">
+    <value>Создать новую учетную запись студента</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>Введите адрес электронной почты</value>
+  </data>
+  <data name="LoginFailedMsg" xml:space="preserve">
+    <value>Ошибка входа</value>
+  </data>
+  <data name="LoginForgetPass" xml:space="preserve">
+    <value>Забыл пароль</value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Иткан - логин</value>
+  </data>
+  <data name="LoginTopHeader" xml:space="preserve">
+    <value>логин пользователя</value>
+  </data>
+  <data name="LoginToSub" xml:space="preserve">
+    <value>Войти, для участия</value>
+  </data>
+  <data name="LogoutTextUrl" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Мужской</value>
+  </data>
+  <data name="ManagementAccept" xml:space="preserve">
+    <value>Ваш запрос был принят</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>Администрация</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>пожалуйста выберите язык обучения</value>
+  </data>
+  <data name="MyAssignment" xml:space="preserve">
+    <value>Понедельник</value>
+  </data>
+  <data name="MyEvaluate" xml:space="preserve">
+    <value>Мои задания</value>
+  </data>
+  <data name="MyTutorials" xml:space="preserve">
+    <value>Моя оценка</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Мои учебные курсы</value>
+  </data>
+  <data name="NameInNational" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Имя на родном языке</value>
+  </data>
+  <data name="NewPassErrorText" xml:space="preserve">
+    <value>Национальность</value>
+  </data>
+  <data name="NewPassLength" xml:space="preserve">
+    <value>Введите новый пароль</value>
+  </data>
+  <data name="NewPassText" xml:space="preserve">
+    <value>Пароль должен состоять не менее  6 и не более  50 символов</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="NoPrevAttForAss" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="NoPrevAttForSol" xml:space="preserve">
+    <value>Нет вложений, загруженных для этого домашнего задания - экзамена</value>
+  </data>
+  <data name="NotAcceptInst" xml:space="preserve">
+    <value>Нет вложений, загруженных  для этого решения</value>
+  </data>
+  <data name="OldPassErrorText" xml:space="preserve">
+    <value>Не согласен</value>
+  </data>
+  <data name="OldPassText" xml:space="preserve">
+    <value>Введите старый пароль </value>
+  </data>
+  <data name="OtherInstDataError" xml:space="preserve">
+    <value>Старый пароль</value>
+  </data>
+  <data name="PassMsg" xml:space="preserve">
+    <value>Электронная почта, полное имя, номер телефона обязательне поля</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Пароль был успешно изменен</value>
+  </data>
+  <data name="passwordsent" xml:space="preserve">
+    <value>Ваш собственный пароль это</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Пароль </value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>Пароль отправлен</value>
+  </data>
+  <data name="Poor" xml:space="preserve">
+    <value>мобилный тел. +ххххх</value>
+  </data>
+  <data name="ProfileImgLable" xml:space="preserve">
+    <value>номер телефона с кодом страны</value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>Слабый</value>
+  </data>
+  <data name="RemoveAtt" xml:space="preserve">
+    <value>Фотография 220*220</value>
+  </data>
+  <data name="RequestedOrSubscribed" xml:space="preserve">
+    <value>Мой файл</value>
+  </data>
+  <data name="ResidentCountry" xml:space="preserve">
+    <value>Х</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>был принят или под рассмотрением</value>
+  </data>
+  <data name="ShowAtt" xml:space="preserve">
+    <value>Страна проживания</value>
+  </data>
+  <data name="ShowStudentAssignments" xml:space="preserve">
+    <value>Суббота</value>
+  </data>
+  <data name="ShowTutDetails" xml:space="preserve">
+    <value>Показывать приложения</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Показать д.з. ученика</value>
+  </data>
+  <data name="SolAttach" xml:space="preserve">
+    <value> Показывать детали курса</value>
+  </data>
+  <data name="SolDesc" xml:space="preserve">
+    <value>Иткан</value>
+  </data>
+  <data name="StAllTut" xml:space="preserve">
+    <value>Прикрепленные файлы с решением</value>
+  </data>
+  <data name="StAssociateYourAccount" xml:space="preserve">
+    <value>Решение</value>
+  </data>
+  <data name="StAssociationForm" xml:space="preserve">
+    <value>Доступные учебные курсы</value>
+  </data>
+  <data name="StCertRequired" xml:space="preserve">
+    <value>Свяжите свой аккаунт с</value>
+  </data>
+  <data name="StCompleteRegister" xml:space="preserve">
+    <value>Экран ссылок</value>
+  </data>
+  <data name="StCreateAccountTitle" xml:space="preserve">
+    <value>Надо загружать последний академический диплом</value>
+  </data>
+  <data name="StDegree" xml:space="preserve">
+    <value>Завершить процесс регистрации</value>
+  </data>
+  <data name="StExLoginAccount" xml:space="preserve">
+    <value>Создать - Изменить учетную запись ученика</value>
+  </data>
+  <data name="StExLoginBtnFace" xml:space="preserve">
+    <value>Оценка ученика</value>
+  </data>
+  <data name="StExLoginUsing" xml:space="preserve">
+    <value>аккаунт</value>
+  </data>
+  <data name="StFinishLoginMsg" xml:space="preserve">
+    <value>Вход через фейсбук </value>
+  </data>
+  <data name="StLoginFailure" xml:space="preserve">
+    <value>Вход через facebook</value>
+  </data>
+  <data name="StRegReq1" xml:space="preserve">
+    <value>Пожалуйста, введите номер телефона в поле ниже чтобы завершить процесс регтстрации</value>
+  </data>
+  <data name="StRegReq10" xml:space="preserve">
+    <value>Ошибка входа в систему</value>
+  </data>
+  <data name="StRegReq11" xml:space="preserve">
+    <value>Условия регистрации</value>
+  </data>
+  <data name="StRegReq2" xml:space="preserve">
+    <value>9- Посещение вводного занятия по учебному плану и прохождение личного собеседования, направленного на выявление возможностей студента, определение его уровня, а также руководство им по соответствующему учебному плану</value>
+  </data>
+  <data name="StRegReq3" xml:space="preserve">
+    <value>10- Покупка учебной программы, которая представляет собой печатную или электронную книгу «Аль-Каиды Аль-Нурания»</value>
+  </data>
+  <data name="StRegReq4" xml:space="preserve">
+    <value>1- Заявителю должно быть 7 лет или более</value>
+  </data>
+  <data name="StRegReq5" xml:space="preserve">
+    <value>2- Запоминание арабских букв перед началом курса.</value>
+  </data>
+  <data name="StRegReq6" xml:space="preserve">
+    <value>3- Серьезность и приверженность посещению до конца курса.</value>
+  </data>
+  <data name="StRegReq7" xml:space="preserve">
+    <value>4- Студент должен хорошо уметь использовать компьютер, или чтобы кто то ему помог в этом</value>
+  </data>
+  <data name="StRegReq8" xml:space="preserve">
+    <value>5-  обязательно Чтобы студент придерживался общественной морали и этикета для изучения Корана</value>
+  </data>
+  <data name="StRegReq9" xml:space="preserve">
+    <value>6- Родители обязаны следить за ребенком во время урока</value>
+  </data>
+  <data name="StScore" xml:space="preserve">
+    <value>уровень достижений</value>
+  </data>
+  <data name="StSuccessExternalAuth" xml:space="preserve">
+    <value>8- Зарегистрироваться на платформе, используя электронную почту и номер телефона для верификации</value>
+  </data>
+  <data name="StudentCert" xml:space="preserve">
+    <value>Уровень достижения</value>
+  </data>
+  <data name="StudentCertify" xml:space="preserve">
+    <value>Вы успешно прошли проверку подлинности в</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Последний академический диплом</value>
+  </data>
+  <data name="StudentsList" xml:space="preserve">
+    <value>Сертифицировать студента</value>
+  </data>
+  <data name="StUnsuccessfullLgin" xml:space="preserve">
+    <value>Студенты</value>
+  </data>
+  <data name="StWithMyAccount" xml:space="preserve">
+    <value>Список студентов</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Проверка службы не удалась</value>
+  </data>
+  <data name="SubStudents" xml:space="preserve">
+    <value>на вашем аккаунте</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Участие</value>
+  </data>
+  <data name="TechProblemInTutorial" xml:space="preserve">
+    <value>Подписчики</value>
+  </data>
+  <data name="Thur" xml:space="preserve">
+    <value>Воскресенье</value>
+  </data>
+  <data name="TimeTable" xml:space="preserve">
+    <value>У вас возникли технические проблемы во время заниятия</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Четверг</value>
+  </data>
+  <data name="Tus" xml:space="preserve">
+    <value>Расписание</value>
+  </data>
+  <data name="TutAssignToInst" xml:space="preserve">
+    <value>К, в</value>
+  </data>
+  <data name="TutCloseDate" xml:space="preserve">
+    <value>Вторник</value>
+  </data>
+  <data name="TutCount" xml:space="preserve">
+    <value>Курс обучения назначен вам администрацией</value>
+  </data>
+  <data name="TutDetails" xml:space="preserve">
+    <value>Дата окончания курса</value>
+  </data>
+  <data name="TutInstName" xml:space="preserve">
+    <value>Количество лекций</value>
+  </data>
+  <data name="TutLang" xml:space="preserve">
+    <value>Подробности курса</value>
+  </data>
+  <data name="TutLectures" xml:space="preserve">
+    <value>Преподаватель курса</value>
+  </data>
+  <data name="TutOpenDate" xml:space="preserve">
+    <value>Язык курса</value>
+  </data>
+  <data name="TutorialTitle" xml:space="preserve">
+    <value>Лекции курса</value>
+  </data>
+  <data name="UserNameMsg" xml:space="preserve">
+    <value>Дата курса</value>
+  </data>
+  <data name="VerifyCode" xml:space="preserve">
+    <value>Название курса</value>
+  </data>
+  <data name="VGood" xml:space="preserve">
+    <value>Ваше имя пользователя это</value>
+  </data>
+  <data name="VideoUrl" xml:space="preserve">
+    <value>Проверка кода</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Очень хорошо</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Ссылка на  видеозапись лекции</value>
+  </data>
+  <data name="MessageRegister" xml:space="preserve">
+    <value>Пожалуйста, выберите язык, на котором вы хотите учиться</value>
+  </data>
+</root>

@@ -15,7 +15,7 @@ using QuranEducation.Helpers;
 namespace QuranEducation.Controllers
 {
     [Authorize(Roles = RoleNames.AdminLevel)]
-    public class TutorialController : Controller
+    public class TutorialController : MyController
     {
         private ApplicationDbContext _context;
         private DateTime _currentDate = DateTime.Now;
@@ -43,18 +43,24 @@ namespace QuranEducation.Controllers
             {
                 foreach (var req in requests)
                 {
-                    var student = _context.Users.Where(u => u.UserName == req.UserName).FirstOrDefault();
-                    SubList.Add(new SubVM
+                    ApplicationUser student = _context.Users.Where(u => u.UserName == req.UserName).FirstOrDefault();
+                    // var student = _context.Users.Where(u => u.UserName == req.UserName).FirstOrDefault();
+                    if (student != null)
                     {
-                        Id = req.Id,
-                        RequestDate = req.RequestDate,
-                        StudentName = student.FullName,
-                        StudentPhone = student.PhoneNumber,
-                        StudentUserName = student.UserName,
-                        StudentEmial = student.Email,
-                        TutorialSubCount = _context.StudentTutorials.Where(t => t.Id == req.TutorialId && t.ManagemetAccept).Count(),
-                        TutorialTitle = req.Tutorial.Title
-                    });
+                        SubList.Add(new SubVM
+                        {
+                            Id = req.Id,
+                            RequestDate = req.RequestDate,
+                            StudentName = student.FullName,
+                            StudentPhone = student.PhoneNumber,
+                            StudentUserName = student.UserName,
+                            StudentEmial = student.Email,
+                            TutorialSubCount = _context.StudentTutorials.Where(t => t.Id == req.TutorialId && t.ManagemetAccept).Count(),
+                            TutorialTitle = req.Tutorial.Title
+                        });
+
+                    }
+
                 }
             }
             return View(SubList);
@@ -76,10 +82,10 @@ namespace QuranEducation.Controllers
                         Arrival = DateTime.Now,
                         AUserName = sub.UserName,
                         Message = getStringFromRes("ManagementAccept", lang),
-                            Sender = getStringFromRes("ManagementTitle", lang),
+                        Sender = getStringFromRes("ManagementTitle", lang),
                         Link = Url.Action("MyTutorials", "Student", null, Request.Url.Scheme)
-                        };
-                        _context.Inbox.Add(message);
+                    };
+                    _context.Inbox.Add(message);
                     EmailSender sender = new EmailSender();
                     var fullSms = message.Message + "  - " + sub.Tutorial?.Title + "  - " + message.Link;
                     sender.SendMail(sub.UserName, fullSms);
@@ -101,7 +107,7 @@ namespace QuranEducation.Controllers
         {
             try
             {
-                var sub = _context.StudentTutorials.Include(t=>t.Tutorial).FirstOrDefault(m => m.Id == Id);
+                var sub = _context.StudentTutorials.Include(t => t.Tutorial).FirstOrDefault(m => m.Id == Id);
                 if (sub != null)
                 {
                     sub.ManagemetAccept = false;
@@ -118,7 +124,7 @@ namespace QuranEducation.Controllers
                     };
                     _context.Inbox.Add(message);
                     EmailSender sender = new EmailSender();
-                    var fullSms = message.Message + "  - "  + sub.Tutorial?.Title + "  - " + message.Link;
+                    var fullSms = message.Message + "  - " + sub.Tutorial?.Title + "  - " + message.Link;
                     sender.SendMail(sub.UserName, fullSms);
                     _context.SaveChanges();
                     Response.StatusCode = 200;
@@ -133,6 +139,7 @@ namespace QuranEducation.Controllers
             Response.StatusCode = 403;
             return false;
         }
+       
         public ActionResult HandlTutorial(int? Id)
         {
             if (Id.HasValue)
@@ -140,7 +147,12 @@ namespace QuranEducation.Controllers
                 var TutorialVM = _context.Tutorials.ProjectTo<TutorialVM>().FirstOrDefault(m => m.Id == Id);
                 return View(TutorialVM);
             }
-            return View(new TutorialVM { OpenDate = DateTime.Now, CloseDate = DateTime.Now });
+            var _currentDate = DateTime.Now;
+            return View(new TutorialVM
+            {
+                OpenDate = _currentDate,
+                CloseDate = _currentDate
+            });
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -252,10 +264,12 @@ namespace QuranEducation.Controllers
         public ActionResult Getstudent1(int Id)
         {
             //var tutorials = _context.StudentTutorials.Where(m => m.TutorialId == Id);
+
             var studentRoleId = _context.Roles.FirstOrDefault(m => m.Name == RoleNames.StudentLevel).Id;
             if (User.IsInRole(RoleNames.AdminLevel))
             {
-                var subStudents = _context.StudentTutorials.Where(m => m.TutorialId == Id).Select(m => m.UserName).ToList();
+                var subStudents = _context.StudentTutorials.Where(m => m.TutorialId == Id && m.ManagemetAccept).Select(m => m.UserName).ToList();
+                // var subStudents = _context.StudentTutorials.Where(m => m.TutorialId == Id).Select(m => m.UserName).ToList();
                 var users = _context.Users.Where(u => u.Roles.Select(r => r.RoleId).Contains(studentRoleId) && subStudents.Contains(u.UserName)).ToList();
                 ViewBag.tutId = Id;
                 return View(users);

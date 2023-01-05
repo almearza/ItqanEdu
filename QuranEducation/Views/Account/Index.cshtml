@@ -75,7 +75,7 @@
                                         }
                                     }
                                     <td>@role</td>
-                                    <td>@LanguageMang.AvailableLanguages.FirstOrDefault(m=>m.Code.ToLower() == userPlusRoleVM.User.LangCode).Name</td>
+                                    <td>@LanguageMang.AvailableLanguages.FirstOrDefault(m=>m.Code.ToLower() == userPlusRoleVM.User.LangCode.ToLower()).Name</td>
 
                                     <td><a class="btn" href="~/Account/Edit/@userPlusRoleVM.User.Id">تعديل</a></td>
                                     <td><a class="btn js-activate" data-user-id="@userPlusRoleVM.User.Id">@activate</a></td>

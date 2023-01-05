@@ -18,7 +18,7 @@
         HttpCookie langCookie = Request.Cookies["culture"];
         if (langCookie != null)
         {
-            if (langCookie.Value == "ar")
+            if (langCookie.Value.ToLower() == "ar" || langCookie.Value.ToLower() == "ur")
             {
                 <link href="~/assets/bootstrap-rtl/css/bootstrap-rtl.min.css" rel="stylesheet" />
                 <link href="~/assets/bootstrap-rtl/css/bootstrap-responsive-rtl.min.css" rel="stylesheet" />

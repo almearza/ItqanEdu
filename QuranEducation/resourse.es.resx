@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Sobre la plataforma de Itqan</value>
+  </data>
+  <data name="aboutus" xml:space="preserve">
+    <value>Quien somos ?</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Cursos</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="AnswerCan" xml:space="preserve">
+    <value>Sí, y la plataforma lo admite y lo respalda, siempre que no afecte el curso de la lección</value>
+  </data>
+  <data name="AnswerInst" xml:space="preserve">
+    <value>Sí, si hay otro profesor disponible que hable con fluidez el idioma del alumno, la plataforma permite que el alumno cambie de profesor.</value>
+  </data>
+  <data name="AnwerInst" xml:space="preserve">
+    <value>Contamos con maestros calificados y competentes que hablan su idioma y tienen un certificado en la enseñanza de Al-Qaida Al-Nooraniah y tienen experiencia en la enseñanza del Sagrado Corán y la enseñanza a distancia.</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>La lengua  árabe </value>
+  </data>
+  <data name="benifits" xml:space="preserve">
+    <value>¿Qué distingue a la plataforma Itqan?</value>
+  </data>
+  <data name="CanFather" xml:space="preserve">
+    <value>¿Puede el tutor tener la sesión educativa con el niño?</value>
+  </data>
+  <data name="Cat" xml:space="preserve">
+    <value>Grupos destinatarios</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Términos y condiciones </value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Conéctate con nosotros</value>
+  </data>
+  <data name="contactwithme" xml:space="preserve">
+    <value>Conéctate con nosotros</value>
+  </data>
+  <data name="Courses" xml:space="preserve">
+    <value>Nuestras programas</value>
+  </data>
+  <data name="Detiles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>    El correo electrónico                                                                                                                           </value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Preguntas comunes</value>
+  </data>
+  <data name="feturs" xml:space="preserve">
+    <value>ventajas de Itqan</value>
+  </data>
+  <data name="Fullname" xml:space="preserve">
+    <value>El nombre                                                                                                                                            </value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Los objetivos </value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="how" xml:space="preserve">
+    <value>¿Cómo me registro en la plataforma?</value>
+  </data>
+  <data name="HowChange" xml:space="preserve">
+    <value>¿Puedo cambiar de profesor?</value>
+  </data>
+  <data name="HowIns" xml:space="preserve">
+    <value>¿Quiénes son los profesores de la plataforma?</value>
+  </data>
+  <data name="howReg" xml:space="preserve">
+    <value>Ver las condiciones de inscripción</value>
+  </data>
+  <data name="Itqan" xml:space="preserve">
+    <value>plataforma de Itqan</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>Lengua </value>
+  </data>
+  <data name="lecture" xml:space="preserve">
+    <value>Sesión educativa</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Enlaces de interes</value>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>Iniciar la sesión</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Mensaje </value>
+  </data>
+  <data name="Moor" xml:space="preserve">
+    <value>Más</value>
+  </data>
+  <data name="plan" xml:space="preserve">
+    <value>Planes de estudio</value>
+  </data>
+  <data name="Privace" xml:space="preserve">
+    <value>Todos los derechos reservados plataforma Itqan 2021</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Términos y condiciones</value>
+  </data>
+  <data name="Quaida" xml:space="preserve">
+    <value>Al Qaida Al-Nooraniah</value>
+  </data>
+  <data name="qudiah" xml:space="preserve">
+    <value>Al Qaida Al-Nooraniah</value>
+  </data>
+  <data name="Quran" xml:space="preserve">
+    <value>El Corán sagrado</value>
+  </data>
+  <data name="registerwithus" xml:space="preserve">
+    <value>  Inscribirse con nosotros                                                                                                               </value>
+  </data>
+  <data name="RegistrationTerms" xml:space="preserve">
+    <value>condiciones de inscripción</value>
+  </data>
+  <data name="requiredIT" xml:space="preserve">
+    <value>Requerimientos técnicos</value>
+  </data>
+  <data name="sendbutton" xml:space="preserve">
+    <value>Enviar                                                                                                                                                   </value>
+  </data>
+  <data name="Sesion" xml:space="preserve">
+    <value>Plan de estudios y método de estudio.</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value> El tema                                                                                                                                                 </value>
+  </data>
+  <data name="Sunah" xml:space="preserve">
+    <value>Sunnah</value>
+  </data>
+  <data name="vision" xml:space="preserve">
+    <value>Visión</value>
+  </data>
+  <data name="WhatCondition" xml:space="preserve">
+    <value>cuáles son los términos de inscripción</value>
+  </data>
+  <data name="why" xml:space="preserve">
+    <value>¿Por qué plataforma de Itqan?</value>
+  </data>
+</root>

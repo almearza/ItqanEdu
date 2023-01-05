@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe" xml:space="preserve">
+    <value>tungkol sa akin</value>
+  </data>
+  <data name="Acceptable" xml:space="preserve">
+    <value>katanggap-tanggap</value>
+  </data>
+  <data name="AcceptInst" xml:space="preserve">
+    <value>sumasang-ayon ako</value>
+  </data>
+  <data name="AccountWasLocked" xml:space="preserve">
+    <value>Pansamantalang na-lock ang account, mangyaring makipag-ugnayan sa administrator ng system</value>
+  </data>
+  <data name="AchievementFile" xml:space="preserve">
+    <value>Achievement file</value>
+  </data>
+  <data name="AddAssMsg2" xml:space="preserve">
+    <value>pagdagdag o pagbago</value>
+  </data>
+  <data name="AddLecMsg1" xml:space="preserve">
+    <value>ang Guro ay</value>
+  </data>
+  <data name="AddLecMsg2" xml:space="preserve">
+    <value>nagdagdag o nag edit ng Lecture</value>
+  </data>
+  <data name="AddLecMsg3" xml:space="preserve">
+    <value>para sa kursong pagsasanay</value>
+  </data>
+  <data name="AdministrativeForms" xml:space="preserve">
+    <value>modelong pang-administratibo</value>
+  </data>
+  <data name="Alreadyeval" xml:space="preserve">
+    <value>Na-rate mo na ang professor na ito</value>
+  </data>
+  <data name="ArriveInATime" xml:space="preserve">
+    <value>pumapasok ang Guro sa tamang Oras</value>
+  </data>
+  <data name="AssAttach" xml:space="preserve">
+    <value>Kalakip ng Takdang-aralin - pagsusulit</value>
+  </data>
+  <data name="AssDegree" xml:space="preserve">
+    <value>ang antas ng Takdang-aralin -pagsusulit</value>
+  </data>
+  <data name="AssDesc" xml:space="preserve">
+    <value>Mga Detalye ng Takdang-Aralin - Pagsusulit</value>
+  </data>
+  <data name="assEndBeggerThanLecStart" xml:space="preserve">
+    <value>Ang oras ng pagtatapos ay dapat pagkatapos ng oras ng pagsisimula para sa Takdang-aralin-pagsusulit</value>
+  </data>
+  <data name="AssEndDate" xml:space="preserve">
+    <value>Petsa ng pagtatapos ng Takdang-aralin - Pagsusulit</value>
+  </data>
+  <data name="AssEndTime" xml:space="preserve">
+    <value>Oras ng pagtatapos ng takdang-aralin - Pagsusulit</value>
+  </data>
+  <data name="AssigmentList" xml:space="preserve">
+    <value>Listahan ng mga Takdang-aralin - Mga Pagsusulit</value>
+  </data>
+  <data name="AssigmentTitle" xml:space="preserve">
+    <value>Mga takdang-aralin at pagsusulit</value>
+  </data>
+  <data name="AssSolution" xml:space="preserve">
+    <value>solusyon sa Takdang-aralin</value>
+  </data>
+  <data name="AssSolutions" xml:space="preserve">
+    <value>mga solusyon sa takdang-aralin</value>
+  </data>
+  <data name="AssStDate" xml:space="preserve">
+    <value>Ang petsa ng pagsisimula ng takdang-aralin - pagsusulit</value>
+  </data>
+  <data name="AssStTime" xml:space="preserve">
+    <value>Ang oras ng pagsisimula ng takdang-aralin - ang pagsusulit</value>
+  </data>
+  <data name="assTimeError" xml:space="preserve">
+    <value>Oras ng Takdang-aralin - ang pagsusulit ay dapat na mas huli kaysa sa kasalukuyang oras</value>
+  </data>
+  <data name="AssTitle" xml:space="preserve">
+    <value>Pamagat ng Takdang-Aralin - Pagsusulit</value>
+  </data>
+  <data name="AssTutNotFound" xml:space="preserve">
+    <value>Walang pagsasanay para sa takdang-aralin na ito</value>
+  </data>
+  <data name="AssType" xml:space="preserve">
+    <value>Takdang-aralin o pagsusulit</value>
+  </data>
+  <data name="AsstypeTitle" xml:space="preserve">
+    <value>Pagsusulit</value>
+  </data>
+  <data name="AttRemoved" xml:space="preserve">
+    <value>ang Kalakip ay tinanggal</value>
+  </data>
+  <data name="AttRemoveError" xml:space="preserve">
+    <value>Nagkaroon ng error habang tinatanggal ang Kalakip</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>pagbalik sa home-page</value>
+  </data>
+  <data name="BackTut" xml:space="preserve">
+    <value>pagbalik</value>
+  </data>
+  <data name="BOD" xml:space="preserve">
+    <value>Araw ng kapanganakan</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>pagpapadala</value>
+  </data>
+  <data name="CertifyError" xml:space="preserve">
+    <value>Mangyaring pumili ng antas ng mag-aaral</value>
+  </data>
+  <data name="ChangePassFailed" xml:space="preserve">
+    <value>Ang user na ito ay hindi umiiral o ang lumang password ay hindi tama</value>
+  </data>
+  <data name="ChangePassLater" xml:space="preserve">
+    <value>Maaari mong baguhin ang password sa ibang pagkakataon</value>
+  </data>
+  <data name="ChangePassTextUrl" xml:space="preserve">
+    <value>pagbagu ng password</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="codeNotValid" xml:space="preserve">
+    <value>maling Code</value>
+  </data>
+  <data name="ConfirmPassErrorText" xml:space="preserve">
+    <value>hindi magkatugma ang dalawang password</value>
+  </data>
+  <data name="ConfirmPassText" xml:space="preserve">
+    <value>i-type ulit ang password</value>
+  </data>
+  <data name="CreateAss" xml:space="preserve">
+    <value>pag-gawa ng takdang-aralin -pagsusulit</value>
+  </data>
+  <data name="CreateLec" xml:space="preserve">
+    <value>pag-gawa ng Lecture</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>ngayong Araw</value>
+  </data>
+  <data name="DeleteAttQues" xml:space="preserve">
+    <value>gusto mo bang tanggalin ang kalakip na ito?</value>
+  </data>
+  <data name="DtsEmptyTable" xml:space="preserve">
+    <value>Walang available na data sa talaan</value>
+  </data>
+  <data name="DtsFirst" xml:space="preserve">
+    <value>ang una</value>
+  </data>
+  <data name="DtsInfoEmpty" xml:space="preserve">
+    <value>Nagpapakita ng 0 hanggang 0 sa kabuuan 0 talaan</value>
+  </data>
+  <data name="DtsInfoFiltered" xml:space="preserve">
+    <value>( nilagay_MAX_ pinili mula sa kabuuan ng )</value>
+  </data>
+  <data name="DtsLast" xml:space="preserve">
+    <value>ang huli</value>
+  </data>
+  <data name="DtsLengthMenu" xml:space="preserve">
+    <value>Ipakita ang _MENU_ mga nailagay</value>
+  </data>
+  <data name="DtsNext" xml:space="preserve">
+    <value>kasunod</value>
+  </data>
+  <data name="DtsPrevious" xml:space="preserve">
+    <value>nakaraan</value>
+  </data>
+  <data name="DtsSearch" xml:space="preserve">
+    <value>hanapin</value>
+  </data>
+  <data name="DtsSortAscending" xml:space="preserve">
+    <value>paganahin upang maayus ang mga Culomn sa pataas na pakakasunud-sunud:</value>
+  </data>
+  <data name="DtsSortDescending" xml:space="preserve">
+    <value>paganahin upang maayus ang mga Culomn sa pababang pakakasunud-sunud:</value>
+  </data>
+  <data name="DtsZeroRecords" xml:space="preserve">
+    <value>walang nakitang mga record</value>
+  </data>
+  <data name="EditProfileBtn" xml:space="preserve">
+    <value>i-edit ang aking File</value>
+  </data>
+  <data name="EduYear" xml:space="preserve">
+    <value>Academic year</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>e-mail</value>
+  </data>
+  <data name="EmailAlreadyTaken" xml:space="preserve">
+    <value>ang E-main na ito ay nauna ng ginamit ng ibang tao</value>
+  </data>
+  <data name="EnName" xml:space="preserve">
+    <value>ang pangalan sa wikang English</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>mangyaring ipasok ang code na ipinadala sa iyong e-mail</value>
+  </data>
+  <data name="EnterCorrectPhone" xml:space="preserve">
+    <value>Ang e-mail na ipinasok ay hindi nakarehistro sa amin, gumamit ng tamang e-mail</value>
+  </data>
+  <data name="ErrorSumTitle" xml:space="preserve">
+    <value>Mangyaring ayusin ang mga error</value>
+  </data>
+  <data name="ErrorWhileResetPass" xml:space="preserve">
+    <value>Error habang ina-update ang pag-reset ng password</value>
+  </data>
+  <data name="EvalSent" xml:space="preserve">
+    <value>Naisumite na ang iyong pagsusuri</value>
+  </data>
+  <data name="EvalStudent" xml:space="preserve">
+    <value>pagsusuri sa mag-aaral</value>
+  </data>
+  <data name="evaluated" xml:space="preserve">
+    <value>natapus ng suriin</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>Excellent</value>
+  </data>
+  <data name="FatherNoti" xml:space="preserve">
+    <value>pagbibigay alam sa mga magulang</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Babae</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>Ang field na ito ay ipinag-uutos na</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Biyernes</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>mula</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>ang uri</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>mahusay</value>
+  </data>
+  <data name="GoodCommunications" xml:space="preserve">
+    <value>Ang guro ay nakikipag-usap sa iyo nang mahinahon</value>
+  </data>
+  <data name="GoodInStudy" xml:space="preserve">
+    <value>Ang istilo ng pagtuturo ay nababagay para sa iyo</value>
+  </data>
+  <data name="GoodInUsingBoard" xml:space="preserve">
+    <value>ang Guro ay gumagamit ng Board ng maayus</value>
+  </data>
+  <data name="GoodInVoice" xml:space="preserve">
+    <value>naririnig mo ng malinaw ang Boses ng Guro</value>
+  </data>
+  <data name="HMtypeTitle" xml:space="preserve">
+    <value>takdang-aralin</value>
+  </data>
+  <data name="HomeIndexTitle" xml:space="preserve">
+    <value>home-page</value>
+  </data>
+  <data name="HomeIndexWelcome" xml:space="preserve">
+    <value>welcome sa iyo dito sa plataporma ng Itqan</value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>Telepono sa bahay</value>
+  </data>
+  <data name="InboxMessageDate" xml:space="preserve">
+    <value>Dumating sa petsa</value>
+  </data>
+  <data name="InboxMessageDelete" xml:space="preserve">
+    <value>pagtanggal</value>
+  </data>
+  <data name="InboxMessageFrom" xml:space="preserve">
+    <value>mula</value>
+  </data>
+  <data name="InboxMessageOpen" xml:space="preserve">
+    <value>pagpunta</value>
+  </data>
+  <data name="InboxMessageTitle" xml:space="preserve">
+    <value>minsahe</value>
+  </data>
+  <data name="InboxTitle" xml:space="preserve">
+    <value>natanggap</value>
+  </data>
+  <data name="InstDescError" xml:space="preserve">
+    <value>Mangyaring magpasok ng sapat na paglalarawan ng iyong sarili</value>
+  </data>
+  <data name="InstEval" xml:space="preserve">
+    <value>pagsusuri ng guro</value>
+  </data>
+  <data name="instHasNotThisTut" xml:space="preserve">
+    <value>Ang kursong ito ay hindi para sa propesor na ito</value>
+  </data>
+  <data name="InstImgError" xml:space="preserve">
+    <value>pumili ng larawang may sukat na 220 pixels by 220 pixels</value>
+  </data>
+  <data name="InstLecList" xml:space="preserve">
+    <value>listahan ng mga Lecture</value>
+  </data>
+  <data name="InstName" xml:space="preserve">
+    <value>pangalan ng Guro</value>
+  </data>
+  <data name="InstProfileUrl" xml:space="preserve">
+    <value> aking file</value>
+  </data>
+  <data name="InstTitleError" xml:space="preserve">
+    <value>Pakilagay ang titulo ng trabaho</value>
+  </data>
+  <data name="InstTitleText" xml:space="preserve">
+    <value>titulo ng trabaho</value>
+  </data>
+  <data name="InstTut" xml:space="preserve">
+    <value>aking kursong pagsasanay</value>
+  </data>
+  <data name="InstTutList" xml:space="preserve">
+    <value>Listahan ng Kursong pagsasanay</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>ang E-mail na ipinasok ay hindi tama</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Deskripsyon ng trabaho</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>wika</value>
+  </data>
+  <data name="LecAttach" xml:space="preserve">
+    <value>pagbubukas ng kalakip na file</value>
+  </data>
+  <data name="LecDate" xml:space="preserve">
+    <value>petsa ng Lecture</value>
+  </data>
+  <data name="LecDesc" xml:space="preserve">
+    <value>Deskripsyon ng Lecture</value>
+  </data>
+  <data name="LecEndBeggerThanLecStart" xml:space="preserve">
+    <value>Ang oras ng pagtatapos ng lecture ay dapat pagkatapos ng oras ng pagsisimula ng lecture</value>
+  </data>
+  <data name="LecEndTime" xml:space="preserve">
+    <value>oras ng pagtatapos ng Lecture</value>
+  </data>
+  <data name="LecsInSameTimeError" xml:space="preserve">
+    <value>May mga lecture sa oras na ito, mangyaring pumili ng ibang oras</value>
+  </data>
+  <data name="LecStTime" xml:space="preserve">
+    <value>oros ng pagsisimula ng Lecture</value>
+  </data>
+  <data name="LecTime" xml:space="preserve">
+    <value>Oras ng Lecture</value>
+  </data>
+  <data name="LecTimeError" xml:space="preserve">
+    <value>Ang oras ng Lecture ay dapat na mas malaki kaysa sa kasalukuyang oras</value>
+  </data>
+  <data name="LecTitle" xml:space="preserve">
+    <value>pamagat ng Lecture</value>
+  </data>
+  <data name="LecTitleTimeTable" xml:space="preserve">
+    <value>Lecture</value>
+  </data>
+  <data name="LectureTitle" xml:space="preserve">
+    <value>mga Lecture</value>
+  </data>
+  <data name="LecTutNotFound" xml:space="preserve">
+    <value>Walang pagsasanay para sa Lecture na ito</value>
+  </data>
+  <data name="LecVirtualUrl" xml:space="preserve">
+    <value>link ng virtual room</value>
+  </data>
+  <data name="ListOfInBox" xml:space="preserve">
+    <value>Listahan ng mga Minsaheng natanggap</value>
+  </data>
+  <data name="LoginBtnVal" xml:space="preserve">
+    <value>pagpasok</value>
+  </data>
+  <data name="LoginCreateStAccount" xml:space="preserve">
+    <value>pag-gawa ng Acount ng mag-aaral</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>ipasok ang E-mail</value>
+  </data>
+  <data name="LoginFailedMsg" xml:space="preserve">
+    <value>Nabigong pagtatangka sa pag-log in</value>
+  </data>
+  <data name="LoginForgetPass" xml:space="preserve">
+    <value>nakalimutan ko ang password</value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>ipasok ang password</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Itqan - Log-in</value>
+  </data>
+  <data name="LoginTopHeader" xml:space="preserve">
+    <value>Log-in</value>
+  </data>
+  <data name="LoginToSub" xml:space="preserve">
+    <value>Mag-log in para mag subscribe</value>
+  </data>
+  <data name="LogoutTextUrl" xml:space="preserve">
+    <value>Log-out</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Lalake</value>
+  </data>
+  <data name="ManagementAccept" xml:space="preserve">
+    <value>Ang iyong kahilingan ay naaprubahan</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>pangangasiwa</value>
+  </data>
+  <data name="MessageRegister" xml:space="preserve">
+    <value>Mangyaring piliin ang wikang gusto mong gamitin sa pag-aaral</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Lunes</value>
+  </data>
+  <data name="MyAssignment" xml:space="preserve">
+    <value>takdang-aralin ko</value>
+  </data>
+  <data name="MyEvaluate" xml:space="preserve">
+    <value>akin pagsusuri</value>
+  </data>
+  <data name="MyTutorials" xml:space="preserve">
+    <value>aking mga kurso</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>pangalan</value>
+  </data>
+  <data name="NameInNational" xml:space="preserve">
+    <value>Pangalan sa wikang pambansa</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Nasyonalidad</value>
+  </data>
+  <data name="NewPassErrorText" xml:space="preserve">
+    <value>ipasok ang bagong password</value>
+  </data>
+  <data name="NewPassLength" xml:space="preserve">
+    <value>Ang haba ng password ay dapat na hindi bababa sa 6 at hindi hihigit sa 50 character</value>
+  </data>
+  <data name="NewPassText" xml:space="preserve">
+    <value>bagong password</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>hindi</value>
+  </data>
+  <data name="NoPrevAttForAss" xml:space="preserve">
+    <value>walang kalakip na na-upload sa takdang-aralin na ito- pagsusulit</value>
+  </data>
+  <data name="NoPrevAttForSol" xml:space="preserve">
+    <value>Walang kalakip na na-upload para sa solusyon na ito</value>
+  </data>
+  <data name="NotAcceptInst" xml:space="preserve">
+    <value>hindi ako sumasang-ayon</value>
+  </data>
+  <data name="OldPassErrorText" xml:space="preserve">
+    <value>ipasok ang lumang password</value>
+  </data>
+  <data name="OldPassText" xml:space="preserve">
+    <value>lumang password</value>
+  </data>
+  <data name="OtherInstDataError" xml:space="preserve">
+    <value>Ang email, pangalan at numero ng mobile ay mga mandatoryong field</value>
+  </data>
+  <data name="passChanged" xml:space="preserve">
+    <value>Matagumpay na nabago ang password</value>
+  </data>
+  <data name="PassMsg" xml:space="preserve">
+    <value>ang iyong password ay</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="passwordsent" xml:space="preserve">
+    <value>na-ipadala na ang password</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>numero ng Mobile +xxx</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>numero ng telepono kasama ang country Code</value>
+  </data>
+  <data name="Poor" xml:space="preserve">
+    <value>mahina</value>
+  </data>
+  <data name="ProfileImgLable" xml:space="preserve">
+    <value>larawan 220*220</value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>aking profile</value>
+  </data>
+  <data name="RemoveAtt" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="RequestedOrSubscribed" xml:space="preserve">
+    <value>Naka-subscribe na o kasalukuyang naka-request</value>
+  </data>
+  <data name="ResidentCountry" xml:space="preserve">
+    <value>bansang tinitirahan</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>sabado</value>
+  </data>
+  <data name="ShowAtt" xml:space="preserve">
+    <value>pagpapakita ng kalakip</value>
+  </data>
+  <data name="ShowStudentAssignments" xml:space="preserve">
+    <value>pagpapakita ng takdang-aralin ng mag-aaral</value>
+  </data>
+  <data name="ShowTutDetails" xml:space="preserve">
+    <value>pagpapakita ng detalye ng Kurso </value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Itqan</value>
+  </data>
+  <data name="SolAttach" xml:space="preserve">
+    <value>mga kalakip na mga file na may solusyon</value>
+  </data>
+  <data name="SolDesc" xml:space="preserve">
+    <value>solusyon</value>
+  </data>
+  <data name="StAllTut" xml:space="preserve">
+    <value>mga Kusrong available</value>
+  </data>
+  <data name="StAssociateYourAccount" xml:space="preserve">
+    <value>pag-uugnay sa iyong Acount sa</value>
+  </data>
+  <data name="StAssociationForm" xml:space="preserve">
+    <value>screen ng Link</value>
+  </data>
+  <data name="StCertRequired" xml:space="preserve">
+    <value>Dapat mong i-upload ang iyong pinakabagong sertipiko</value>
+  </data>
+  <data name="StCompleteRegister" xml:space="preserve">
+    <value> pag-kumpleto sa proseso ng pagpaparehistro</value>
+  </data>
+  <data name="StCreateAccountTitle" xml:space="preserve">
+    <value>pag-gawa ng pag-edit ng Acount ng mag-aaral</value>
+  </data>
+  <data name="StDegree" xml:space="preserve">
+    <value>antas ng mag-aaral</value>
+  </data>
+  <data name="StExLoginAccount" xml:space="preserve">
+    <value>Acount</value>
+  </data>
+  <data name="StExLoginBtnFace" xml:space="preserve">
+    <value>pagpasok gamit ang facebook Acount</value>
+  </data>
+  <data name="StExLoginUsing" xml:space="preserve">
+    <value>Log-in sa pamamagitan ng Facebook</value>
+  </data>
+  <data name="StFinishLoginMsg" xml:space="preserve">
+    <value>Mangyaring ipasok ang iyong mobile number sa field sa ibaba upang makumpleto ang proseso ng pagpaparehistro</value>
+  </data>
+  <data name="StLoginFailure" xml:space="preserve">
+    <value>hindi tagumpay ang pag-login</value>
+  </data>
+  <data name="StRegReq1" xml:space="preserve">
+    <value>Mga Tuntunin sa Pagpaparehistro</value>
+  </data>
+  <data name="StRegReq10" xml:space="preserve">
+    <value>9- Ang pagdalo sa panimulang sesyon patungkol sa plano ng pag-aaral at pagpasa sa personal interview na naglalayong kilalanin ang kakayahan ng mag-aaral, at matukoy ang kanyang antas at gabayan siya sa naaangkop na plano sa pag-aara</value>
+  </data>
+  <data name="StRegReq11" xml:space="preserve">
+    <value>10- Pagbili ng kurikulum na pang-edukasyon, printed o elektronikong aklat na Al-Qaida Al-nooraniah</value>
+  </data>
+  <data name="StRegReq2" xml:space="preserve">
+    <value>1- Ang aplikante ay dapat 7 taong gulang o higit pa</value>
+  </data>
+  <data name="StRegReq3" xml:space="preserve">
+    <value>2- Pagsasaulo ng Arabic Alpabeto bago simulan ang kurso</value>
+  </data>
+  <data name="StRegReq4" xml:space="preserve">
+    <value>3- pag-seseryoso at regular na pagdalo hanggang sa katapusan ng kurso</value>
+  </data>
+  <data name="StRegReq5" xml:space="preserve">
+    <value>4- ang mag-aaral ay dapat maging bihasa sa paggamit ng kompyuter, o dikaya'y may tutulong sa kanya sa bagay na iyon</value>
+  </data>
+  <data name="StRegReq6" xml:space="preserve">
+    <value>5- Ang mag-aaral ay dapat sumunod sa pangkalahatang kagandahang-asal, at kagandahang-asal sa pag-aaral ng Qur’an</value>
+  </data>
+  <data name="StRegReq7" xml:space="preserve">
+    <value>6- Obligado ang mga magulang na subaybayan ang bata sa oras ng pag-aaral</value>
+  </data>
+  <data name="StRegReq8" xml:space="preserve">
+    <value>7- pag-filup ng form para sa pagpaparehistro, at saktung pagsulat ng mga impormasyong kailangan, at tiyaking basahin ang mga tuntunin at kundisyon</value>
+  </data>
+  <data name="StRegReq9" xml:space="preserve">
+    <value>8- ang pagpaparehistro sa plataporma ay gamit ang iyong email at numero ng telepono para sa pagpapatunay</value>
+  </data>
+  <data name="StScore" xml:space="preserve">
+    <value>antas ng Achievement</value>
+  </data>
+  <data name="StSuccessExternalAuth" xml:space="preserve">
+    <value>Matagumpay na na-verify sa</value>
+  </data>
+  <data name="StudentCert" xml:space="preserve">
+    <value>Pinakabagong akademikong sertipiko</value>
+  </data>
+  <data name="StudentCertify" xml:space="preserve">
+    <value>pagbibigay ng sertipiko</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>mga mag-aaral</value>
+  </data>
+  <data name="StudentsList" xml:space="preserve">
+    <value>Listahan ng mag-aaral</value>
+  </data>
+  <data name="StUnsuccessfullLgin" xml:space="preserve">
+    <value>Nabigo ang pag-verify sa serbisyo</value>
+  </data>
+  <data name="StWithMyAccount" xml:space="preserve">
+    <value>gamit ang account na ito</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>subscribe</value>
+  </data>
+  <data name="SubStudents" xml:space="preserve">
+    <value>ang mag-aaral na nakasubscribe</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Lingo</value>
+  </data>
+  <data name="TechProblemInTutorial" xml:space="preserve">
+    <value>Mayroon kang mga teknikal na problema sa oras ng klase</value>
+  </data>
+  <data name="Thur" xml:space="preserve">
+    <value>Huwebes</value>
+  </data>
+  <data name="TimeTable" xml:space="preserve">
+    <value>iskedyul ng pag-aaral</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>hanggang</value>
+  </data>
+  <data name="Tus" xml:space="preserve">
+    <value>Martes</value>
+  </data>
+  <data name="TutAssignToInst" xml:space="preserve">
+    <value>Isang kurso sa pagsasanay ang itinalaga sa iyo ng opisina </value>
+  </data>
+  <data name="TutCloseDate" xml:space="preserve">
+    <value>Petsa ng pagtatapos ng kurso</value>
+  </data>
+  <data name="TutCount" xml:space="preserve">
+    <value>bilang ng Lecture</value>
+  </data>
+  <data name="TutDetails" xml:space="preserve">
+    <value>Detalye ng kurso</value>
+  </data>
+  <data name="TutInstName" xml:space="preserve">
+    <value>guro ng kurso</value>
+  </data>
+  <data name="TutLang" xml:space="preserve">
+    <value>wika ng kurso</value>
+  </data>
+  <data name="TutLectures" xml:space="preserve">
+    <value>mga Lecture ng kurso</value>
+  </data>
+  <data name="TutOpenDate" xml:space="preserve">
+    <value>petsa ng Kurso</value>
+  </data>
+  <data name="TutorialTitle" xml:space="preserve">
+    <value>pamagat ng Kurso</value>
+  </data>
+  <data name="UserNameMsg" xml:space="preserve">
+    <value>Ang iyong username ay</value>
+  </data>
+  <data name="VerifyCode" xml:space="preserve">
+    <value>Pag-verify ng Code</value>
+  </data>
+  <data name="VGood" xml:space="preserve">
+    <value>Napakahusay</value>
+  </data>
+  <data name="VideoUrl" xml:space="preserve">
+    <value>Link ng video ng lecture</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Miyerkules</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Oo</value>
+  </data>
+</root>

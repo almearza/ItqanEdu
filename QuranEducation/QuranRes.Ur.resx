@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMe" xml:space="preserve">
+    <value>میرے   بارے میں</value>
+  </data>
+  <data name="Acceptable" xml:space="preserve">
+    <value>قابل قبول</value>
+  </data>
+  <data name="AcceptInst" xml:space="preserve">
+    <value>متفق</value>
+  </data>
+  <data name="AccountWasLocked" xml:space="preserve">
+    <value>اکاونٹ وقتی طور پر بند ہوچکا ہے  براہ مہربانی ایڈمن سے رابطہ کریں</value>
+  </data>
+  <data name="AchievementFile" xml:space="preserve">
+    <value>حاصل کردہ نکات کی فائل</value>
+  </data>
+  <data name="AddAssMsg2" xml:space="preserve">
+    <value>اضافہ یا تبدیلی</value>
+  </data>
+  <data name="AddLecMsg1" xml:space="preserve">
+    <value>استاد</value>
+  </data>
+  <data name="AddLecMsg2" xml:space="preserve">
+    <value>لیکچر میں  اضافہ یا  تبدیلی</value>
+  </data>
+  <data name="AddLecMsg3" xml:space="preserve">
+    <value>تربیتی دورے کیلیے</value>
+  </data>
+  <data name="AdministrativeForms" xml:space="preserve">
+    <value> ادارتی  نمونہ جات</value>
+  </data>
+  <data name="Alreadyeval" xml:space="preserve">
+    <value>آپ پہلے ہی ان استاد کے متعلق اظہار خیال کرچکے ہیں</value>
+  </data>
+  <data name="ArriveInATime" xml:space="preserve">
+    <value>استاد مناسب وقت پر آتے ہیں</value>
+  </data>
+  <data name="AssAttach" xml:space="preserve">
+    <value>گھر کا کام/ امتحان  منسلک ہے</value>
+  </data>
+  <data name="AssDegree" xml:space="preserve">
+    <value>گھر کے کام/ امتحان کے نمبرز</value>
+  </data>
+  <data name="AssDesc" xml:space="preserve">
+    <value>گھر کے کام / امتحان کی تفصیلات</value>
+  </data>
+  <data name="assEndBeggerThanLecStart" xml:space="preserve">
+    <value>گھر کا کام / امتحآن کااختتامی  وقت اس کے شروع ہونے کے بعد ہونا چاہیے</value>
+  </data>
+  <data name="AssEndDate" xml:space="preserve">
+    <value>گھر کے کام/ امتحان کی آخری تاریخ</value>
+  </data>
+  <data name="AssEndTime" xml:space="preserve">
+    <value>گھر کے کام/ امتحان کا آخری وقت</value>
+  </data>
+  <data name="AssigmentList" xml:space="preserve">
+    <value>گھر کے کام/ امتحانات کی فہرست</value>
+  </data>
+  <data name="AssigmentTitle" xml:space="preserve">
+    <value>گھر کا کام اور امتحانات</value>
+  </data>
+  <data name="AssSolution" xml:space="preserve">
+    <value>حل کریں</value>
+  </data>
+  <data name="AssSolutions" xml:space="preserve">
+    <value>جوابات</value>
+  </data>
+  <data name="AssStDate" xml:space="preserve">
+    <value>گھر کام کام/ امتحان شروع ہونے کی تاریخ</value>
+  </data>
+  <data name="AssStTime" xml:space="preserve">
+    <value>گھر کے کام/ امتحان کے شروع ہونے کا وقت</value>
+  </data>
+  <data name="assTimeError" xml:space="preserve">
+    <value>گھر کے کام/ امتحان کا  وقت لازمی طور پر  ابھی کے وقت کے بعد ہونا چاہیے</value>
+  </data>
+  <data name="AssTitle" xml:space="preserve">
+    <value>گھر کا کام/ امتحان کا عنوان</value>
+  </data>
+  <data name="AssTutNotFound" xml:space="preserve">
+    <value>اس کام سے متعلق کوئی تربیتی دورہ نہیں ہے</value>
+  </data>
+  <data name="AssType" xml:space="preserve">
+    <value>گھر کا کام یا امتحان؟</value>
+  </data>
+  <data name="AsstypeTitle" xml:space="preserve">
+    <value>امتحان</value>
+  </data>
+  <data name="AttRemoved" xml:space="preserve">
+    <value>منسلکہ مواد حذف کردیا گیا </value>
+  </data>
+  <data name="AttRemoveError" xml:space="preserve">
+    <value>مواد کے اضافہ کے دوران خرابی آ رہی ہے</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>صفحہ اول پر واپسی</value>
+  </data>
+  <data name="BackTut" xml:space="preserve">
+    <value>واپسی</value>
+  </data>
+  <data name="BOD" xml:space="preserve">
+    <value>تاریخ پیدائش</value>
+  </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>بھیج  دیں</value>
+  </data>
+  <data name="CertifyError" xml:space="preserve">
+    <value>طالب علم  کا درجہ  منتخب کریں</value>
+  </data>
+  <data name="ChangePassFailed" xml:space="preserve">
+    <value>اس نام  کا اکاونٹ موجود نہیں یا پاسورڈ غلط ہے</value>
+  </data>
+  <data name="ChangePassLater" xml:space="preserve">
+    <value>آُ پ اپنا پاسورڈ بعد میں تبدیل کرسکتے ہیں</value>
+  </data>
+  <data name="ChangePassTextUrl" xml:space="preserve">
+    <value>پاسورڈ  تبدیل کریں</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>کوڈ </value>
+  </data>
+  <data name="codeNotValid" xml:space="preserve">
+    <value>درج کردہ کوڈ غلط ہے</value>
+  </data>
+  <data name="ConfirmPassErrorText" xml:space="preserve">
+    <value>دونوں پاسورڈ  ملتے جلتے نہیں ہیں</value>
+  </data>
+  <data name="ConfirmPassText" xml:space="preserve">
+    <value>پاسورڈ دبارہ  لکھیں</value>
+  </data>
+  <data name="CreateAss" xml:space="preserve">
+    <value>گھر کا کا۔/ امتحان  شروع کریں</value>
+  </data>
+  <data name="CreateLec" xml:space="preserve">
+    <value>لیکچر شروع کریں</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>آج</value>
+  </data>
+  <data name="DeleteAttQues" xml:space="preserve">
+    <value>منسلکہ مواد  حذف کردیا جائے؟</value>
+  </data>
+  <data name="DtsEmptyTable" xml:space="preserve">
+    <value>ٹائم ٹیبل خالی ہے</value>
+  </data>
+  <data name="DtsFirst" xml:space="preserve">
+    <value>پہلا</value>
+  </data>
+  <data name="DtsInfoEmpty" xml:space="preserve">
+    <value>پیش کردہ   0 سے  0  کل  0  محفوظ شدہ</value>
+  </data>
+  <data name="DtsInfoFiltered" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DtsLast" xml:space="preserve">
+    <value>آخری</value>
+  </data>
+  <data name="DtsLengthMenu" xml:space="preserve">
+    <value>نمایاں  _ menu_ داخل کردہ</value>
+  </data>
+  <data name="DtsNext" xml:space="preserve">
+    <value>دوسرا</value>
+  </data>
+  <data name="DtsPrevious" xml:space="preserve">
+    <value>پچھلا</value>
+  </data>
+  <data name="DtsSearch" xml:space="preserve">
+    <value>تلاش کیجیے</value>
+  </data>
+  <data name="DtsSortAscending" xml:space="preserve">
+    <value>اوپری ترتیب سے دکھائیں</value>
+  </data>
+  <data name="DtsSortDescending" xml:space="preserve">
+    <value>نچلی ترتیب سے دکھائیں</value>
+  </data>
+  <data name="DtsZeroRecords" xml:space="preserve">
+    <value>کوئی ریکارڈ موجود نہیں</value>
+  </data>
+  <data name="EditProfileBtn" xml:space="preserve">
+    <value>پروفائل میں تبدیلی</value>
+  </data>
+  <data name="EduYear" xml:space="preserve">
+    <value>تعلیمی سال</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ای-میل</value>
+  </data>
+  <data name="EmailAlreadyTaken" xml:space="preserve">
+    <value>یہ ای-میل پہلے سے استعمال شدہ ہے</value>
+  </data>
+  <data name="EnName" xml:space="preserve">
+    <value>انگریزی میں نام</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>براہ کرم ای-میل پر ارسال کردہ کوڈ لکھیں</value>
+  </data>
+  <data name="EnterCorrectPhone" xml:space="preserve">
+    <value>یہ ای-میل ہمارے ہاں رجسٹرڈ نہیں ۔ براہ کرم درست ای-میل لکھیں</value>
+  </data>
+  <data name="ErrorSumTitle" xml:space="preserve">
+    <value>براہ کرم غلطیاں درست کریں</value>
+  </data>
+  <data name="ErrorWhileResetPass" xml:space="preserve">
+    <value>نیا  پاسورڈ  بنانے میں غلطی آرہی ہے</value>
+  </data>
+  <data name="EvalSent" xml:space="preserve">
+    <value>آپکی رائے ارسال کردی گئی ہے</value>
+  </data>
+  <data name="EvalStudent" xml:space="preserve">
+    <value>طالب علم کی  رائے</value>
+  </data>
+  <data name="evaluated" xml:space="preserve">
+    <value>رائے مکمل ہوئی</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>بہترین</value>
+  </data>
+  <data name="FatherNoti" xml:space="preserve">
+    <value>سرپرستوں  کیلیے اہم باتیں</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>لڑکی</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>یہ لازمی خانہ ہے</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>جمعہ</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>سے</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>جنس</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>اچھا</value>
+  </data>
+  <data name="GoodCommunications" xml:space="preserve">
+    <value>آپکے استاد آپ سے نرمی سے مخاطب ہوتے ہیں</value>
+  </data>
+  <data name="GoodInStudy" xml:space="preserve">
+    <value>تدریسی طریقہ کار مناسب ہے</value>
+  </data>
+  <data name="GoodInUsingBoard" xml:space="preserve">
+    <value>استاد اچھے انداز سے بورڈ استعال کرتے ہیں</value>
+  </data>
+  <data name="GoodInVoice" xml:space="preserve">
+    <value>آپ استاد کی آواز صاف سنتے ہیں</value>
+  </data>
+  <data name="HMtypeTitle" xml:space="preserve">
+    <value>گھر کا کام</value>
+  </data>
+  <data name="HomeIndexTitle" xml:space="preserve">
+    <value>صفحہ اول</value>
+  </data>
+  <data name="HomeIndexWelcome" xml:space="preserve">
+    <value>اتقان پلیٹ فارم میں خوش آمدید </value>
+  </data>
+  <data name="HomePhone" xml:space="preserve">
+    <value>گھر کا نمبر</value>
+  </data>
+  <data name="InboxMessageDate" xml:space="preserve">
+    <value>وصو ل پایا بتاریخ</value>
+  </data>
+  <data name="InboxMessageDelete" xml:space="preserve">
+    <value>میسج حڈف کریں</value>
+  </data>
+  <data name="InboxMessageFrom" xml:space="preserve">
+    <value>کی طرف سے</value>
+  </data>
+  <data name="InboxMessageOpen" xml:space="preserve">
+    <value>جانا</value>
+  </data>
+  <data name="InboxMessageTitle" xml:space="preserve">
+    <value>پیغام</value>
+  </data>
+  <data name="InboxTitle" xml:space="preserve">
+    <value>ان باکس</value>
+  </data>
+  <data name="InstDescError" xml:space="preserve">
+    <value>براہ کرم اپنے متعلق کچھ مزید لکھیں</value>
+  </data>
+  <data name="InstEval" xml:space="preserve">
+    <value>استاد کے متعلق رائے دیں</value>
+  </data>
+  <data name="instHasNotThisTut" xml:space="preserve">
+    <value>یہ دورہ اس استاد کا نہیں ہے</value>
+  </data>
+  <data name="InstImgError" xml:space="preserve">
+    <value> تصویر کا سائز 220 پکسل  * 220 پکسل ہونا چاہیے</value>
+  </data>
+  <data name="InstLecList" xml:space="preserve">
+    <value>لیکچرز کی فہرست</value>
+  </data>
+  <data name="InstName" xml:space="preserve">
+    <value>استاد کا نام</value>
+  </data>
+  <data name="InstProfileUrl" xml:space="preserve">
+    <value>میری فائل</value>
+  </data>
+  <data name="InstTitleError" xml:space="preserve">
+    <value>براہ کرم اپنا پیشہ لکھیں </value>
+  </data>
+  <data name="InstTitleText" xml:space="preserve">
+    <value>پیشہ </value>
+  </data>
+  <data name="InstTut" xml:space="preserve">
+    <value>میرے تربیتی دورہ جات</value>
+  </data>
+  <data name="InstTutList" xml:space="preserve">
+    <value>تربیتی دورہ جات کی فہرست</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>درج کردہ ای-میل  غلط ہے</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>پیشے کی نوعیت</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="LecAttach" xml:space="preserve">
+    <value>منسلکہ  فائل کھولیں</value>
+  </data>
+  <data name="LecDate" xml:space="preserve">
+    <value>لیکچر کی تاریخ </value>
+  </data>
+  <data name="LecDesc" xml:space="preserve">
+    <value>لیکچر کی نوعیت</value>
+  </data>
+  <data name="LecEndBeggerThanLecStart" xml:space="preserve">
+    <value>لیکچر کا اختتامی وقت   اس کے شروع ہونے کے بعد ہونا چاہیے</value>
+  </data>
+  <data name="LecEndTime" xml:space="preserve">
+    <value>لیکچر ختم ہونے کاوقت</value>
+  </data>
+  <data name="LecsInSameTimeError" xml:space="preserve">
+    <value>اس وقت لیکچرز  موجود ہیں ۔ براہ کرم کوئی اور وقت منتخب کیجیے</value>
+  </data>
+  <data name="LecStTime" xml:space="preserve">
+    <value>لیکچر شروع ہونے کا وقت</value>
+  </data>
+  <data name="LecTime" xml:space="preserve">
+    <value>لیکچر کی کل مدت</value>
+  </data>
+  <data name="LecTimeError" xml:space="preserve">
+    <value>لیکچر کا وقت موجودہ وقت سے زیادہ ہونا چاہیے</value>
+  </data>
+  <data name="LecTitle" xml:space="preserve">
+    <value>لیکچر کا عنوان</value>
+  </data>
+  <data name="LecTitleTimeTable" xml:space="preserve">
+    <value>لیکچر</value>
+  </data>
+  <data name="LectureTitle" xml:space="preserve">
+    <value>لیکچرز</value>
+  </data>
+  <data name="LecTutNotFound" xml:space="preserve">
+    <value>اس  لیکچر سے متعلق کوئی تربیتی دورہ نہیں ہے</value>
+  </data>
+  <data name="LecVirtualUrl" xml:space="preserve">
+    <value>تعلیمی کلاس کا لنک</value>
+  </data>
+  <data name="ListOfInBox" xml:space="preserve">
+    <value>آنے والے پیغامات کی فہرست</value>
+  </data>
+  <data name="LoginBtnVal" xml:space="preserve">
+    <value>داخل ہوں</value>
+  </data>
+  <data name="LoginCreateStAccount" xml:space="preserve">
+    <value>طالب علم کا اکاونٹ کھولیں</value>
+  </data>
+  <data name="LoginEmail" xml:space="preserve">
+    <value>ای-میل درج کریں</value>
+  </data>
+  <data name="LoginFailedMsg" xml:space="preserve">
+    <value>لاگ ان نہیں ہورہا</value>
+  </data>
+  <data name="LoginForgetPass" xml:space="preserve">
+    <value>پاسورڈ بھول گیا </value>
+  </data>
+  <data name="LoginPass" xml:space="preserve">
+    <value>پاسورڈ ڈالیں </value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>اتقان - رکنیت  اختیار کریں</value>
+  </data>
+  <data name="LoginTopHeader" xml:space="preserve">
+    <value>رکنیت (رجسڑ ) </value>
+  </data>
+  <data name="LoginToSub" xml:space="preserve">
+    <value>شامل ہونے کیلیے  لاگ ان ہوں</value>
+  </data>
+  <data name="LogoutTextUrl" xml:space="preserve">
+    <value>لاگ -آوٹ </value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>لڑکا</value>
+  </data>
+  <data name="ManagementAccept" xml:space="preserve">
+    <value>آُپ کی درخواست قبول کرلی گئ ہے</value>
+  </data>
+  <data name="ManagementTitle" xml:space="preserve">
+    <value>ادارہ</value>
+  </data>
+  <data name="MessageRegister" xml:space="preserve">
+    <value>براہ کرم  اپنی مطلوبہ زبان کا انتخاب کیجیے جس میں آپ پڑھنا چاہتے ہیں</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>سوموار</value>
+  </data>
+  <data name="MyAssignment" xml:space="preserve">
+    <value>میرے گھر کے کام</value>
+  </data>
+  <data name="MyEvaluate" xml:space="preserve">
+    <value>میری رائے</value>
+  </data>
+  <data name="MyTutorials" xml:space="preserve">
+    <value>میرے دورہ جات</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="NameInNational" xml:space="preserve">
+    <value>مادری زبان میں نام</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>شہریت</value>
+  </data>
+  <data name="NewPassErrorText" xml:space="preserve">
+    <value>نیا پاسورڈ لکھیں</value>
+  </data>
+  <data name="NewPassLength" xml:space="preserve">
+    <value>پاسورڈ  6 حروف سے کم اور 50 حروف سے زیادہ نہ ہو</value>
+  </data>
+  <data name="NewPassText" xml:space="preserve">
+    <value>نیا پاسورڈ </value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>نہیں</value>
+  </data>
+  <data name="NoPrevAttForAss" xml:space="preserve">
+    <value>اس کام/ امتحان کے ساتھ منسلک مواد موجود نہیں </value>
+  </data>
+  <data name="NoPrevAttForSol" xml:space="preserve">
+    <value>اس حل کے ساتھ منسلک مواد موجود نہیں</value>
+  </data>
+  <data name="NotAcceptInst" xml:space="preserve">
+    <value>غیر متفق</value>
+  </data>
+  <data name="OldPassErrorText" xml:space="preserve">
+    <value>پرا نا پاسورڈ لکھیں</value>
+  </data>
+  <data name="OldPassText" xml:space="preserve">
+    <value>پرانا پاسورڈ</value>
+  </data>
+  <data name="OtherInstDataError" xml:space="preserve">
+    <value>یہ خانے لازمی پر کریں : ای-میل، نام، موبائل نمبر</value>
+  </data>
+  <data name="passChanged" xml:space="preserve">
+    <value>پاسورڈ  تبدیل کردیا گیا ہے</value>
+  </data>
+  <data name="PassMsg" xml:space="preserve">
+    <value>آپ کا پاسورڈ یہ ہے :</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>پاسورڈ</value>
+  </data>
+  <data name="passwordsent" xml:space="preserve">
+    <value>پاسورڈ ارسال کردیا گیا</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>موبائل نمبر  9xx+</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>موبائل نمبرملک کے کوڈ کے ساتھ</value>
+  </data>
+  <data name="Poor" xml:space="preserve">
+    <value>کمزور</value>
+  </data>
+  <data name="ProfileImgLable" xml:space="preserve">
+    <value>تصویر سائز  220*220 </value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>میری پروفائل</value>
+  </data>
+  <data name="RemoveAtt" xml:space="preserve">
+    <value>حٍذف</value>
+  </data>
+  <data name="RequestedOrSubscribed" xml:space="preserve">
+    <value>آپ کی سبسکرپشن ہوچکی یا درخواست زیر غور ہے</value>
+  </data>
+  <data name="ResidentCountry" xml:space="preserve">
+    <value>رہائشی ملک</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>ہفتہ</value>
+  </data>
+  <data name="ShowAtt" xml:space="preserve">
+    <value>منسلکہ مواد دیکھیں</value>
+  </data>
+  <data name="ShowStudentAssignments" xml:space="preserve">
+    <value>طالب علم کےگھر کا کام  دیکھیں</value>
+  </data>
+  <data name="ShowTutDetails" xml:space="preserve">
+    <value>دورہ کی تفصیلات دیکھیں</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>اتقان</value>
+  </data>
+  <data name="SolAttach" xml:space="preserve">
+    <value>منسلکہ مواد مع حل </value>
+  </data>
+  <data name="SolDesc" xml:space="preserve">
+    <value>حل </value>
+  </data>
+  <data name="StAllTut" xml:space="preserve">
+    <value>میسر دورہ جات</value>
+  </data>
+  <data name="StAssociateYourAccount" xml:space="preserve">
+    <value>آپ کا  اکاونٹ </value>
+  </data>
+  <data name="StAssociationForm" xml:space="preserve">
+    <value>اسکرین لنک</value>
+  </data>
+  <data name="StCertRequired" xml:space="preserve">
+    <value>آخری ڈگری کی تصویر منسلک کریں</value>
+  </data>
+  <data name="StCompleteRegister" xml:space="preserve">
+    <value>رکنیت  کا عمل مکمل کریں</value>
+  </data>
+  <data name="StCreateAccountTitle" xml:space="preserve">
+    <value>طالب علم کے اکاونٹ میں تبدیلی کی درخواست</value>
+  </data>
+  <data name="StDegree" xml:space="preserve">
+    <value>طالب علم کی ڈگری</value>
+  </data>
+  <data name="StExLoginAccount" xml:space="preserve">
+    <value>اکاونٹ</value>
+  </data>
+  <data name="StExLoginBtnFace" xml:space="preserve">
+    <value>لاگ-ان  بذریعہ فیس بک اکاونٹ</value>
+  </data>
+  <data name="StExLoginUsing" xml:space="preserve">
+    <value>رکنیت بذریعہ فیس بک اکاونٹ </value>
+  </data>
+  <data name="StFinishLoginMsg" xml:space="preserve">
+    <value>براہ کرم شمولیت  کیلیے اپنا موبائل نمبر درج کریں</value>
+  </data>
+  <data name="StLoginFailure" xml:space="preserve">
+    <value>شمولیت نہیں ہورہی</value>
+  </data>
+  <data name="StRegReq1" xml:space="preserve">
+    <value>رجسٹر کروانے کیلیے شرائط و ضوابط</value>
+  </data>
+  <data name="StRegReq10" xml:space="preserve">
+    <value>تعلیمی نصاب سے آگاہی حاصل کرنے کیلیے تعارفی کلاس میں شامل ہونا نیز طالب علم کا انٹرویو میں کامیاب ہونا جس کابنیادی مقصد طالب علم کی ذہنی سطح اور اس کی صلاحیتیں جاننا  اور اس کے مطابق تعلیمی نصاب کے متعلق مطلع کرنا ہے </value>
+  </data>
+  <data name="StRegReq11" xml:space="preserve">
+    <value>تعلیمی نصاب نورانی قاعدہ کی خریداری مطبوعہ کاپی یا الکٹرونک کاپی</value>
+  </data>
+  <data name="StRegReq2" xml:space="preserve">
+    <value>رکنیت اختیار کرنے والے کی عمر 7 سال سے زائد ہو</value>
+  </data>
+  <data name="StRegReq3" xml:space="preserve">
+    <value>دورہ شروع ہونے سے پہلےعربی حروف تہجی یاد کرنا</value>
+  </data>
+  <data name="StRegReq4" xml:space="preserve">
+    <value>پوری دلجمعی اور باقاعدگی کے ساتھ دورے میں شروع سے آخر تک شریک ہونا</value>
+  </data>
+  <data name="StRegReq5" xml:space="preserve">
+    <value>طالب علم کمپیوٹر کا استعال جانتا ہو یا اس کے ساتھ کوئی مدد گار ہو</value>
+  </data>
+  <data name="StRegReq6" xml:space="preserve">
+    <value>طالب علم آداب  عامہ خصوصا قرآن کی تعلیم کے آداب کا اہتمام کرنے والا ہو</value>
+  </data>
+  <data name="StRegReq7" xml:space="preserve">
+    <value>لڑکا/ لڑکی کے سرپرست تعلیمی سرگرمیوں پر نظر رکھنے والے ہوں</value>
+  </data>
+  <data name="StRegReq8" xml:space="preserve">
+    <value>رکنیت فارم بھرنا اور مطلوبہ معلومات احتیاط سے درج کرنا اور قواعد و ضوابط سے آگاہی حاصل کرنا  </value>
+  </data>
+  <data name="StRegReq9" xml:space="preserve">
+    <value>رکنیت حاصل کرنے کیلیے ای-میل کا  اندراج اور کوڈ حاصل کرنے کیلیے صحیح موبائل نمبر لکھنا</value>
+  </data>
+  <data name="StScore" xml:space="preserve">
+    <value>حاصل شدہ نتائج</value>
+  </data>
+  <data name="StSuccessExternalAuth" xml:space="preserve">
+    <value>تصدیق ہوچکی ہے</value>
+  </data>
+  <data name="StudentCert" xml:space="preserve">
+    <value>آخری حاصل کردہ ڈگری</value>
+  </data>
+  <data name="StudentCertify" xml:space="preserve">
+    <value>سرٹیفکیٹ</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>طلبہ</value>
+  </data>
+  <data name="StudentsList" xml:space="preserve">
+    <value>طلبہ کی فہرست</value>
+  </data>
+  <data name="StUnsuccessfullLgin" xml:space="preserve">
+    <value>تصدیق ناکام </value>
+  </data>
+  <data name="StWithMyAccount" xml:space="preserve">
+    <value>آپ کےاس  اکاونٹ کے ساتھ</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>سبسکرائب</value>
+  </data>
+  <data name="SubStudents" xml:space="preserve">
+    <value>سبسکرائب طلبہ </value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>اتوار</value>
+  </data>
+  <data name="TechProblemInTutorial" xml:space="preserve">
+    <value>تعلیمی کلاس کے دوران تکنیکی خرابی آرہی ہے</value>
+  </data>
+  <data name="Thur" xml:space="preserve">
+    <value>جمعرات</value>
+  </data>
+  <data name="TimeTable" xml:space="preserve">
+    <value>تعلیمی نظام اوقات (ٹائم ٹیبل)</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>کی طرف</value>
+  </data>
+  <data name="Tus" xml:space="preserve">
+    <value>منگل</value>
+  </data>
+  <data name="TutAssignToInst" xml:space="preserve">
+    <value>آپ کو ادارہ کی طرف سے تربیتی دورہ کیلیے منتخب کیا گیا ہے</value>
+  </data>
+  <data name="TutCloseDate" xml:space="preserve">
+    <value>دورہ ختم ہونے کی تاریخ</value>
+  </data>
+  <data name="TutCount" xml:space="preserve">
+    <value>لیکچرز کی تعداد</value>
+  </data>
+  <data name="TutDetails" xml:space="preserve">
+    <value>دورے کی تفصیلات</value>
+  </data>
+  <data name="TutInstName" xml:space="preserve">
+    <value>دورہ کے استاد</value>
+  </data>
+  <data name="TutLang" xml:space="preserve">
+    <value>دورہ کی زبان</value>
+  </data>
+  <data name="TutLectures" xml:space="preserve">
+    <value>دورہ کے لیکچرز</value>
+  </data>
+  <data name="TutOpenDate" xml:space="preserve">
+    <value>دورے  کی تاریخ</value>
+  </data>
+  <data name="TutorialTitle" xml:space="preserve">
+    <value>دورے کا عنوان </value>
+  </data>
+  <data name="UserNameMsg" xml:space="preserve">
+    <value> آپ کا نام برائے  شمولیت</value>
+  </data>
+  <data name="VerifyCode" xml:space="preserve">
+    <value>کوڈ کی تحقیق</value>
+  </data>
+  <data name="VGood" xml:space="preserve">
+    <value>بہت اچھا</value>
+  </data>
+  <data name="VideoUrl" xml:space="preserve">
+    <value>ویڈیو لیکچر کا لنک</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>بدھ</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>جی ہاں</value>
+  </data>
+</root>

@@ -31,15 +31,19 @@
     <div class="control-group">
         @Html.LabelFor(m => m.OpenDate, new { @class = "control-label" })
         <div class="controls">
-            <div class="input-append date date-picker" data-date-format="MM/dd/yyyy">
-                @Html.TextBoxFor(m => m.OpenDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
-                <span class="add-on"><i class="icon-calendar"></i></span>
-            </div>
-            <div class="error-validation">
-                @Html.ValidationMessageFor(m => m.OpenDate)
+            <!--dd/MM/yy-->
+         
+
+
+                <div class="input-append date date-picker" data-date-format="MM/dd/yyyy">
+                    @Html.TextBoxFor(m => m.OpenDate, new { @class = " m-ctrl-medium date-picker ", size = "16", type = "text" })
+                    <span class="add-on"><i class="icon-calendar"></i></span>
+                </div>
+                <div class="error-validation">
+                    @Html.ValidationMessageFor(m => m.OpenDate)
+                </div>
             </div>
         </div>
-    </div>
     <div class="control-group">
         @Html.LabelFor(m => m.CloseDate, new { @class = "control-label" })
         <div class="controls">

@@ -387,6 +387,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="QuranRes.Ur.Designer.cs">
+      <DependentUpon>QuranRes.Ur.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.fil.Designer.cs">
+      <DependentUpon>QuranRes.fil.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.It.Designer.cs">
+      <DependentUpon>QuranRes.It.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuranRes.De.Designer.cs">
+      <DependentUpon>QuranRes.De.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="QuranRes.es.Designer.cs">
       <DependentUpon>QuranRes.es.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -427,6 +447,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="resourse.bo.Designer.cs" />
+    <Compile Include="resourse.es.Designer.cs" />
+    <Compile Include="resourse.nl.Designer.cs" />
+    <Compile Include="resourse.os.Designer.cs" />
+    <Compile Include="resourse.to.Designer.cs" />
+    <Compile Include="resourse.vi.Designer.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1153,6 +1179,23 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.Ur.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.Ur.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.fil.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.fil.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.It.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.It.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuranRes.De.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranRes.De.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuranRes.es.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>QuranRes.es.Designer.cs</LastGenOutput>
@@ -1188,6 +1231,12 @@
       <LastGenOutput>QuranRes.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="resourse.bo.resx" />
+    <EmbeddedResource Include="resourse.es.resx" />
+    <EmbeddedResource Include="resourse.nl.resx" />
+    <EmbeddedResource Include="resourse.os.resx" />
+    <EmbeddedResource Include="resourse.to.resx" />
+    <EmbeddedResource Include="resourse.vi.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

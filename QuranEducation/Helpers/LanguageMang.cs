@@ -40,6 +40,30 @@ namespace QuranEducation.Helpers
                new Languages
             {
                 Name = "Spanish" , Code ="es"
+            },
+               new Languages
+            {
+                Name = "German" , Code ="de"
+            },
+               new Languages
+            {
+                Name = "Italian" , Code ="it"
+            },
+               new Languages
+            {
+                Name = "Philippines" , Code ="fil"
+            },
+               new Languages
+            {
+                Name = "أوردو" , Code ="ur"
+            },
+               new Languages
+            {
+                Name = "Vietnamese" , Code ="vi"
+            },
+               new Languages
+            {
+                Name = "Dutch" , Code ="nl"
             }
         };
         public static bool IsLanguageAvailable(string lang)
@@ -64,12 +88,11 @@ namespace QuranEducation.Helpers
                 {
                     LangCode = code;
                 }
-                if (!string.IsNullOrEmpty(LangCode)&& IsLanguageAvailable(LangCode))
+                if (!string.IsNullOrEmpty(LangCode) && IsLanguageAvailable(LangCode))
                 {
-                    
+
                     var cultureInfo = new CultureInfo(LangCode);
                     Thread.CurrentThread.CurrentUICulture = cultureInfo;
-                    Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureInfo.Name);
                     HttpCookie langCookie = new HttpCookie("culture", LangCode);
 
                     langCookie.Expires = DateTime.Now.AddYears(100);

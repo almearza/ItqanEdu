@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Over Itqan</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Wie zijn wij</value>
+  </data>
+  <data name="AnswerCan" xml:space="preserve">
+    <value>Cursussen</value>
+  </data>
+  <data name="AnswerInst" xml:space="preserve">
+    <value>En</value>
+  </data>
+  <data name="AnwerInst" xml:space="preserve">
+    <value>Ja, Itqan helpt hierbij opdat dit verder geen invloed heeft op de studie</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>Ja, als een andere docent beschikbaar is die de taal van de student kent, dan zal Itqan de mogelijkheid geven om te wisselen van docent</value>
+  </data>
+  <data name="benifits" xml:space="preserve">
+    <value>Wij hebben capabele docenten die uw taal kennen en zij zijn gecertificeerd om al-Qa'idah an-Nuraniyyah te onderwijzen. Zij hebben daarnaast ervaring met het onderwijzen van de Qur'an en het onderwijzen op afstand</value>
+  </data>
+  <data name="CanFather" xml:space="preserve">
+    <value>Arabisch</value>
+  </data>
+  <data name="Cat" xml:space="preserve">
+    <value>Waarmee onderscheidt Itqan zich?</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Kan de voogd samen met het kind de lessen bijwonen?</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Doelgroepen</value>
+  </data>
+  <data name="Courses" xml:space="preserve">
+    <value>Voorwaarden en regels</value>
+  </data>
+  <data name="Detiles" xml:space="preserve">
+    <value>Neem contact op met ons</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Ons programma</value>
+  </data>
+  <data name="feturs" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Veelvoorkomende vragen</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Wat maakt Itqan speciaal?</value>
+  </data>
+  <data name="how" xml:space="preserve">
+    <value>Doelen</value>
+  </data>
+  <data name="HowChange" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HowIns" xml:space="preserve">
+    <value>Hoe schrijf ik me in</value>
+  </data>
+  <data name="howReg" xml:space="preserve">
+    <value>Kan ik van docent wisselen?</value>
+  </data>
+  <data name="Itqan" xml:space="preserve">
+    <value>Wie zijn de docenten bij Itqan?</value>
+  </data>
+  <data name="Lang" xml:space="preserve">
+    <value>Zie voorwaarden inschrijving</value>
+  </data>
+  <data name="lecture" xml:space="preserve">
+    <value>Itqan</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value>Inloggen</value>
+  </data>
+  <data name="Moor" xml:space="preserve">
+    <value>Belangrijke links</value>
+  </data>
+  <data name="plan" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Privace" xml:space="preserve">
+    <value>Bericht</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Meer</value>
+  </data>
+  <data name="Quaida" xml:space="preserve">
+    <value>Studieprogramma</value>
+  </data>
+  <data name="qudiah" xml:space="preserve">
+    <value>Alle rechten van Itqan zijn voorbehouden - 2021</value>
+  </data>
+  <data name="Quran" xml:space="preserve">
+    <value>Voorwaarden en regels</value>
+  </data>
+  <data name="RegistrationTerms" xml:space="preserve">
+    <value>al-Qa'idah an-Nuraniyyah</value>
+  </data>
+  <data name="requiredIT" xml:space="preserve">
+    <value>al-Qa'idah an-Nuraniyyah</value>
+  </data>
+  <data name="Sesion" xml:space="preserve">
+    <value>De Edele Qur'an</value>
+  </data>
+  <data name="Sunah" xml:space="preserve">
+    <value>Voorwaarden aanmelden</value>
+  </data>
+  <data name="Sunah1" xml:space="preserve">
+    <value>De profetische Sunnah</value>
+  </data>
+  <data name="vision" xml:space="preserve">
+    <value>Visie</value>
+  </data>
+  <data name="WhatCondition" xml:space="preserve">
+    <value>Technische voorwaarden</value>
+  </data>
+  <data name="WhatCondition1" xml:space="preserve">
+    <value>Aanmeldvoorwaarden</value>
+  </data>
+  <data name="why" xml:space="preserve">
+    <value>Leer- en studiemethode</value>
+  </data>
+  <data name="why1" xml:space="preserve">
+    <value>Waarom Itqan?</value>
+  </data>
+</root>

@@ -50,7 +50,7 @@
                                 <tr>
                                     <td class="span2">@QuranRes.TutLang</td>
                                     <td>
-                                        @LanguageMang.AvailableLanguages.FirstOrDefault(m => m.Code == Model.LangCode).Name
+                                        @LanguageMang.AvailableLanguages.FirstOrDefault(m => m.Code.ToLower() == Model.LangCode.ToLower()).Name
                                     </td>
                                 </tr>
                             </tbody>
